@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard - художественная галерея</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/choices.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="scripts/swiper-bundle.min.js"></script>
+  <script src="scripts/jquery-1.12.4.js"></script>
+  <script src="scripts/jquery-ui.js"></script>
+  <script src="scripts/api-maps.js"></script>
+  <script src="scripts/choices.min.js"></script>
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top header-top">
+      <div class="container header-top__container flex">
+        <a class="header__logo" href="#">
+          <img src="images/Logo.svg" alt="Blanchard, художественная галерея">
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list flex">
+            <li class="header-nav__item nav-item">
+              <a class="nav-item__link" href="#">О нас</a>
+            </li>
+            <li class="header-nav__item ">
+              <a class="nav-item__link" href="#">Галерея</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="nav-item__link" href="#">Каталог</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="nav-item__link" href="#">События</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="nav-item__link" href="#">Издания</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="nav-item__link" href="#">Проекты</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="nav-item__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__log-in" href="#">
+          Войти
+        </a>
+      </div>
+    </div>
+    <div class="header__bottom header-bottom">
+      <div class="container header-bottom__container flex">
+        <ul class="header-section__filter flex">
+          <li class="filter__item">
+            <select name="Реализм" id="selectCustom1" class="selectCustom">
+              <option value="Реализм">Реализм</option>
+              <option value="Древесина">Древесина</option>
+              <option value="Металл">Металл</option>
+              <option value="Камень">Камень</option>
+              <option value="Пластик">Пластик</option>
+              <option value="Композитный">Композитный</option>
+              <option value="Гипс">Гипс</option>
+            </select>
+          </li>
+          <li class="filter__item">
+            <select name="Реализм" id="selectCustom2" class="selectCustom">
+              <option value="Импрессионизм">Импрессионизм</option>
+              <option value="Древесина">Древесина</option>
+              <option value="Металл">Металл</option>
+              <option value="Камень">Камень</option>
+              <option value="Пластик">Пластик</option>
+              <option value="Композитный">Композитный</option>
+              <option value="Гипс">Гипс</option>
+            </select>
+          </li>
+          <li class="filter__item">
+            <select name="Реализм" id="selectCustom3" class="selectCustom">
+              <option value="Постимпрессионизм">Постимпрессионизм</option>
+              <option value="Древесина">Древесина</option>
+              <option value="Металл">Металл</option>
+              <option value="Камень">Камень</option>
+              <option value="Пластик">Пластик</option>
+              <option value="Композитный">Композитный</option>
+              <option value="Гипс">Гипс</option>
+            </select>
+          </li>
+          <li class="filter__item">
+            <select name="Реализм" id="selectCustom4" class="selectCustom">
+              <option value="Авангард">Авангард</option>
+              <option value="Древесина">Древесина</option>
+              <option value="Металл">Металл</option>
+              <option value="Камень">Камень</option>
+              <option value="Пластик">Пластик</option>
+              <option value="Композитный">Композитный</option>
+              <option value="Гипс">Гипс</option>
+            </select>
+          </li>
+          <li class="filter__item">
+            <select name="Реализм" id="selectCustom5" class="selectCustom">
+              <option value="Футуризм">Футуризм</option>
+              <option value="Древесина">Древесина</option>
+              <option value="Металл">Металл</option>
+              <option value="Камень">Камень</option>
+              <option value="Пластик">Пластик</option>
+              <option value="Композитный">Композитный</option>
+              <option value="Гипс">Гипс</option>
+            </select>
+          </li>
+        </ul>
+        <div class="header-section__search">
+          <input class="header-section__input" type="text" placeholder="Поиск по сайту">
+          <button class="header-section__btn"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero-section hero">
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <div class="container hero__container">
+          <h1 class="hero__title">
+            Прикоснитесь к прекрасному
+          </h1>
+          <p class="hero__decription">
+            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
+            предложений.
+          </p>
+          <a class="hero__link" href="#">
+            Подписаться на рассылку
+          </a>
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture class="swiper-slide__image">
+              <source srcset="images/birmingham-museums-1@1x.webp 1x, images/birmingham-museums-1@2x.webp 2x"
+                type="image/webp">
+              <img src="images/birmingham-museums-1@1x.jpg" srcset="images/birmingham-museums-1@2x.jpg 2x" alt="Замок">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="swiper-slide__image">
+              <source srcset="images/birmingham-museums-2@1x.webp 1x, images/birmingham-museums-2@2x.webp 2x"
+                type="image/webp">
+              <img src="images/birmingham-museums-2@1x.jpg" srcset="images/birmingham-museums-2@2x.jpg 2x" alt="Замок">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="swiper-slide__image">
+              <source srcset="images/birmingham-museums-3@1x.webp 1x, images/birmingham-museums-3@2x.webp 2x"
+                type="image/webp">
+              <img src="images/birmingham-museums-3@1x.jpg" srcset="images/birmingham-museums-3@2x.jpg 2x" alt="Замок">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="about-us-section about-us">
+      <div class="container">
+        <h2 class="about-us__title section__title">
+          О нас
+        </h2>
+        <p class="about-us__description">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+          участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов.
+          Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс
+          внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных
+          исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+          учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов,
+          действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны
+          быть разоблачены.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery-section gallery">
+      <div class="container">
+        <div class="gallery-section__filter">
+          <h2 class="gallery__title section__title">
+            Галерея
+          </h2>
+          <span class="gallery__filter-by">
+            Фильтровать по:
+          </span>
+          <select name="Реализм" id="selectCustom6" class="selectCustom">
+            <option value="Автор">Автор</option>
+            <option value="Направление">Направление</option>
+            <option value="Техника">Техника</option>
+          </select>
+          <p class="gallery__description gallery-description">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a
+              class="gallery-description__link" href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией.
+          </p>
+        </div>
+        <div class="gallery-section__picture">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture class="swiper-slide__image">
+                  <source srcset="images/birmingham-museums-1@1x.webp 1x, images/birmingham-museums-1@2x.webp 2x"
+                    type="image/webp">
+                  <img src="images/birmingham-museums-1@1x.jpg" srcset="images/birmingham-museums-1@2x.jpg 2x"
+                    alt="Замок">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture class="swiper-slide__image">
+                  <source srcset="images/birmingham-museums-2@1x.webp 1x, images/birmingham-museums-2@2x.webp 2x"
+                    type="image/webp">
+                  <img src="images/birmingham-museums-2@1x.jpg" srcset="images/birmingham-museums-2@2x.jpg 2x"
+                    alt="Замок">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture class="swiper-slide__image">
+                  <source srcset="images/birmingham-museums-3@1x.webp 1x, images/birmingham-museums-3@2x.webp 2x"
+                    type="image/webp">
+                  <img src="images/birmingham-museums-3@1x.jpg" srcset="images/birmingham-museums-3@2x.jpg 2x"
+                    alt="Замок">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section catalog">
+      <div class="container">
+        <h2 class="catalog__title section__title">
+          Каталог
+        </h2>
+        <ul class="catalog__list-countries">
+          <li class="catalog__item-countries catalog__item-countries--France">
+            <a href="#">
+              <img src="images/France.svg" alt="Франция">
+            </a>
+          </li>
+          <li class="catalog__item-countries catalog__item-countries--Germany">
+            <a href="#">
+              <img src="images/Germany.svg" alt="Германия">
+            </a>
+          </li>
+          <li class="catalog__item-countries catalog__item-countries--Italy">
+            <a href="#">
+              <img src="images/Italy.svg" alt="Италия">
+            </a>
+          </li>
+          <li class="catalog__item-countries catalog__item-countries--Russia">
+            <a href="#">
+              <img src="images/Russia.svg" alt="Россия">
+            </a>
+          </li>
+          <li class="catalog__item-countries catalog__item-countries--Belgium">
+            <a href="#">
+              <img src="images/Belgium.svg" alt="Бельгия">
+            </a>
+          </li>
+        </ul>
+        <p class="catalog__description">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
+          частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
+          уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+        </p>
+        <div class="catalog__wrapper catalog-wrapper">
+          <figure class="catalog-wrapper__description">
+            <picture>
+              <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+              <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Доменико Гирландайо">
+            </picture>
+            <figcaption>
+              <h3>
+                Доменико Гирландайо
+              </h3>
+              <p>
+                2 июня 1448 — 11 января 1494.
+              </p>
+              <p>
+                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                граждане Флоренции в костюмах того времени).
+              </p>
+            </figcaption>
+          </figure>
+          <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+              <p>
+                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+              <p>
+                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                suscipit faucibus urna.
+              </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+              <p>
+                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+              <p>
+                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                mauris vel est.
+              </p>
+              <p>
+                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="developments-section developments">
+      <div class="container">
+        <h2 class="developments__title section__title">
+          События
+        </h2>
+        <ul class="developments__list">
+          <li class="developments__item developments-item">
+            <figure>
+              <picture>
+                <source srcset="images/Rectangle-98@1x.webp 1x, images/Rectangle-98@2x.webp 2x" type="image/webp">
+                <img src="images/Rectangle-98@1x.jpg" srcset="images/Rectangle-98@2x.jpg 2x"
+                  alt="Книжная гравюра в живом восприятии">
+              </picture>
+              <figcaption>
+                <small>
+                  <span>
+                    Музей им. Щусева
+                  </span>
+                  <span>
+                    с 20 марта по 30 апреля
+                  </span>
+                </small>
+                <h3>
+                  Книжная гравюра в живом восприятии
+                </h3>
+                <p>
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                </p>
+                <a class="developments-item__more-details" href="#">Подробнее</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="developments__item developments-item">
+            <figure>
+              <picture>
+                <source srcset="images/Rectangle-99@1x.webp 1x, images/Rectangle-99@2x.webp 2x" type="image/webp">
+                <img src="images/Rectangle-99@1x.jpg" srcset="images/Rectangle-99@2x.jpg 2x"
+                  alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
+              </picture>
+              <figcaption>
+                <small>
+                  <span>
+                    ММОМА
+                  </span>
+                  <span>
+                    24 марта 19:00
+                  </span>
+                </small>
+                <h3>
+                  «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                </h3>
+                <p>
+                  Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                  факта: постоянный количественный рост и сфера нашей активности представляет собой интересный
+                  эксперимент проверки новых принципов формирования...
+                </p>
+                <a class="developments-item__more-details" href="#">Подробнее</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="developments__item developments-item">
+            <figure>
+              <picture>
+                <source srcset="images/Rectangle-100@1x.webp 1x, images/Rectangle-100@2x.webp 2x" type="image/webp">
+                <img src="images/Rectangle-100@1x.jpg" srcset="images/Rectangle-100@2x.jpg 2x"
+                  alt="Выставка «Формация 2020»">
+              </picture>
+              <figcaption>
+                <small>
+                  <span>
+                    Еврейский музей
+                  </span>
+                  <span>
+                    с 31 марта по 21 апреля
+                  </span>
+                </small>
+                <h3>
+                  Выставка «Формация 2020»
+                </h3>
+                <p>
+                  Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
+                  формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
+                  значение для новых принципов формирования материально-технической и кадровой базы.
+                </p>
+                <a class="developments-item__more-details" href="#">Подробнее</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="developments__item developments-item">
+            <figure>
+              <picture>
+                <source srcset="images/Rectangle-101@1x.webp 1x, images/Rectangle-101@2x.webp 2x" type="image/webp">
+                <img src="images/Rectangle-101@1x.jpg" srcset="images/Rectangle-101@2x.jpg 2x"
+                  alt="XXIV Международная биеннале молодого искусства">
+              </picture>
+              <figcaption>
+                <small>
+                  <span>
+                    Третьяковка на Крымском валу
+                  </span>
+                  <span>
+                    с 30 марта по 30 апреля
+                  </span>
+                </small>
+                <h3>
+                  XXIV Международная биеннале молодого искусства
+                </h3>
+                <p>
+                  Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что
+                  иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в
+                  разрезе маркетинговых и финансовых...
+                </p>
+                <a class="developments-item__more-details" href="#">Подробнее</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="developments__item developments-item">
+            <figure>
+              <picture>
+                <source srcset="images/Rectangle-102@1x.webp 1x, images/Rectangle-102@2x.webp 2x" type="image/webp">
+                <img src="images/Rectangle-102@1x.jpg" srcset="images/Rectangle-102@2x.jpg 2x"
+                  alt="«Джон Винзор. Фотографии из серии «Метафора серебра»">
+              </picture>
+              <figcaption>
+                <small>
+                  <span>
+                    ММАМ
+                  </span>
+                  <span>
+                    с 8 апреля по 20 мая
+                  </span>
+                </small>
+                <h3>
+                  Джон Винзор. Фотографии из серии «Метафора серебра»
+                </h3>
+                <p>
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+                </p>
+                <a class="developments-item__more-details" href="#">Подробнее</a>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="edition-section edition">
+      <div class="container">
+        <h2 class="section__title edition__title">
+          Издания
+        </h2>
+        <div class="edition__categories-prices">
+          <fieldset>
+            <legend>Категории</legend>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Бестселлеры </label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Искусство</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Архитектура</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Дизайн</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Мода</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Детям</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Художественная
+              литература</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Публицистика</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Путеводители</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Философия</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Учебная литература</label>
+            <label><input type="checkbox"><span class="edition__custom-checkbox"></span>Журналы и газеты</label>
+          </fieldset>
+          <fieldset>
+            <legend>Цена</legend>
+            <span>
+              <label>От<input type="text"></label>
+              <label>до<input type="text"></label>
+              <span>рублей</span>
+            </span>
+          </fieldset>
+        </div>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <figure>
+                <picture class="swiper-slide__image">
+                  <source srcset="images/Rectangle-107@1x.webp 1x, images/Rectangle-107@2x.webp 2x" type="image/webp">
+                  <img src="images/Rectangle-107@1x.jpg" srcset="images/Rectangle-107@2x.jpg 2x"
+                    alt="Иттен, Иоханнес: Искусство цвета">
+                </picture>
+                <figcaption>
+
+                  <div>
+                    <h4>
+                      Искусство цвета
+                    </h4>
+                    <p>
+                      Иттен, Иоханнес
+                    </p>
+                  </div>
+                  <div>
+                    620 руб
+                  </div>
+
+                  <a href="#">
+                    Заказать
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <picture class="swiper-slide__image">
+                  <source srcset="images/Rectangle-108@1x.webp 1x, images/Rectangle-108@2x.webp 2x" type="image/webp">
+                  <img src="images/Rectangle-108@1x.jpg" srcset="images/Rectangle-108@2x.jpg 2x"
+                    alt="Рудер, Эмиль: Типографика">
+                </picture>
+                <figcaption>
+
+                  <div>
+                    <h4>
+                      Типографика
+                    </h4>
+                    <p>
+                      Рудер, Эмиль
+                    </p>
+                  </div>
+                  <div>
+                    2 450 руб
+                  </div>
+
+                  <a href="#">
+                    Заказать
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <picture class="swiper-slide__image">
+                  <source srcset="images/Rectangle-109@1x.webp 1x, images/Rectangle-109@2x.webp 2x" type="image/webp">
+                  <img src="images/Rectangle-109@1x.jpg" srcset="images/Rectangle-109@2x.jpg 2x"
+                    alt="Гордон, Юрий: Книга про буквы">
+                </picture>
+                <figcaption>
+
+                  <div>
+                    <h4>
+                      Книга про буквы
+                    </h4>
+                    <p>
+                      Гордон, Юрий
+                    </p>
+                  </div>
+                  <div>
+                    2 200 руб
+                  </div>
+
+                  <a href="#">
+                    Заказать
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <picture class="swiper-slide__image">
+                  <source srcset="images/Rectangle-103@1x.webp 1x, images/Rectangle-103@2x.webp 2x" type="image/webp">
+                  <img src="images/Rectangle-103@1x.jpg" srcset="images/Rectangle-103@2x.jpg 2x"
+                    alt="Кричевский, Владимир: Николай Ильин">
+                </picture>
+                <figcaption>
+
+                  <div>
+                    <h4>
+                      Николай Ильин
+                    </h4>
+                    <p>
+                      Кричевский, Владимир
+                    </p>
+                  </div>
+                  <div>
+                    1 100 руб
+                  </div>
+
+                  <a href="#">
+                    Заказать
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <picture class="swiper-slide__image">
+                  <source srcset="images/Rectangle-104@1x.webp 1x, images/Rectangle-104@2x.webp 2x" type="image/webp">
+                  <img src="images/Rectangle-104@1x.jpg" srcset="images/Rectangle-104@2x.jpg 2x"
+                    alt="Мюллер-Брокманн, Йозеф: Модульные сетки в граф...">
+                </picture>
+                <figcaption>
+
+                  <div>
+                    <h4>
+                      Модульные сетки в граф...
+                    </h4>
+                    <p>
+                      Мюллер-Брокманн, Йозеф
+                    </p>
+                  </div>
+                  <div>
+                    1 450 руб
+                  </div>
+
+                  <a href="#">
+                    Заказать
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <picture class="swiper-slide__image">
+                  <source srcset="images/Rectangle-105@1x.webp 1x, images/Rectangle-105@2x.webp 2x" type="image/webp">
+                  <img src="images/Rectangle-105@1x.jpg" srcset="images/Rectangle-105@2x.jpg 2x"
+                    alt="Хеллер, Чваст: Эволюция графических ст...">
+                </picture>
+                <figcaption>
+
+                  <div>
+                    <h4>
+                      Эволюция графических ст...
+                    </h4>
+                    <p>
+                      Хеллер, Чваст
+                    </p>
+                  </div>
+                  <div>
+                    3 200 руб
+                  </div>
+
+                  <a href="#">
+                    Заказать
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <picture class="swiper-slide__image">
+                  <source srcset="images/Rectangle-106@1x.webp 1x, images/Rectangle-106@2x.webp 2x" type="image/webp">
+                  <img src="images/Rectangle-106@1x.jpg" srcset="images/Rectangle-106@2x.jpg 2x"
+                    alt="Арнхейм, Рудольф: Искусство и визуальное в...">
+                </picture>
+                <figcaption>
+
+                  <div>
+                    <h4>
+                      Искусство и визуальное в...
+                    </h4>
+                    <p>
+                      Арнхейм, Рудольф
+                    </p>
+                  </div>
+                  <div>
+                    2 200 руб
+                  </div>
+
+                  <a href="#">
+                    Заказать
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section projects">
+      <div class="container">
+        <h2 class="projects-title section__title">
+          Проекты
+        </h2>
+        <p class="projects__description">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
+          фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
+          уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+          Прежде всего, постоянное информационно-пропагандистское <span class="projects__tooltip">i</span> обеспечение
+          нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И
+          нет сомнений, что действия представителей оппозиции могут быть рассмотрены <span
+            class="projects__tooltip">i</span> исключительно в разрезе маркетинговых и финансовых <span
+            class="projects__tooltip">i</span> предпосылок. Банальные, но неопровержимые выводы, а также представители
+          современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны
+          с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project__link"
+            href="#">blanchard-art.ru/projects/about</a>
+        </p>
+        <h3 class="projects__partners">
+          Партнёры проектов:
+        </h3>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture class="swiper-slide__image">
+                <source srcset="images/FreeLands@1x.png 1x, images/FreeLands@2x.png 2x" type="image/png">
+                <img src="images/FreeLands@1x.png" srcset="images/FreeLands@2x.png 2x" alt="Freelands Foundation">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__image">
+                <source srcset="images/Institute@1x.png 1x, images/Institute@2x.png 2x" type="image/png">
+                <img src="images/Institute@1x.png" srcset="images/Institute@2x.png 2x"
+                  alt="Institute for Contemporary Art">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__image">
+                <source srcset="images/Workhouse@1x.png 1x, images/Workhouse@2x.png 2x" type="image/png">
+                <img src="images/Workhouse@1x.png" srcset="images/Workhouse@2x.png 2x" alt="Workhouse ARTS CENTER">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__image">
+                <source srcset="images/1849@1x.png 1x, images/1849@2x.png 2x" type="image/png">
+                <img src="images/1849@1x.png" srcset="images/1849@2x.png 2x" alt="1849 wine co.">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__image">
+                <source srcset="images/HISCOX@1x.png 1x, images/HISCOX@2x.png 2x" type="image/png">
+                <img src="images/HISCOX@1x.png" srcset="images/HISCOX@2x.png 2x" alt="HISCOX">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__image">
+                <source srcset="images/Camden@1x.png 1x, images/Camden@2x.png 2x" type="image/png">
+                <img src="images/Camden@1x.png" srcset="images/Camden@2x.png 2x" alt="Camden arts centre">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__image">
+                <source srcset="images/Stassen@1x.png 1x, images/Stassen2x.png 2x" type="image/png">
+                <img src="images/Stassen@1x.png" srcset="images/Stassen@2x.png 2x" alt="Stassen PREMIUM BELGIAN CIDER">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__image">
+                <source srcset="images/WATTS@1x.png 1x, images/WATTS@2x.png 2x" type="image/png">
+                <img src="images/WATTS@1x.png" srcset="images/WATTS@2x.png 2x" alt="WATTS GALLERY ARTISTS VILLAGE">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__image">
+                <source srcset="images/eSAD@1x.webp 1x, images/eSAD@2x.webp 2x" type="image/png">
+                <img src="images/eSAD@1x.webp" srcset="images/eSAD@2x.webp 2x"
+                  alt="eSAD ECOLE SUPERIEURE D'ART ET DE DESIGN DE VALENCIENNES">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts-section contacts">
+      <div class="container">
+        <div class="contacts__address-form">
+          <h3>
+            Шоурум №4
+          </h3>
+          <address>
+            Леонтьевский переулок, дом 5, строение 1
+          </address>
+          <form>
+            <fieldset>
+              <legend>Заказать обратный звонок</legend>
+              <input type="text" placeholder="Имя*">
+              <input type="text" placeholder="Телефон*">
+              <button>Заказать</button>
+            </fieldset>
+          </form>
+          <h4>Связаться в один клик</h4>
+          <div>
+            <img src="images/Whatsapp-Icon.svg" alt="Whatsapp">
+          </div>
+          <div>
+            <img src="images/Telegram.svg" alt="Telegram">
+          </div>
+        </div>
+        <div class="contacts__map">
+          <div id="map" class="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="header__logo logo" href="#">
+        <span class="logo__title">Blanchard</span>
+        <span class="logo__subtitle">художественная галерея</span>
+      </a>
+      <ul class="footer__socials socials">
+        <li class="socials__item">
+          <img class="socials__item--vk" src="images/vk.svg" alt="Вконтакте">
+        </li>
+        <li class="socials__item">
+          <img class="socials__item--instagram" src="images/instagram.svg" alt="Инстаграм">
+        </li>
+        <li class="socials__item">
+          <img class="socials__item--fb" src="images/fb.svg" alt="Фэйсбук">
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
