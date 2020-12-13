@@ -49,10 +49,8 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Open sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -62,9 +60,7 @@ a {
 
 img {
   max-width: 100%;
-  width: 100%;
   max-height: 100%;
-  height: 100%;
 }
 
 ul {
@@ -73,15 +69,22 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 ::selection {
   background-color: rgb(110, 20, 0, .4);
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1950px;
   margin: 0 auto;
-  padding-right: 160px;
-  padding-left: 160px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .flex {
@@ -96,6 +99,9 @@ ul {
 /* HEADER */
 .header {
   position: relative;
+}
+
+.header__top {
   background-color: var(--dark);
 }
 
@@ -116,21 +122,21 @@ ul {
 }
 
 .header-nav__item:not(:last-child) {
-  margin-right: 63px;
+  margin-right: 62px;
 }
 
-.nav-item__link:hover {
+.header-nav__link:hover {
   color: var(--purple-hover);
   transition: color .1s ease-in-out;
 }
 
-.nav-item__link:active {
+.header-nav__link:active {
   color: var(--purple-active);
   outline: none;
   transition: color .1s ease-in-out;
 }
 
-.nav-item__link,
+.header-nav__link,
 .header__log-in {
   color: var(--white);
   transition: color .1s ease-in-out;
@@ -158,13 +164,9 @@ ul {
 }
 
 .header__bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
   color: var(--white);
   background: rgba(0, 0, 0, 0.4);
-  transform: translateY(100%);
   z-index: 2;
 }
 
@@ -174,67 +176,72 @@ ul {
 }
 
 .filter__item {
+  position: relative;
   padding: 23px 0;
   line-height: 24px;
+  font-size: 18px;
+  transition: color .1s ease-in-out;
+  cursor: pointer;
 }
 
 .filter__item:not(:last-child) {
-  margin-right: 97px;
+  margin-right: 113px;
 }
 
-.choices {
-  position: relative;
-  padding: 0 16px 0 0;
-  width: auto;
-  min-height: auto;
+.filter__item:hover {
+  color: var(--purple-hover);
+  transition: color .1s ease-in-out;
 }
 
-.choices__inner {
-  padding: 0 !important;
-  border: none;
-  min-height: auto;
-  font-size: 18px;
-  background-color: transparent;
-  z-index: 3;
+.filter__item:active {
+  color: var(--purple-active);
+  transition: color .1s ease-in-out;
 }
 
-.choices__list--single {
-  padding: 0;
-  letter-spacing: 0.035rem;
-}
-
-.choices__list--dropdown {
-  border: none;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.choices[data-type*=select-one]::after {
-  position: absolute;
+.filter__item::after {
   content: '';
+  position: absolute;
   top: 50%;
-  right: 0;
-  border: none;
   width: 12px;
   height: 12px;
-  background: url(../images/checkmark-down.svg) center center transparent;
-  transform: translateY(-50%);
-  pointer-events: none;
-  z-index: 3;
+  background: url(../images/checkmark-down.svg) right center no-repeat transparent;
+  background-size: contain;
+  transform: translate(15%, -50%);
+  transition: background .1s ease-in-out;
 }
 
-.choices.is-focused.is-open::after {
-  border: none;
-  background: url(../images/checkmark-down.svg) center center transparent;
-  transform: rotate(180deg);
-  pointer-events: none;
-  z-index: 3;
+.filter__item:hover::after {
+  background: url(../images/checkmark-down-hover.svg) right center no-repeat transparent;
+  background-size: contain;
+  transform: translate(15%, -50%);
+  transition: background .1s ease-in-out;
 }
 
-.header-section__search {
+.filter__item:active::after {
+  background: url(../images/checkmark-down-active.svg) right center no-repeat transparent;
+  background-size: contain;
+  transform: translate(15%, -50%);
+  transition: background .1s ease-in-out;
+}
+
+.filter__item.open {
+  color: var(--purple-active);
+  transition: color .1s ease-in-out;
+}
+
+.filter__item.open::after {
+  top: 55%;
+  background: url(../images/checkmark-down-open.svg) right center no-repeat transparent;
+  background-size: contain;
+  transform: translate(15%, -50%);
+  transition: background .1s ease-in-out;
+}
+
+.header-bottom__search {
   position: relative;
 }
 
-.header-section__btn {
+.header-bottom__btn {
   position: absolute;
   top: 0;
   left: 0;
@@ -247,19 +254,19 @@ ul {
   transition: background .15s ease-in-out;
 }
 
-.header-section__input:focus + .header-section__btn,
-.header-section__input:hover + .header-section__btn,
-.header-section__btn:focus,
-.header-section__btn:hover {
+.header-bottom__input:focus + .header-bottom__btn,
+.header-bottom__input:hover + .header-bottom__btn,
+.header-bottom__btn:focus,
+.header-bottom__btn:hover {
   background: url(../images/Search-hover.svg) center center no-repeat transparent;
   transition: background .15s ease-in-out;
 }
 
-.header-section__btn:active {
+.header-bottom__btn:active {
   background: url(../images/Search-active.svg) center center no-repeat transparent;
 }
 
-.header-section__input {
+.header-bottom__input {
   border: none;
   border-bottom: 1px solid var(--white);
   width: 220px;
@@ -269,19 +276,20 @@ ul {
   transition: border-bottom-color .15s ease-in-out;
 }
 
-.header-section__input:hover {
+.header-bottom__input:hover {
   border-bottom-color: var(--purple-hover);
   transition: border-bottom-color .15s ease-in-out;
 }
 
-.header-section__input::placeholder {
+.header-bottom__input::placeholder {
   font-size: 18px;
-  color: var(--white);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* HERO */
-.swiper-container {
-  max-height: 700px;
+.hero-section {
+  position: relative;
+  min-height: 700px;
 }
 
 .hero__container {
@@ -290,38 +298,61 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
+  padding-top: 73px;
   color: var(--white);
-  z-index: 5;
+  z-index: 2;
+}
+
+.hero__swiper-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-70px);
+}
+
+.swiper-slide--image1 {
+  background: url(../images/birmingham-museums-1@1x.jpg) center center no-repeat transparent;
+  background-size: cover;
+}
+
+.swiper-slide--image2 {
+  background: url(../images/birmingham-museums-2@1x.jpg) center center no-repeat transparent;
+  background-size: cover;
+}
+
+.swiper-slide--image3 {
+  background: url(../images/birmingham-museums-3@1x.jpg) center center no-repeat transparent;
+  background-size: cover;
 }
 
 .hero__title {
-  margin-top: 142px;
   margin-bottom: 20px;
   max-width: 570px;
   font-weight: 700;
   font-size: 72px;
   line-height: 82px;
-  letter-spacing: 0.16rem;
+  transform: translateX(-5px);
 }
 
 .hero__decription {
-  margin-bottom: 118px;
+  margin-bottom: 92px;
   max-width: 570px;
   font-weight: 700;
-  font-size: inherit;
+  font-size: 18px;
   line-height: 30px;
-  letter-spacing: 0.04rem;
 }
 
 .hero__link {
-  padding: 20px 35px;
+  display: inline-block;
+  padding: 22px 33px;
   border: 3px solid #9D5CD0;
   border-radius: 100px;
   font-weight: 700;
-  font-size: inherit;
+  font-size: 18px;
   color: var(--white);
   background-color: #9D5CD0;
-  letter-spacing: 0.012rem;
   transition: border .15s ease-in-out, background-color .15s ease-in-out;
 }
 
@@ -341,14 +372,134 @@ ul {
 
 /* ABOUT-US */
 .about-us-section {
-  padding: 45px 0;
+  padding-top: 16px;
+  padding-bottom: 70px;
+}
+
+.about-us__title {
+  margin-bottom: 20px;
+  transform: translateX(-3px);
 }
 
 .about-us__description {
   max-width: 1080px;
-  font-size: 16px;
-  letter-spacing: 0.032rem;
   line-height: 32px;
+}
+
+/* GALLERY */
+.gallery-section {
+  padding-top: 85px;
+  padding-bottom: 80px;
+  color: var(--white);
+  background: url(../images/birmingham-museums-4@1x.jpg) center center no-repeat transparent;
+  background-size: cover;
+}
+
+.gallery-section__filter {
+  width: 26%;
+  flex-direction: column;
+}
+
+.gallery__title {
+  margin-bottom: 27px;
+}
+
+.gallery__filter-by {
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.choices__inner,
+.choices__list--dropdown {
+  padding: 7px 13px;
+  min-height: auto;
+  border: 1px solid var(--white);
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.is-open .choices__inner {
+  border-radius: 6px;
+}
+
+.choices__list--dropdown {
+  color: #999;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: transparent;
+}
+
+.gallery__description {
+  margin-top: auto;
+  font-size: 17px;
+  line-height: 32px;
+  transform: translateY(8px);
+}
+
+.gallery-section__picture {
+  position: relative;
+  margin-left: 50px;
+  width: 75%;
+  min-height: 830px;
+}
+
+.gallery__swiper-buttons {
+  padding-top: 18px;
+  padding-left: 5px;
+}
+
+.swiper-pagination {
+  position: static;
+  display: inline-block;
+  margin-left: 48px;
+  width: auto;
+}
+
+.swiper-button-prev {
+transform: translateY(25px);
+}
+
+.swiper-button-next {
+  margin-left: 100px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #666;
+}
+
+.swiper-button-prev:after, 
+.swiper-container-rtl .swiper-button-next:after,
+.swiper-button-next::after {
+  font-size: 10px;
+  color: var(--white);
+}
+
+.gallery__swiper-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 80px;
+  overflow-x: hidden;
+}
+
+.gallery__row {
+  justify-content: space-between;
+}
+
+.gallery__row:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.gallery__image {
+  max-width: 350px;
 }
 
 /* Custom map */

@@ -1,11 +1,9 @@
 window.addEventListener('DOMContentLoaded', function() {
-  let mySwiper = new Swiper('.swiper-container', {
+  let heroSwiper = new Swiper('.hero__swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     updateOnWindowResize: true,
-    grabCursor: true,
-    speed: 2000,
-    loop: true,
+    speed: 3000,
     fadeEffect: {
       crossFade: true,
     },
@@ -13,57 +11,50 @@ window.addEventListener('DOMContentLoaded', function() {
       delay: 5000,
       disableOnInteraction: false,
     },
+    effect: 'fade',
+    loop: true,
   });
 
+  let gallerySwiper = new Swiper('.gallery__swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 1,
+    updateOnWindowResize: true,
+    spaceBetween: 50,
+    speed: 1500,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+      clicable: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  document.querySelectorAll('.filter__item').forEach(function(el) {
+    el.addEventListener('click', function(event) {
+      event.target.classList.toggle('open')
+    });
+  });
+
+
   const defaultSelect1 = () => {
-    const element = document.querySelector('#selectCustom1');
+    const element = document.querySelector('.selectCustom1');
     const choices = new Choices(element, {
-        searchEnabled: false,
-    });
-  };
-
-  const defaultSelect2 = () => {
-    const element = document.querySelector('#selectCustom2');
-    const choices = new Choices(element, {
-        searchEnabled: false,
-    });
-  };
-
-  const defaultSelect3 = () => {
-    const element = document.querySelector('#selectCustom3');
-    const choices = new Choices(element, {
-        searchEnabled: false,
-    });
-  };
-
-  const defaultSelect4 = () => {
-    const element = document.querySelector('#selectCustom4');
-    const choices = new Choices(element, {
-        searchEnabled: false,
-    });
-  };
-
-  const defaultSelect5 = () => {
-    const element = document.querySelector('#selectCustom5');
-    const choices = new Choices(element, {
-        searchEnabled: false,
-    });
-  };
-
-  const defaultSelect6 = () => {
-    const element = document.querySelector('#selectCustom6');
-    const choices = new Choices(element, {
-        searchEnabled: false,
-    });
+      searchEnabled: false,
+    });  
   };
 
   defaultSelect1();
-  defaultSelect2();
-  defaultSelect3();
-  defaultSelect4();
-  defaultSelect5();
-  defaultSelect6();
 
+
+
+
+
+  
   $( function() {
     $( "#accordion" ).accordion();
   });

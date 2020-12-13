@@ -19,7 +19,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header ">
     <div class="header__top header-top">
       <div class="container header-top__container flex">
         <a class="header__logo" href="#">
@@ -27,26 +27,26 @@
         </a>
         <nav class="header-nav">
           <ul class="header-nav__list flex">
-            <li class="header-nav__item nav-item">
-              <a class="nav-item__link" href="#">О нас</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">О нас</a>
             </li>
             <li class="header-nav__item ">
-              <a class="nav-item__link" href="#">Галерея</a>
+              <a class="header-nav__link" href="#">Галерея</a>
             </li>
             <li class="header-nav__item">
-              <a class="nav-item__link" href="#">Каталог</a>
+              <a class="header-nav__link" href="#">Каталог</a>
             </li>
             <li class="header-nav__item">
-              <a class="nav-item__link" href="#">События</a>
+              <a class="header-nav__link" href="#">События</a>
             </li>
             <li class="header-nav__item">
-              <a class="nav-item__link" href="#">Издания</a>
+              <a class="header-nav__link" href="#">Издания</a>
             </li>
             <li class="header-nav__item">
-              <a class="nav-item__link" href="#">Проекты</a>
+              <a class="header-nav__link" href="#">Проекты</a>
             </li>
             <li class="header-nav__item">
-              <a class="nav-item__link" href="#">Контакты</a>
+              <a class="header-nav__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -58,114 +58,53 @@
     <div class="header__bottom header-bottom">
       <div class="container header-bottom__container flex">
         <ul class="header-section__filter flex">
-          <li class="filter__item">
-            <select name="Реализм" id="selectCustom1" class="selectCustom">
-              <option value="Реализм">Реализм</option>
-              <option value="Древесина">Древесина</option>
-              <option value="Металл">Металл</option>
-              <option value="Камень">Камень</option>
-              <option value="Пластик">Пластик</option>
-              <option value="Композитный">Композитный</option>
-              <option value="Гипс">Гипс</option>
-            </select>
+          <li class="filter__item filter-item">
+            <span class="filter-item__text">
+              Реализм
+            </span>
           </li>
           <li class="filter__item">
-            <select name="Реализм" id="selectCustom2" class="selectCustom">
-              <option value="Импрессионизм">Импрессионизм</option>
-              <option value="Древесина">Древесина</option>
-              <option value="Металл">Металл</option>
-              <option value="Камень">Камень</option>
-              <option value="Пластик">Пластик</option>
-              <option value="Композитный">Композитный</option>
-              <option value="Гипс">Гипс</option>
-            </select>
+            Импрессионизм
           </li>
           <li class="filter__item">
-            <select name="Реализм" id="selectCustom3" class="selectCustom">
-              <option value="Постимпрессионизм">Постимпрессионизм</option>
-              <option value="Древесина">Древесина</option>
-              <option value="Металл">Металл</option>
-              <option value="Камень">Камень</option>
-              <option value="Пластик">Пластик</option>
-              <option value="Композитный">Композитный</option>
-              <option value="Гипс">Гипс</option>
-            </select>
+            Постимпрессионизм
           </li>
           <li class="filter__item">
-            <select name="Реализм" id="selectCustom4" class="selectCustom">
-              <option value="Авангард">Авангард</option>
-              <option value="Древесина">Древесина</option>
-              <option value="Металл">Металл</option>
-              <option value="Камень">Камень</option>
-              <option value="Пластик">Пластик</option>
-              <option value="Композитный">Композитный</option>
-              <option value="Гипс">Гипс</option>
-            </select>
+            Авангард
           </li>
           <li class="filter__item">
-            <select name="Реализм" id="selectCustom5" class="selectCustom">
-              <option value="Футуризм">Футуризм</option>
-              <option value="Древесина">Древесина</option>
-              <option value="Металл">Металл</option>
-              <option value="Камень">Камень</option>
-              <option value="Пластик">Пластик</option>
-              <option value="Композитный">Композитный</option>
-              <option value="Гипс">Гипс</option>
-            </select>
+            Футуризм
           </li>
         </ul>
-        <div class="header-section__search">
-          <input class="header-section__input" type="text" placeholder="Поиск по сайту">
-          <button class="header-section__btn"></button>
-        </div>
+        <form class="header-bottom__search">
+          <input class="header-bottom__input" type="text" placeholder="Поиск по сайту">
+          <button class="header-bottom__btn"></button>
+        </form>
       </div>
     </div>
   </header>
 
   <main class="main">
     <section class="hero-section hero">
-      <!-- Slider main container -->
-      <div class="swiper-container">
-        <div class="container hero__container">
-          <h1 class="hero__title">
-            Прикоснитесь к прекрасному
-          </h1>
-          <p class="hero__decription">
-            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
-            предложений.
-          </p>
-          <a class="hero__link" href="#">
-            Подписаться на рассылку
-          </a>
-        </div>
-        <!-- Additional required wrapper -->
+      <div class="container hero__container">
+        <h2 class="hero__title">
+          Прикоснитесь к прекрасному
+        </h2>
+        <p class="hero__decription">
+          Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
+          предложений.
+        </p>
+        <a class="hero__link" href="#">
+          Подписаться на рассылку
+        </a>
+      </div>
+      <div class="hero__swiper-container swiper-no-swiping">
         <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <picture class="swiper-slide__image">
-              <source srcset="images/birmingham-museums-1@1x.webp 1x, images/birmingham-museums-1@2x.webp 2x"
-                type="image/webp">
-              <img src="images/birmingham-museums-1@1x.jpg" srcset="images/birmingham-museums-1@2x.jpg 2x" alt="Замок">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture class="swiper-slide__image">
-              <source srcset="images/birmingham-museums-2@1x.webp 1x, images/birmingham-museums-2@2x.webp 2x"
-                type="image/webp">
-              <img src="images/birmingham-museums-2@1x.jpg" srcset="images/birmingham-museums-2@2x.jpg 2x" alt="Замок">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture class="swiper-slide__image">
-              <source srcset="images/birmingham-museums-3@1x.webp 1x, images/birmingham-museums-3@2x.webp 2x"
-                type="image/webp">
-              <img src="images/birmingham-museums-3@1x.jpg" srcset="images/birmingham-museums-3@2x.jpg 2x" alt="Замок">
-            </picture>
-          </div>
+          <div class="swiper-slide swiper-slide--image1"></div>
+          <div class="swiper-slide swiper-slide--image2"></div>
+          <div class="swiper-slide swiper-slide--image3"></div>
         </div>
       </div>
-
-
     </section>
 
     <section class="about-us-section about-us">
@@ -187,15 +126,15 @@
     </section>
 
     <section class="gallery-section gallery">
-      <div class="container">
-        <div class="gallery-section__filter">
+      <div class="container flex">
+        <div class="gallery-section__filter flex">
           <h2 class="gallery__title section__title">
             Галерея
           </h2>
-          <span class="gallery__filter-by">
+          <div class="gallery__filter-by">
             Фильтровать по:
-          </span>
-          <select name="Реализм" id="selectCustom6" class="selectCustom">
+          </div>
+          <select name="Реализм" id="selectCustom" class="selectCustom1">
             <option value="Автор">Автор</option>
             <option value="Направление">Направление</option>
             <option value="Техника">Техника</option>
@@ -206,41 +145,57 @@
           </p>
         </div>
         <div class="gallery-section__picture">
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
+          <div class="gallery__swiper-buttons">
+            <button class="swiper-button-prev"></button>
+            <div class="swiper-pagination"></div>
+            <button class="swiper-button-next"></button>
+          </div>
+          <div class="gallery__swiper-container">
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <picture class="swiper-slide__image">
-                  <source srcset="images/birmingham-museums-1@1x.webp 1x, images/birmingham-museums-1@2x.webp 2x"
-                    type="image/webp">
-                  <img src="images/birmingham-museums-1@1x.jpg" srcset="images/birmingham-museums-1@2x.jpg 2x"
-                    alt="Замок">
-                </picture>
+              <div class="swiper-slide gallery__swiper-slide">
+                <div class="gallery__row flex">
+                  <img class="gallery__image" src="images/Rectangle-92@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-93@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-94@1x.jpg" alt="Экспозиция">
+                </div>
+                <div class="gallery__row flex">
+                  <img class="gallery__image" src="images/Rectangle-95@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-96@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-97@1x.jpg" alt="Экспозиция">
+                </div>
               </div>
-              <div class="swiper-slide">
-                <picture class="swiper-slide__image">
-                  <source srcset="images/birmingham-museums-2@1x.webp 1x, images/birmingham-museums-2@2x.webp 2x"
-                    type="image/webp">
-                  <img src="images/birmingham-museums-2@1x.jpg" srcset="images/birmingham-museums-2@2x.jpg 2x"
-                    alt="Замок">
-                </picture>
+              <div class="swiper-slide gallery__swiper-slide">
+                <div class="gallery__row flex">
+                  <img class="gallery__image" src="images/Rectangle-70@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-68@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-69@1x.jpg" alt="Экспозиция">
+                </div>
+                <div class="gallery__row flex">
+                  <img class="gallery__image" src="images/Rectangle-72@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-71@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-73@1x.jpg" alt="Экспозиция">
+                </div>
               </div>
-              <div class="swiper-slide">
-                <picture class="swiper-slide__image">
-                  <source srcset="images/birmingham-museums-3@1x.webp 1x, images/birmingham-museums-3@2x.webp 2x"
-                    type="image/webp">
-                  <img src="images/birmingham-museums-3@1x.jpg" srcset="images/birmingham-museums-3@2x.jpg 2x"
-                    alt="Замок">
-                </picture>
+              <div class="swiper-slide gallery__swiper-slide">
+                <div class="gallery__row flex">
+                  <img class="gallery__image" src="images/Rectangle-77@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-74@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-79@1x.jpg" alt="Экспозиция">
+                </div>
+                <div class="gallery__row flex">
+                  <img class="gallery__image" src="images/Rectangle-78@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-75@1x.jpg" alt="Экспозиция">
+                  <img class="gallery__image" src="images/Rectangle-76@1x.jpg" alt="Экспозиция">
+                </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="catalog-section catalog">
+    <!-- <section class="catalog-section catalog">
       <div class="container">
         <h2 class="catalog__title section__title">
           Каталог
@@ -532,9 +487,7 @@
           </fieldset>
         </div>
         <div class="swiper-container">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <figure>
                 <picture class="swiper-slide__image">
@@ -751,9 +704,7 @@
           Партнёры проектов:
         </h3>
         <div class="swiper-container">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <picture class="swiper-slide__image">
                 <source srcset="images/FreeLands@1x.png 1x, images/FreeLands@2x.png 2x" type="image/png">
@@ -865,7 +816,7 @@
         </li>
       </ul>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 </html>
