@@ -34,12 +34,11 @@ window.addEventListener('DOMContentLoaded', function() {
     },
   });
 
-  document.querySelectorAll('.filter__item').forEach(function(el) {
+  document.querySelectorAll('.filter-item__text').forEach(function(el) {
     el.addEventListener('click', function(event) {
       event.target.classList.toggle('open')
     });
   });
-
 
   const defaultSelect1 = () => {
     const element = document.querySelector('.selectCustom1');
@@ -50,14 +49,48 @@ window.addEventListener('DOMContentLoaded', function() {
 
   defaultSelect1();
 
-
-
-
-
-  
-  $( function() {
-    $( "#accordion" ).accordion();
+ document.querySelectorAll('.catalog__item-countries').forEach(function(countrie) {
+  countrie.addEventListener('click', function(event) {
+    event.target.classList.toggle('active')
   });
+ });
+  
+ // Accordion
+ $( function() {
+  $( "#accordion" ).accordion({
+    collapsible: true,
+    heightStyle: "content",
+  });
+});
+
+$( function() {
+  var icons = {
+    header: "ui-icon-circle-arrow-e",
+    activeHeader: "ui-icon-circle-arrow-s"
+  };
+  $( "#accordion" ).accordion({
+    icons: icons
+  });
+  $( "#toggle" ).button().on( "click", function() {
+    if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+      $( "#accordion" ).accordion( "option", "icons", null );
+    } else {
+      $( "#accordion" ).accordion( "option", "icons", icons );
+    }
+  });
+});
+
+document.querySelectorAll('.catalog-accordion__title').forEach(function(accordion) {
+  accordion.addEventListener('click', function(event) {
+    event.target.classList.toggle('open')
+  })
+});
+
+document.querySelectorAll('.accordion__item-link').forEach(function(select) {
+  select.addEventListener('click', function(event) {
+    event.target.classList.toggle('select')
+  })
+});
 
   // Функция ymaps.ready() будет вызвана, когда
   // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
