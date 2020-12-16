@@ -44,80 +44,86 @@ window.addEventListener('DOMContentLoaded', function() {
     const element = document.querySelector('.selectCustom1');
     const choices = new Choices(element, {
       searchEnabled: false,
-    });  
+    });
   };
 
   defaultSelect1();
 
- document.querySelectorAll('.catalog__item-countries').forEach(function(countrie) {
+  document.querySelectorAll('.catalog__item-countries').forEach(function(countrie) {
   countrie.addEventListener('click', function(event) {
     event.target.classList.toggle('active')
+    });
   });
- });
-  
- // Accordion
- $( function() {
-  $( "#accordion" ).accordion({
-    collapsible: true,
-    heightStyle: "content",
+
+  // Accordion
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      heightStyle: "content",
+    });
   });
-});
 
-$( function() {
-  var icons = {
-    header: "ui-icon-circle-arrow-e",
-    activeHeader: "ui-icon-circle-arrow-s"
-  };
-  $( "#accordion" ).accordion({
-    icons: icons
+  $( function() {
+    var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons
+    });
+    $( "#toggle" ).button().on( "click", function() {
+      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+        $( "#accordion" ).accordion( "option", "icons", null );
+      } else {
+        $( "#accordion" ).accordion( "option", "icons", icons );
+      }
+    });
   });
-  $( "#toggle" ).button().on( "click", function() {
-    if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
-      $( "#accordion" ).accordion( "option", "icons", null );
-    } else {
-      $( "#accordion" ).accordion( "option", "icons", icons );
-    }
+
+  document.querySelectorAll('.catalog-accordion__title').forEach(function(accordion) {
+    accordion.addEventListener('click', function(event) {
+      event.target.classList.toggle('open')
+    });
   });
-});
 
-document.querySelectorAll('.catalog-accordion__title').forEach(function(accordion) {
-  accordion.addEventListener('click', function(event) {
-    event.target.classList.toggle('open')
-  })
-});
+  document.querySelectorAll('.accordion__item-link').forEach(function(select) {
+    select.addEventListener('click', function(event) {
+      event.target.classList.toggle('select')
+    });
+  });
 
-document.querySelectorAll('.accordion__item-link').forEach(function(select) {
-  select.addEventListener('click', function(event) {
-    event.target.classList.toggle('select')
-  })
-});
+  document.querySelector('.events__button').addEventListener('click', function() {
+    document.querySelector('.events__item:nth-child(4)').classList.toggle('visually')
+    document.querySelector('.events__item:nth-child(5)').classList.toggle('visually')
+  });
 
-  // Функция ymaps.ready() будет вызвана, когда
-  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-  ymaps.ready(init);
-  function init(){
-      // Создание карты.
-      let myMap = new ymaps.Map("map", {
-          // Координаты центра карты.
-          // Порядок по умолчанию: «широта, долгота».
-          // Чтобы не определять координаты центра карты вручную,
-          // воспользуйтесь инструментом Определение координат.
-          center: [55.76, 37.64],
-          // Уровень масштабирования. Допустимые значения:
-          // от 0 (весь мир) до 19.
-          zoom: 7
-      });
 
-      // Создание геообъекта с типом точка (метка).
-      let myPlacemark = new ymaps.Placemark([48.87219657376512, 2.354223999999991], {}, {
-          iconLayout: 'default#image',
-          iconImageHref: 'img/Subtract.svg',
-          iconImageSize: [28, 40],
-          iconImageOffset: [-3, -42]
-      });
+  // // Функция ymaps.ready() будет вызвана, когда
+  // // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  // ymaps.ready(init);
+  // function init(){
+  //     // Создание карты.
+  //     let myMap = new ymaps.Map("map", {
+  //         // Координаты центра карты.
+  //         // Порядок по умолчанию: «широта, долгота».
+  //         // Чтобы не определять координаты центра карты вручную,
+  //         // воспользуйтесь инструментом Определение координат.
+  //         center: [55.76, 37.64],
+  //         // Уровень масштабирования. Допустимые значения:
+  //         // от 0 (весь мир) до 19.
+  //         zoom: 7
+  //     });
 
-      // Размещение геообъекта на карте.
-      myMap.setCenter([48.87219657376512, 2.354223999999991], 13);
-      myMap.geoObjects.add(myPlacemark);
-  };
+  //     // Создание геообъекта с типом точка (метка).
+  //     let myPlacemark = new ymaps.Placemark([48.87219657376512, 2.354223999999991], {}, {
+  //         iconLayout: 'default#image',
+  //         iconImageHref: 'img/Subtract.svg',
+  //         iconImageSize: [28, 40],
+  //         iconImageOffset: [-3, -42]
+  //     });
+
+  //     // Размещение геообъекта на карте.
+  //     myMap.setCenter([48.87219657376512, 2.354223999999991], 13);
+  //     myMap.geoObjects.add(myPlacemark);
+  // };
 });
