@@ -43,10 +43,10 @@
 
 :root {
   --dark: #000;
-  --purple-hover: #C283F3;
-  --purple-active: #7943A4;
-  --purple-focus: #9D5CD0;
-  --purple-border: #D1A9F0;
+  --purple-hover: #c283f3;
+  --purple-active: #7943a4;
+  --purple-focus: #9d5cd0;
+  --purple-border: #d1a9F0;
   --white: #fff;
   --border: #cacaca;
 }
@@ -69,15 +69,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-figure {
-  margin: 0;
 }
 
 ::selection {
@@ -103,6 +94,7 @@ figure {
 }
 
 .section__title {
+  margin: 0;
   font-weight: 400;
   font-size: 48px;
 }
@@ -118,14 +110,22 @@ figure {
 
 .header-top__container {
   align-items: center;
-  padding: 26px 15px;
+  padding: 29px 15px;
   font-size: 18px;
 }
 
 .header__logo {
+  margin-right: 179px;
+}
+
+.logo {
   display: inline-block;
   flex-shrink: 0;
-  margin-right: 179px;
+  transition: filter .15s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0px 0px 20px rgba(247, 246, 248, 0.7));
 }
 
 .nav__list {
@@ -204,9 +204,8 @@ figure {
   cursor: pointer;
 }
 
-.customScroll {
+.filter-item__dropdown {
   position: absolute;
-  display: none;
   top: 100%;
   left: 0;
   padding: 40px;
@@ -214,14 +213,6 @@ figure {
   height: 300px;
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 30px rgba(207, 36, 50, 0.726);
-}
-
-#dropdown-1.is-open,
-#dropdown-2.is-open,
-#dropdown-3.is-open,
-#dropdown-4.is-open,
-#dropdown-5.is-open {
-  display: inline-block;
 }
 
 .simplebar-content-wrapper {
@@ -239,19 +230,22 @@ figure {
 }
 
 .simplebar-scrollbar::before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 28px;
+  border-radius: 0;
   background-color: var(--purple-focus);
+  opacity: 1;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
   visibility: visible;
   opacity: 1;
 }
 
-.simplebar-scrollbar.simplebar.simplebar-visible::before {
-  visibility: visible;
-  opacity: 1;
-}
-
-.cusomScroll__item {
+.dropdown__item {
   position: relative;
   display: block;
   padding: 9px 12px;
@@ -261,15 +255,15 @@ figure {
   transition: border .15s ease-in-out;
 }
 
-.cusomScroll__item:hover {
+.dropdown__item:hover {
   border: 2px solid var(--purple-focus);
 }
 
-.cusomScroll__item:active {
+.dropdown__item:active {
   border: 2px solid var(--purple-active);
 }
 
-.cusomScroll__item::after {
+.dropdown__item::after {
   content: '';
   position: absolute;
   top: 0;
@@ -279,30 +273,30 @@ figure {
   background: transparent;
 }
 
-.cusomScroll__item:active:after {
+.dropdown__item:active:after {
   background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
 }
 
-.cusomScroll__item:not(:last-child) {
+.dropdown__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.customScroll__item_Tintoretto {
+.dropdown__item_Tintoretto {
   background: url(../images/birmingham-museums-2@1x.jpg) center center no-repeat transparent;
   background-size: cover;
 }
 
-.customScroll__item_Frederick {
+.dropdown__item_Frederick {
   background: url(../images/Rectangle-89@1x.jpg) center center no-repeat transparent;
   background-size: cover;
 }
 
-.customScroll__item_Leonardo {
+.dropdown__item_Leonardo {
   background: url(../images/birmingham-museums-1@1x.jpg) center center no-repeat transparent;
   background-size: cover;
 }
 
-.customScroll__item_Verrocchio {
+.dropdown__item_Verrocchio {
   background: url(../images/Rectangle-89@1x.jpg) center center no-repeat transparent;
   background-size: cover;
 }
@@ -339,12 +333,11 @@ figure {
   transform: translate(15%, -50%);
 }
 
-.filter-item__text.open {
+.filter-item__text_active {
   color: var(--purple-active);
-  transition: color .1s ease-in-out;
 }
 
-.filter-item__text.open::after {
+.filter-item__text.filter-item__text_active::after {
   top: 55%;
   background: url(../images/checkmark-down-open.svg) right center no-repeat transparent;
   background-size: contain;
@@ -425,7 +418,7 @@ figure {
   right: 0;
   bottom: 0;
   left: 0;
-  transform: translateY(-70px);
+  transform: translateY(-69px);
   overflow: hidden;
 }
 
@@ -464,6 +457,7 @@ figure {
 }
 
 .hero__title {
+  margin: 0;
   margin-bottom: 20px;
   max-width: 570px;
   font-weight: 700;
@@ -506,7 +500,7 @@ figure {
 }
 
 /* ABOUT-US */
-.about-us-section {
+.about-us {
   padding-top: 16px;
   padding-bottom: 70px;
 }
@@ -517,6 +511,7 @@ figure {
 }
 
 .about-us__description {
+  margin: 0;
   max-width: 1080px;
   line-height: 32px;
 }
@@ -596,6 +591,7 @@ figure {
 }
 
 .gallery__description {
+  margin: 0;
   margin-top: auto;
   font-size: 17px;
   line-height: 32px;
@@ -691,35 +687,40 @@ figure {
 .gallery__wrapper-image,
 .edition__wrapper-image {
   position: relative;
+  margin: 0;
   padding: 0;
   border: none;
   max-width: 350px;
-}
-
-.gallery__image {
   cursor: pointer;
 }
 
-.gallery__wrapper-image:hover::before {
+.gallery__wrapper-image::before {
   content: '';
   position: absolute;
   top: 25px;
   right: 25px;
   bottom: 25px;
   left: 25px;
-  background: url(../images/Magnifier.svg) center center no-repeat rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+  background: center center no-repeat transparent;
+  transition: background .15s ease-in-out;
 }
 
-.gallery__wrapper-image:active::after {
+.gallery__wrapper-image:hover::before {
+  background: url(../images/Magnifier.svg) center center no-repeat rgba(0, 0, 0, 0.5);
+}
+
+.gallery__wrapper-image::after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
-  cursor: pointer;
+  background: transparent;
+}
+
+.gallery__wrapper-image:active:after {
+  background: linear-gradient(0deg, rgba(221, 220, 223, 0.4), rgba(194, 131, 243, 0.4));
 }
 
 /* CATALOG */
@@ -742,26 +743,68 @@ figure {
   width: 66px;
   height: 66px;
   cursor: pointer;
+  transition: filter .15s ease-in-out;
 }
 
-.catalog__link {
+.catalog__button {
+  position: relative;
   display: inline-block;
+  padding: 0;
+  border: none;
+  width: 46px;
+  height: 46px;
+  background: transparent;
+  cursor: pointer;
 }
 
-.catalog__item-countries:hover {
+.catalog__button_France {
+  background: url(../images/France.svg) center center no-repeat transparent;
+  background-size: contain;
+}
+
+.catalog__button_Germany {
+  background: url(../images/Germany.svg) center center no-repeat transparent;
+  background-size: contain;
+}
+
+.catalog__button_Italy {
+  background: url(../images/Italy.svg) center center no-repeat transparent;
+  background-size: contain;
+}
+
+.catalog__button_Russia {
+  background: url(../images/Russia.svg) center center no-repeat transparent;
+  background-size: contain;
+}
+
+.catalog__button_Belgium {
+  background: url(../images/Belgium.svg) center center no-repeat transparent;
+  background-size: contain;
+}
+
+.catalog__button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65px;
+  height: 65px;
+  border: 2px solid var(--purple-focus);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity .3s ease-in-out;
+}
+
+.catalog__button.catalog__button_active::after {
+  opacity: 1;
+}
+
+.catalog__button:hover {
   filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
 }
 
-.catalog__item-countries--France.active,
-.catalog__item-countries--Germany.active,
-.catalog__item-countries--Italy.active,
-.catalog__item-countries--Russia.active,
-.catalog__item-countries--Belgium.active {
-  border: 2px solid var(--purple-focus);
-  border-radius: 50%;
-}
-
-.catalog__countrie:active {
+.catalog__button:active {
   border: 2px solid var(--purple-focus);
   border-radius: 50%;
 }
@@ -771,16 +814,33 @@ figure {
 }
 
 .catalog__description {
+  display: none;
+  margin: 0;
   margin-bottom: 40px;
   max-width: 1080px;
   line-height: 32px;
 }
 
+.catalog__description_active {
+  display: block;
+}
+
 .catalog-wrapper__figure {
-  flex: 1 1 50%;
+  flex: 1 1 47%;
+  margin-right: 50px;
+}
+
+.catalog__figure {
+  display: none;
+  margin: 0;
+}
+
+.catalog__figure_active {
+  display: block;
 }
 
 .catalog-wrapper__title {
+  margin: 0;
   padding-top: 30px;
   padding-bottom: 12px;
   font-weight: 600;
@@ -795,6 +855,7 @@ figure {
 }
 
 .catalog-wrapper__description {
+  margin: 0;
   max-width: 750px;
   line-height: 32px;
 }
@@ -807,6 +868,7 @@ figure {
 .ui-accordion-header {
   justify-content: space-between;
   align-items: center;
+  margin: 0;
   cursor: pointer;
   transition: color .15s ease-in-out;
 }
@@ -832,7 +894,7 @@ figure {
 .ui-accordion-header-text {
   font-size: 24px;
   font-weight: 700;
-  line-height: 113px;
+  line-height: 114px;
 }
 
 .ui-widget-content,
@@ -901,6 +963,7 @@ figure {
 .accordion__item-link {
   color: #333;
   line-height: 32px;
+  background: transparent;
   transition: color .15s ease-in-out, border-bottom .15s ease-in-out;
 }
 
@@ -914,7 +977,7 @@ figure {
   border-bottom: 1px solid var(--purple-active);
 }
 
-.accordion__item-link.select {
+.accordion__item-link_active {
   font-weight: 600;
   color: var(--purple-active);
   outline: none;
@@ -954,6 +1017,10 @@ figure {
   margin-right: 50px;
 }
 
+.events__figure {
+  margin: 0;
+}
+
 .events-figure__figcaption {
   flex-direction: column;
   padding: 12px 16px 48px 50px;
@@ -968,12 +1035,14 @@ figure {
 }
 
 .events-figure__title {
+  margin: 0;
   margin-bottom: 2px;
   font-size: 23px;
   line-height: 34px;
 }
 
 .events-figure__description {
+  margin: 0;
   margin-right: 30px;
   margin-bottom: 25px;
   line-height: 32px;
@@ -1059,7 +1128,7 @@ figure {
 }
 
 .edition__categories {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 .edition__categories-text {
@@ -1195,6 +1264,10 @@ figure {
   padding: 23px 0 15px 0;
 }
 
+.edition__image-name {
+  margin: 0;
+}
+
 .edition__image-author {
   font-weight: 400;
   font-size: 16px;
@@ -1322,6 +1395,7 @@ figure {
 }
 
 .projects__partner-title {
+  margin: 0;
   margin-bottom: 27px;
 }
 
@@ -1388,6 +1462,8 @@ figure {
 }
 
 .contacts__address-form-title {
+  margin: 0;
+  margin-bottom: 5px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1448,6 +1524,7 @@ figure {
 }
 
 .contacts__address-social {
+  margin: 0;
   margin-bottom: 18px;
   font-size: 22px;
 }
@@ -1455,6 +1532,7 @@ figure {
 .contacts__social-icons {
   display: inline-block;
   margin-right: 21px;
+  transition: filter .15s ease-in-out;
 }
 
 .contacts__social-icons:hover {
@@ -1488,12 +1566,8 @@ figure {
   padding: 50px 15px;
 }
 
-.logo {
+.footer__logo {
   margin-right: auto;
-}
-
-.header__logo:hover {
-  filter: drop-shadow(0px 0px 20px rgba(247, 246, 248, 0.7));
 }
 
 .socials__item:not(:last-child) {
