@@ -64,10 +64,10 @@
       <div class="container header-bottom__container flex">
         <ul class="header-section__filter flex">
           <li class="filter__item filter-item">
-            <button class="filter-item__text filter-item__text_active" data-tabs-path="dropdown-1">
+            <button class="filter-item__button filter-item__button_active" data-filter-path="dropdown-1">
               Реализм
             </button>
-            <div class="filter-item__dropdown filter-item__dropdown_active" data-simplebar data-tabs-target="dropdown-1">
+            <div class="filter-item__dropdown filter-item__dropdown_active" data-simplebar data-filter-target="dropdown-1">
               <a class="dropdown__item dropdown__item_Tintoretto" href="#">
                 Тинторетто
               </a>
@@ -107,10 +107,10 @@
             </div>
           </li>
           <li class="filter__item filter-item">
-            <button class="filter-item__text" data-tabs-path="dropdown-2">
+            <button class="filter-item__button" data-filter-path="dropdown-2">
               Импрессионизм
             </button>
-            <!-- <div class="filter-item__dropdown" data-simplebar data-tabs-target="dropdown-2">
+            <div class="filter-item__dropdown" data-simplebar data-filter-target="dropdown-2">
               <a class="dropdown__item dropdown__item_Tintoretto" href="#">
                 Тинторетто
               </a>
@@ -147,13 +147,13 @@
               <a class="dropdown__item dropdown__item_Verrocchio" href="#">
                 Верроккьо
               </a>
-            </div> -->
+            </div>
           </li>
           <li class="filter__item filter-item">
-            <button class="filter-item__text" data-tabs-path="dropdown-3">
+            <button class="filter-item__button" data-filter-path="dropdown-3">
               Постимпрессионизм
             </button>
-            <!-- <div class="filter-item__dropdown" data-simplebar data-tabs-target="dropdown-3">
+            <div class="filter-item__dropdown" data-simplebar data-filter-target="dropdown-3">
               <a class="dropdown__item dropdown__item_Tintoretto" href="#">
                 Тинторетто
               </a>
@@ -190,13 +190,13 @@
               <a class="dropdown__item dropdown__item_Verrocchio" href="#">
                 Верроккьо
               </a>
-            </div> -->
+            </div>
           </li>
           <li class="filter__item filter-item">
-            <button class="filter-item__text" data-tabs-path="dropdown-4">
+            <button class="filter-item__button" data-filter-path="dropdown-4">
               Авангард
             </button>
-            <!-- <div class="filter-item__dropdown" data-simplebar data-tabs-target="dropdown-4">
+            <div class="filter-item__dropdown" data-simplebar data-filter-target="dropdown-4">
               <a class="dropdown__item dropdown__item_Tintoretto" href="#">
                 Тинторетто
               </a>
@@ -233,13 +233,13 @@
               <a class="dropdown__item dropdown__item_Verrocchio" href="#">
                 Верроккьо
               </a>
-            </div> -->
+            </div>
           </li>
           <li class="filter__item filter-item">
-            <button class="filter-item__text" data-tabs-path="dropdown-5">
+            <button class="filter-item__button" data-filter-path="dropdown-5">
               Футуризм
             </button>
-            <!-- <div class="filter-item__dropdown" data-simplebar data-tabs-target="dropdown-5">
+            <div class="filter-item__dropdown" data-simplebar data-filter-target="dropdown-5">
               <a class="dropdown__item dropdown__item_Tintoretto" href="#">
                 Тинторетто
               </a>
@@ -276,7 +276,7 @@
               <a class="dropdown__item dropdown__item_Verrocchio" href="#">
                 Верроккьо
               </a>
-            </div> -->
+            </div>
           </li>
         </ul>
         <form class="header-bottom__search flex">
@@ -489,7 +489,238 @@
         </p>
         <div class="catalog__wrapper catalog-wrapper flex">
           <div class="catalog-wrapper__figure">
-            <figure class="catalog__figure catalog__figure_active" data-tabs-target="Dominico-Girlandio">
+            <figure class="catalog__figure" data-author-target="Benedetto-di-Bindo-Bergognone">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Бенедетто ди Биндо">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Бенедетто ди Биндо
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Ambrodgio-Bissolo">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Бергоньоне, Амброджо">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Бергоньоне, Амброджо
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Francesco-Boltraffio">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Биссоло, Франческо">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Биссоло, Франческо
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Giovanni-Bonsignori">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Больтраффио, Джованни">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Больтраффио, Джованни
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Francesco-Botticini">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Бонсиньори, Франческо">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Бонсиньори, Франческо
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Rafaello-Bramantino">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Боттичини, Рафаэлло">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Боттичини, Рафаэлло
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Bramantino">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Брамантино">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Брамантино
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Brea-Ludovico">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Бреа, Людовико">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Бреа, Людовико
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Ludovico-Biagio-dAntonio-Tucci">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Бьяджо д’Антонио Туччи">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Бьяджо д’Антонио Туччи
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Vecchietta">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Веккьетта">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Веккьетта
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Andrea-Verrochio">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Андреа Верроккьо">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Андреа Верроккьо
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure catalog__figure_active" data-author-target="Dominico-Girlandio">
               <picture class="catalog-wrapper__picture">
                 <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
                 <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Доменико Гирландайо">
@@ -510,14 +741,14 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="catalog__figure" data-tabs-target="Benedetto-di-Bindo-Bergognone">
+            <figure class="catalog__figure" data-author-target="Benozzo-Gozzoli">
               <picture class="catalog-wrapper__picture">
                 <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
-                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Бенедетто ди Биндо Бергоньоне">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Беноццо Гоццоли">
               </picture>
               <figcaption>
                 <h3 class="catalog-wrapper__title">
-                  Бенедетто ди Биндо Бергоньоне
+                  Беноццо Гоццоли
                 </h3>
                 <small class="catalog-wrapper__date">
                   2 июня 1448 — 11 января 1494.
@@ -531,14 +762,14 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="catalog__figure" data-tabs-target="Ambrodgio-Bissolo">
+            <figure class="catalog__figure" data-author-target="Granacci">
               <picture class="catalog-wrapper__picture">
                 <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
-                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Амброджо Биссоло">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Граначчи">
               </picture>
               <figcaption>
                 <h3 class="catalog-wrapper__title">
-                  Амброджо Биссоло
+                  Граначчи
                 </h3>
                 <small class="catalog-wrapper__date">
                   2 июня 1448 — 11 января 1494.
@@ -552,14 +783,14 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="catalog__figure" data-tabs-target="Francesco-Boltraffio">
+            <figure class="catalog__figure" data-author-target="Francesco">
               <picture class="catalog-wrapper__picture">
                 <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
-                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Франческо Больтраффио">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Франческо">
               </picture>
               <figcaption>
                 <h3 class="catalog-wrapper__title">
-                  Франческо Больтраффио
+                  Франческо
                 </h3>
                 <small class="catalog-wrapper__date">
                   2 июня 1448 — 11 января 1494.
@@ -573,14 +804,14 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="catalog__figure" data-tabs-target="Giovanni-Bonsignori">
+            <figure class="catalog__figure" data-author-target="Gregorio-Di-Cecco">
               <picture class="catalog-wrapper__picture">
                 <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
-                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Джованни Бонсиньори">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Грегорио ди Чекко">
               </picture>
               <figcaption>
                 <h3 class="catalog-wrapper__title">
-                  Джованни Бонсиньори
+                  Грегорио ди Чекко
                 </h3>
                 <small class="catalog-wrapper__date">
                   2 июня 1448 — 11 января 1494.
@@ -594,14 +825,14 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="catalog__figure" data-tabs-target="Francesco-Botticini">
+            <figure class="catalog__figure" data-author-target="Giovanni-Da-Udine">
               <picture class="catalog-wrapper__picture">
                 <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
-                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Франческо Боттичини">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Джованни да Удине">
               </picture>
               <figcaption>
                 <h3 class="catalog-wrapper__title">
-                  Франческо Боттичини
+                  Джованни да Удине
                 </h3>
                 <small class="catalog-wrapper__date">
                   2 июня 1448 — 11 января 1494.
@@ -615,14 +846,14 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="catalog__figure" data-tabs-target="Francesco-Botticini">
+            <figure class="catalog__figure" data-author-target="Giovanni-Di-Paolo">
               <picture class="catalog-wrapper__picture">
                 <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
-                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Франческо Боттичини">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Джованни ди Паоло">
               </picture>
               <figcaption>
                 <h3 class="catalog-wrapper__title">
-                  Франческо Боттичини
+                  Джованни ди Паоло
                 </h3>
                 <small class="catalog-wrapper__date">
                   2 июня 1448 — 11 января 1494.
@@ -636,14 +867,14 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="catalog__figure" data-tabs-target="Rafaello-Bramantino">
+            <figure class="catalog__figure" data-author-target="Giorgione">
               <picture class="catalog-wrapper__picture">
                 <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
-                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Рафаэлло Брамантино">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Джорджоне">
               </picture>
               <figcaption>
                 <h3 class="catalog-wrapper__title">
-                  Рафаэлло Брамантино
+                  Джорджоне
                 </h3>
                 <small class="catalog-wrapper__date">
                   2 июня 1448 — 11 января 1494.
@@ -657,14 +888,161 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="catalog__figure" data-tabs-target="Ludovico-Biagio-dAntonio-Tucci">
+            <figure class="catalog__figure" data-author-target="Parentino">
               <picture class="catalog-wrapper__picture">
                 <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
-                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Людовико Бьяджо д’Антонио Туччи">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Парентино">
               </picture>
               <figcaption>
                 <h3 class="catalog-wrapper__title">
-                  Людовико Бьяджо д’Антонио Туччи
+                  Парентино
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Bernardo">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Бернардо">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Бернардо
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Pesellino">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Пезеллино">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Пезеллино
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Pietro-Perugino">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Пьетро Перуджино">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Пьетро Перуджино
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Peruzzi">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Перуцци">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Перуцци
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Baldassare">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Бальдассаре">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Бальдассаре
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Pisanello">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Пизанелло">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Пизанелло
+                </h3>
+                <small class="catalog-wrapper__date">
+                  2 июня 1448 — 11 января 1494.
+                </small>
+                <p class="catalog-wrapper__description">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                  течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со
+                  всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные
+                  граждане Флоренции в костюмах того времени).
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="catalog__figure" data-author-target="Pinturicchio">
+              <picture class="catalog-wrapper__picture">
+                <source srcset="images/Dominico@1x.webp 1x, images/Dominico@2x.webp 2x" type="image/webp">
+                <img src="images/Dominico@1x.jpg" srcset="images/Dominico@2x.jpg 2x" alt="Пинтуриккьо">
+              </picture>
+              <figcaption>
+                <h3 class="catalog-wrapper__title">
+                  Пинтуриккьо
                 </h3>
                 <small class="catalog-wrapper__date">
                   2 июня 1448 — 11 января 1494.
@@ -684,35 +1062,37 @@
             <div>
               <ul class="accordion__list flex">
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#" data-tabs-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди Биндо Бергоньоне</a>,
-                  <a class="accordion__item-link" href="#" data-tabs-path="Ambrodgio-Bissolo">Амброджо Биссоло</a>,
-                  <a class="accordion__item-link" href="#" data-tabs-path="Francesco-Boltraffio">Франческо Больтраффио</a>,
-                  <a class="accordion__item-link" href="#" data-tabs-path="Giovanni-Bonsignori">Джованни Бонсиньори</a>,
-                  <a class="accordion__item-link" href="#" data-tabs-path="Francesco-Botticini">Франческо Боттичини</a>,
-                  <a class="accordion__item-link" href="#" data-tabs-path="Rafaello-Bramantino">Рафаэлло Брамантино<br>Бреа</a>,
-                  <a class="accordion__item-link" href="#" data-tabs-path="Ludovico-Biagio-dAntonio-Tucci">Людовико<br>Бьяджо д’Антонио Туччи</a>
+                  <button class="accordion__item-button" data-author-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди Биндо</button>
+                  <button class="accordion__item-button" data-author-path="Ambrodgio-Bissolo">Бергоньоне, Амброджо</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Boltraffio">Биссоло, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Bonsignori">Больтраффио, Джованни</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Botticini">Бонсиньори, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Rafaello-Bramantino">Боттичини, Рафаэлло</button>
+                  <button class="accordion__item-button" data-author-path="Bramantino">Брамантино</button><br>
+                  <button class="accordion__item-button" data-author-path="Brea-Ludovico">Бреа, Людовико</button><br>
+                  <button class="accordion__item-button" data-author-path="Ludovico-Biagio-dAntonio-Tucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#" data-tabs-path="Vecchietta">Веккьетта</a><br>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Andrea-Verrochio">Андреа Верроккьо</a><br>
-                  <a class="accordion__item-link accordion__item-link_active" href="#" data-tabs-path="Dominico-Girlandio">Доменико Гирландайо</a>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Benozzo-Gozzoli">Беноццо Гоццоли</a><br>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Granacci">Граначчи</a>, <a class="accordion__item-link"
-                    href="#" data-tabs-path="Francesco">Франческо</a><br>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Gregorio-Di-Cecco">Грегорио ди Чекко</a><br>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Giovanni-Da-Udine">Джованни да Удине</a><br>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Giovanni-Di-Paolo">Джованни ди Паоло</a>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Giorgione">Джорджоне</a>
+                  <button class="accordion__item-button" data-author-path="Vecchietta">Веккьетта</button><br>
+                  <button class="accordion__item-button" data-author-path="Andrea-Verrochio">Андреа Верроккьо</button>
+                  <button class="accordion__item-button accordion__item-button_active" data-author-path="Dominico-Girlandio">Доменико Гирландайо</button>
+                  <button class="accordion__item-button" data-author-path="Benozzo-Gozzoli">Беноццо Гоццоли</button><br>
+                  <button class="accordion__item-button" data-author-path="Granacci">Граначчи</button> <button class="accordion__item-button"
+                   data-author-path="Francesco">Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Gregorio-Di-Cecco">Грегорио ди Чекко</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Da-Udine">Джованни да Удине</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Di-Paolo">Джованни ди Паоло</button>
+                  <button class="accordion__item-button" data-author-path="Giorgione">Джорджоне</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#" data-tabs-path="Parentino">Парентино</a>, <a class="accordion__item-link"
-                    href="#">Бернардо</a>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Pesellino">Пезеллино</a><br>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Pietro-Perugino">Пьетро Перуджино</a><br>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Peruzzi">Перуцци</a>, <a class="accordion__item-link"
-                    href="#" data-tabs-path="Baldassare">Бальдассаре</a><br>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Pisanello">Пизанелло</a><br>
-                  <a class="accordion__item-link" href="#" data-tabs-path="Pinturicchio">Пинтуриккьо</a>
+                  <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>, <button class="accordion__item-button"
+                   data-author-path="Bernardo">Бернардо</button>
+                  <button class="accordion__item-button" data-author-path="Pesellino">Пезеллино</button>
+                  <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро Перуджино</button><br>
+                  <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>, <button class="accordion__item-button"
+                   data-author-path="Baldassare">Бальдассаре</button>
+                  <button class="accordion__item-button" data-author-path="Pisanello">Пизанелло</button><br>
+                  <button class="accordion__item-button" data-author-path="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </div>
@@ -720,35 +1100,37 @@
             <div>
               <ul class="accordion__list flex">
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Бенедетто ди Биндо Бергоньоне</a>,
-                  <a class="accordion__item-link" href="#">Амброджо Биссоло</a>,
-                  <a class="accordion__item-link" href="#">Франческо Больтраффио</a>,
-                  <a class="accordion__item-link" href="#">Джованни Бонсиньори</a>,
-                  <a class="accordion__item-link" href="#">Франческо Боттичини</a>,
-                  <a class="accordion__item-link" href="#">Рафаэлло Брамантино<br>Бреа</a>,
-                  <a class="accordion__item-link" href="#">Людовико<br>Бьяджо д’Антонио Туччи</a>
+                  <button class="accordion__item-button" data-author-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди Биндо</button>
+                  <button class="accordion__item-button" data-author-path="Ambrodgio-Bissolo">Бергоньоне, Амброджо</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Boltraffio">Биссоло, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Bonsignori">Больтраффио, Джованни</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Botticini">Бонсиньори, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Rafaello-Bramantino">Боттичини, Рафаэлло</button>
+                  <button class="accordion__item-button" data-author-path="Bramantino">Брамантино</button><br>
+                  <button class="accordion__item-button" data-author-path="Brea-Ludovico">Бреа, Людовико</button><br>
+                  <button class="accordion__item-button" data-author-path="Ludovico-Biagio-dAntonio-Tucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Веккьетта</a><br>
-                  <a class="accordion__item-link" href="#">Андреа Верроккьо</a><br>
-                  <a class="accordion__item-link" href="#">Доменико Гирландайо</a>
-                  <a class="accordion__item-link" href="#">Беноццо Гоццоли</a><br>
-                  <a class="accordion__item-link" href="#">Граначчи</a>, <a class="accordion__item-link"
-                    href="#">Франческо</a><br>
-                  <a class="accordion__item-link" href="#">Грегорио ди Чекко</a><br>
-                  <a class="accordion__item-link" href="#">Джованни да Удине</a><br>
-                  <a class="accordion__item-link" href="#">Джованни ди Паоло</a>
-                  <a class="accordion__item-link" href="#">Джорджоне</a>
+                  <button class="accordion__item-button" data-author-path="Vecchietta">Веккьетта</button><br>
+                  <button class="accordion__item-button" data-author-path="Andrea-Verrochio">Андреа Верроккьо</button>
+                  <button class="accordion__item-button accordion__item-button_active" data-author-path="Dominico-Girlandio">Доменико Гирландайо</button>
+                  <button class="accordion__item-button" data-author-path="Benozzo-Gozzoli">Беноццо Гоццоли</button><br>
+                  <button class="accordion__item-button" data-author-path="Granacci">Граначчи</button> <button class="accordion__item-button"
+                   data-author-path="Francesco">Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Gregorio-Di-Cecco">Грегорио ди Чекко</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Da-Udine">Джованни да Удине</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Di-Paolo">Джованни ди Паоло</button>
+                  <button class="accordion__item-button" data-author-path="Giorgione">Джорджоне</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Парентино</a>, <a class="accordion__item-link"
-                    href="#">Бернардо</a>
-                  <a class="accordion__item-link" href="#">Пезеллино</a><br>
-                  <a class="accordion__item-link" href="#">Пьетро Перуджино</a><br>
-                  <a class="accordion__item-link" href="#">Перуцци</a>, <a class="accordion__item-link"
-                    href="#">Бальдассаре</a><br>
-                  <a class="accordion__item-link" href="#">Пизанелло</a><br>
-                  <a class="accordion__item-link" href="#">Пинтуриккьо</a>
+                  <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>, <button class="accordion__item-button"
+                   data-author-path="Bernardo">Бернардо</button>
+                  <button class="accordion__item-button" data-author-path="Pesellino">Пезеллино</button>
+                  <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро Перуджино</button><br>
+                  <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>, <button class="accordion__item-button"
+                   data-author-path="Baldassare">Бальдассаре</button>
+                  <button class="accordion__item-button" data-author-path="Pisanello">Пизанелло</button><br>
+                  <button class="accordion__item-button" data-author-path="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </div>
@@ -756,35 +1138,37 @@
             <div>
               <ul class="accordion__list flex">
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Бенедетто ди Биндо Бергоньоне</a>,
-                  <a class="accordion__item-link" href="#">Амброджо Биссоло</a>,
-                  <a class="accordion__item-link" href="#">Франческо Больтраффио</a>,
-                  <a class="accordion__item-link" href="#">Джованни Бонсиньори</a>,
-                  <a class="accordion__item-link" href="#">Франческо Боттичини</a>,
-                  <a class="accordion__item-link" href="#">Рафаэлло Брамантино<br>Бреа</a>,
-                  <a class="accordion__item-link" href="#">Людовико<br>Бьяджо д’Антонио Туччи</a>
+                  <button class="accordion__item-button" data-author-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди Биндо</button>
+                  <button class="accordion__item-button" data-author-path="Ambrodgio-Bissolo">Бергоньоне, Амброджо</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Boltraffio">Биссоло, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Bonsignori">Больтраффио, Джованни</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Botticini">Бонсиньори, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Rafaello-Bramantino">Боттичини, Рафаэлло</button>
+                  <button class="accordion__item-button" data-author-path="Bramantino">Брамантино</button><br>
+                  <button class="accordion__item-button" data-author-path="Brea-Ludovico">Бреа, Людовико</button><br>
+                  <button class="accordion__item-button" data-author-path="Ludovico-Biagio-dAntonio-Tucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Веккьетта</a><br>
-                  <a class="accordion__item-link" href="#">Андреа Верроккьо</a><br>
-                  <a class="accordion__item-link" href="#">Доменико Гирландайо</a>
-                  <a class="accordion__item-link" href="#">Беноццо Гоццоли</a><br>
-                  <a class="accordion__item-link" href="#">Граначчи</a>, <a class="accordion__item-link"
-                    href="#">Франческо</a><br>
-                  <a class="accordion__item-link" href="#">Грегорио ди Чекко</a><br>
-                  <a class="accordion__item-link" href="#">Джованни да Удине</a><br>
-                  <a class="accordion__item-link" href="#">Джованни ди Паоло</a>
-                  <a class="accordion__item-link" href="#">Джорджоне</a>
+                  <button class="accordion__item-button" data-author-path="Vecchietta">Веккьетта</button><br>
+                  <button class="accordion__item-button" data-author-path="Andrea-Verrochio">Андреа Верроккьо</button>
+                  <button class="accordion__item-button accordion__item-button_active" data-author-path="Dominico-Girlandio">Доменико Гирландайо</button>
+                  <button class="accordion__item-button" data-author-path="Benozzo-Gozzoli">Беноццо Гоццоли</button><br>
+                  <button class="accordion__item-button" data-author-path="Granacci">Граначчи</button> <button class="accordion__item-button"
+                   data-author-path="Francesco">Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Gregorio-Di-Cecco">Грегорио ди Чекко</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Da-Udine">Джованни да Удине</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Di-Paolo">Джованни ди Паоло</button>
+                  <button class="accordion__item-button" data-author-path="Giorgione">Джорджоне</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Парентино</a>, <a class="accordion__item-link"
-                    href="#">Бернардо</a>
-                  <a class="accordion__item-link" href="#">Пезеллино</a><br>
-                  <a class="accordion__item-link" href="#">Пьетро Перуджино</a><br>
-                  <a class="accordion__item-link" href="#">Перуцци</a>, <a class="accordion__item-link"
-                    href="#">Бальдассаре</a><br>
-                  <a class="accordion__item-link" href="#">Пизанелло</a><br>
-                  <a class="accordion__item-link" href="#">Пинтуриккьо</a>
+                  <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>, <button class="accordion__item-button"
+                   data-author-path="Bernardo">Бернардо</button>
+                  <button class="accordion__item-button" data-author-path="Pesellino">Пезеллино</button>
+                  <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро Перуджино</button><br>
+                  <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>, <button class="accordion__item-button"
+                   data-author-path="Baldassare">Бальдассаре</button>
+                  <button class="accordion__item-button" data-author-path="Pisanello">Пизанелло</button><br>
+                  <button class="accordion__item-button" data-author-path="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </div>
@@ -792,35 +1176,37 @@
             <div>
               <ul class="accordion__list flex">
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Бенедетто ди Биндо Бергоньоне</a>,
-                  <a class="accordion__item-link" href="#">Амброджо Биссоло</a>,
-                  <a class="accordion__item-link" href="#">Франческо Больтраффио</a>,
-                  <a class="accordion__item-link" href="#">Джованни Бонсиньори</a>,
-                  <a class="accordion__item-link" href="#">Франческо Боттичини</a>,
-                  <a class="accordion__item-link" href="#">Рафаэлло Брамантино<br>Бреа</a>,
-                  <a class="accordion__item-link" href="#">Людовико<br>Бьяджо д’Антонио Туччи</a>
+                  <button class="accordion__item-button" data-author-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди Биндо</button>
+                  <button class="accordion__item-button" data-author-path="Ambrodgio-Bissolo">Бергоньоне, Амброджо</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Boltraffio">Биссоло, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Bonsignori">Больтраффио, Джованни</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Botticini">Бонсиньори, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Rafaello-Bramantino">Боттичини, Рафаэлло</button>
+                  <button class="accordion__item-button" data-author-path="Bramantino">Брамантино</button><br>
+                  <button class="accordion__item-button" data-author-path="Brea-Ludovico">Бреа, Людовико</button><br>
+                  <button class="accordion__item-button" data-author-path="Ludovico-Biagio-dAntonio-Tucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Веккьетта</a><br>
-                  <a class="accordion__item-link" href="#">Андреа Верроккьо</a><br>
-                  <a class="accordion__item-link" href="#">Доменико Гирландайо</a>
-                  <a class="accordion__item-link" href="#">Беноццо Гоццоли</a><br>
-                  <a class="accordion__item-link" href="#">Граначчи</a>, <a class="accordion__item-link"
-                    href="#">Франческо</a><br>
-                  <a class="accordion__item-link" href="#">Грегорио ди Чекко</a><br>
-                  <a class="accordion__item-link" href="#">Джованни да Удине</a><br>
-                  <a class="accordion__item-link" href="#">Джованни ди Паоло</a>
-                  <a class="accordion__item-link" href="#">Джорджоне</a>
+                  <button class="accordion__item-button" data-author-path="Vecchietta">Веккьетта</button><br>
+                  <button class="accordion__item-button" data-author-path="Andrea-Verrochio">Андреа Верроккьо</button>
+                  <button class="accordion__item-button accordion__item-button_active" data-author-path="Dominico-Girlandio">Доменико Гирландайо</button>
+                  <button class="accordion__item-button" data-author-path="Benozzo-Gozzoli">Беноццо Гоццоли</button><br>
+                  <button class="accordion__item-button" data-author-path="Granacci">Граначчи</button> <button class="accordion__item-button"
+                   data-author-path="Francesco">Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Gregorio-Di-Cecco">Грегорио ди Чекко</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Da-Udine">Джованни да Удине</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Di-Paolo">Джованни ди Паоло</button>
+                  <button class="accordion__item-button" data-author-path="Giorgione">Джорджоне</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Парентино</a>, <a class="accordion__item-link"
-                    href="#">Бернардо</a>
-                  <a class="accordion__item-link" href="#">Пезеллино</a><br>
-                  <a class="accordion__item-link" href="#">Пьетро Перуджино</a><br>
-                  <a class="accordion__item-link" href="#">Перуцци</a>, <a class="accordion__item-link"
-                    href="#">Бальдассаре</a><br>
-                  <a class="accordion__item-link" href="#">Пизанелло</a><br>
-                  <a class="accordion__item-link" href="#">Пинтуриккьо</a>
+                  <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>, <button class="accordion__item-button"
+                   data-author-path="Bernardo">Бернардо</button>
+                  <button class="accordion__item-button" data-author-path="Pesellino">Пезеллино</button>
+                  <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро Перуджино</button><br>
+                  <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>, <button class="accordion__item-button"
+                   data-author-path="Baldassare">Бальдассаре</button>
+                  <button class="accordion__item-button" data-author-path="Pisanello">Пизанелло</button><br>
+                  <button class="accordion__item-button" data-author-path="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </div>
@@ -828,35 +1214,37 @@
             <div>
               <ul class="accordion__list flex">
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Бенедетто ди Биндо Бергоньоне</a>,
-                  <a class="accordion__item-link" href="#">Амброджо Биссоло</a>,
-                  <a class="accordion__item-link" href="#">Франческо Больтраффио</a>,
-                  <a class="accordion__item-link" href="#">Джованни Бонсиньори</a>,
-                  <a class="accordion__item-link" href="#">Франческо Боттичини</a>,
-                  <a class="accordion__item-link" href="#">Рафаэлло Брамантино<br>Бреа</a>,
-                  <a class="accordion__item-link" href="#">Людовико<br>Бьяджо д’Антонио Туччи</a>
+                  <button class="accordion__item-button" data-author-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди Биндо</button>
+                  <button class="accordion__item-button" data-author-path="Ambrodgio-Bissolo">Бергоньоне, Амброджо</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Boltraffio">Биссоло, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Bonsignori">Больтраффио, Джованни</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Botticini">Бонсиньори, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Rafaello-Bramantino">Боттичини, Рафаэлло</button>
+                  <button class="accordion__item-button" data-author-path="Bramantino">Брамантино</button><br>
+                  <button class="accordion__item-button" data-author-path="Brea-Ludovico">Бреа, Людовико</button><br>
+                  <button class="accordion__item-button" data-author-path="Ludovico-Biagio-dAntonio-Tucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Веккьетта</a><br>
-                  <a class="accordion__item-link" href="#">Андреа Верроккьо</a><br>
-                  <a class="accordion__item-link" href="#">Доменико Гирландайо</a>
-                  <a class="accordion__item-link" href="#">Беноццо Гоццоли</a><br>
-                  <a class="accordion__item-link" href="#">Граначчи</a>, <a class="accordion__item-link"
-                    href="#">Франческо</a><br>
-                  <a class="accordion__item-link" href="#">Грегорио ди Чекко</a><br>
-                  <a class="accordion__item-link" href="#">Джованни да Удине</a><br>
-                  <a class="accordion__item-link" href="#">Джованни ди Паоло</a>
-                  <a class="accordion__item-link" href="#">Джорджоне</a>
+                  <button class="accordion__item-button" data-author-path="Vecchietta">Веккьетта</button><br>
+                  <button class="accordion__item-button" data-author-path="Andrea-Verrochio">Андреа Верроккьо</button>
+                  <button class="accordion__item-button accordion__item-button_active" data-author-path="Dominico-Girlandio">Доменико Гирландайо</button>
+                  <button class="accordion__item-button" data-author-path="Benozzo-Gozzoli">Беноццо Гоццоли</button><br>
+                  <button class="accordion__item-button" data-author-path="Granacci">Граначчи</button> <button class="accordion__item-button"
+                   data-author-path="Francesco">Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Gregorio-Di-Cecco">Грегорио ди Чекко</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Da-Udine">Джованни да Удине</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Di-Paolo">Джованни ди Паоло</button>
+                  <button class="accordion__item-button" data-author-path="Giorgione">Джорджоне</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Парентино</a>, <a class="accordion__item-link"
-                    href="#">Бернардо</a>
-                  <a class="accordion__item-link" href="#">Пезеллино</a><br>
-                  <a class="accordion__item-link" href="#">Пьетро Перуджино</a><br>
-                  <a class="accordion__item-link" href="#">Перуцци</a>, <a class="accordion__item-link"
-                    href="#">Бальдассаре</a><br>
-                  <a class="accordion__item-link" href="#">Пизанелло</a><br>
-                  <a class="accordion__item-link" href="#">Пинтуриккьо</a>
+                  <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>, <button class="accordion__item-button"
+                   data-author-path="Bernardo">Бернардо</button>
+                  <button class="accordion__item-button" data-author-path="Pesellino">Пезеллино</button>
+                  <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро Перуджино</button><br>
+                  <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>, <button class="accordion__item-button"
+                   data-author-path="Baldassare">Бальдассаре</button>
+                  <button class="accordion__item-button" data-author-path="Pisanello">Пизанелло</button><br>
+                  <button class="accordion__item-button" data-author-path="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </div>
@@ -864,35 +1252,37 @@
             <div>
               <ul class="accordion__list flex">
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Бенедетто ди Биндо Бергоньоне</a>,
-                  <a class="accordion__item-link" href="#">Амброджо Биссоло</a>,
-                  <a class="accordion__item-link" href="#">Франческо Больтраффио</a>,
-                  <a class="accordion__item-link" href="#">Джованни Бонсиньори</a>,
-                  <a class="accordion__item-link" href="#">Франческо Боттичини</a>,
-                  <a class="accordion__item-link" href="#">Рафаэлло Брамантино<br>Бреа</a>,
-                  <a class="accordion__item-link" href="#">Людовико<br>Бьяджо д’Антонио Туччи</a>
+                  <button class="accordion__item-button" data-author-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди Биндо</button>
+                  <button class="accordion__item-button" data-author-path="Ambrodgio-Bissolo">Бергоньоне, Амброджо</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Boltraffio">Биссоло, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Bonsignori">Больтраффио, Джованни</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Botticini">Бонсиньори, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Rafaello-Bramantino">Боттичини, Рафаэлло</button>
+                  <button class="accordion__item-button" data-author-path="Bramantino">Брамантино</button><br>
+                  <button class="accordion__item-button" data-author-path="Brea-Ludovico">Бреа, Людовико</button><br>
+                  <button class="accordion__item-button" data-author-path="Ludovico-Biagio-dAntonio-Tucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Веккьетта</a><br>
-                  <a class="accordion__item-link" href="#">Андреа Верроккьо</a><br>
-                  <a class="accordion__item-link" href="#">Доменико Гирландайо</a>
-                  <a class="accordion__item-link" href="#">Беноццо Гоццоли</a><br>
-                  <a class="accordion__item-link" href="#">Граначчи</a>, <a class="accordion__item-link"
-                    href="#">Франческо</a><br>
-                  <a class="accordion__item-link" href="#">Грегорио ди Чекко</a><br>
-                  <a class="accordion__item-link" href="#">Джованни да Удине</a><br>
-                  <a class="accordion__item-link" href="#">Джованни ди Паоло</a>
-                  <a class="accordion__item-link" href="#">Джорджоне</a>
+                  <button class="accordion__item-button" data-author-path="Vecchietta">Веккьетта</button><br>
+                  <button class="accordion__item-button" data-author-path="Andrea-Verrochio">Андреа Верроккьо</button>
+                  <button class="accordion__item-button accordion__item-button_active" data-author-path="Dominico-Girlandio">Доменико Гирландайо</button>
+                  <button class="accordion__item-button" data-author-path="Benozzo-Gozzoli">Беноццо Гоццоли</button><br>
+                  <button class="accordion__item-button" data-author-path="Granacci">Граначчи</button> <button class="accordion__item-button"
+                   data-author-path="Francesco">Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Gregorio-Di-Cecco">Грегорио ди Чекко</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Da-Udine">Джованни да Удине</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Di-Paolo">Джованни ди Паоло</button>
+                  <button class="accordion__item-button" data-author-path="Giorgione">Джорджоне</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Парентино</a>, <a class="accordion__item-link"
-                    href="#">Бернардо</a>
-                  <a class="accordion__item-link" href="#">Пезеллино</a><br>
-                  <a class="accordion__item-link" href="#">Пьетро Перуджино</a><br>
-                  <a class="accordion__item-link" href="#">Перуцци</a>, <a class="accordion__item-link"
-                    href="#">Бальдассаре</a><br>
-                  <a class="accordion__item-link" href="#">Пизанелло</a><br>
-                  <a class="accordion__item-link" href="#">Пинтуриккьо</a>
+                  <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>, <button class="accordion__item-button"
+                   data-author-path="Bernardo">Бернардо</button>
+                  <button class="accordion__item-button" data-author-path="Pesellino">Пезеллино</button>
+                  <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро Перуджино</button><br>
+                  <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>, <button class="accordion__item-button"
+                   data-author-path="Baldassare">Бальдассаре</button>
+                  <button class="accordion__item-button" data-author-path="Pisanello">Пизанелло</button><br>
+                  <button class="accordion__item-button" data-author-path="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </div>
@@ -900,35 +1290,37 @@
             <div>
               <ul class="accordion__list flex">
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Бенедетто ди Биндо Бергоньоне</a>,
-                  <a class="accordion__item-link" href="#">Амброджо Биссоло</a>,
-                  <a class="accordion__item-link" href="#">Франческо Больтраффио</a>,
-                  <a class="accordion__item-link" href="#">Джованни Бонсиньори</a>,
-                  <a class="accordion__item-link" href="#">Франческо Боттичини</a>,
-                  <a class="accordion__item-link" href="#">Рафаэлло Брамантино<br>Бреа</a>,
-                  <a class="accordion__item-link" href="#">Людовико<br>Бьяджо д’Антонио Туччи</a>
+                  <button class="accordion__item-button" data-author-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди Биндо</button>
+                  <button class="accordion__item-button" data-author-path="Ambrodgio-Bissolo">Бергоньоне, Амброджо</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Boltraffio">Биссоло, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Bonsignori">Больтраффио, Джованни</button>
+                  <button class="accordion__item-button" data-author-path="Francesco-Botticini">Бонсиньори, Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Rafaello-Bramantino">Боттичини, Рафаэлло</button>
+                  <button class="accordion__item-button" data-author-path="Bramantino">Брамантино</button><br>
+                  <button class="accordion__item-button" data-author-path="Brea-Ludovico">Бреа, Людовико</button><br>
+                  <button class="accordion__item-button" data-author-path="Ludovico-Biagio-dAntonio-Tucci">Бьяджо д’Антонио Туччи</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Веккьетта</a><br>
-                  <a class="accordion__item-link" href="#">Андреа Верроккьо</a><br>
-                  <a class="accordion__item-link" href="#">Доменико Гирландайо</a>
-                  <a class="accordion__item-link" href="#">Беноццо Гоццоли</a><br>
-                  <a class="accordion__item-link" href="#">Граначчи</a>, <a class="accordion__item-link"
-                    href="#">Франческо</a><br>
-                  <a class="accordion__item-link" href="#">Грегорио ди Чекко</a><br>
-                  <a class="accordion__item-link" href="#">Джованни да Удине</a><br>
-                  <a class="accordion__item-link" href="#">Джованни ди Паоло</a>
-                  <a class="accordion__item-link" href="#">Джорджоне</a>
+                  <button class="accordion__item-button" data-author-path="Vecchietta">Веккьетта</button><br>
+                  <button class="accordion__item-button" data-author-path="Andrea-Verrochio">Андреа Верроккьо</button>
+                  <button class="accordion__item-button accordion__item-button_active" data-author-path="Dominico-Girlandio">Доменико Гирландайо</button>
+                  <button class="accordion__item-button" data-author-path="Benozzo-Gozzoli">Беноццо Гоццоли</button><br>
+                  <button class="accordion__item-button" data-author-path="Granacci">Граначчи</button> <button class="accordion__item-button"
+                   data-author-path="Francesco">Франческо</button>
+                  <button class="accordion__item-button" data-author-path="Gregorio-Di-Cecco">Грегорио ди Чекко</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Da-Udine">Джованни да Удине</button>
+                  <button class="accordion__item-button" data-author-path="Giovanni-Di-Paolo">Джованни ди Паоло</button>
+                  <button class="accordion__item-button" data-author-path="Giorgione">Джорджоне</button>
                 </li>
                 <li class="accordion__item">
-                  <a class="accordion__item-link" href="#">Парентино</a>, <a class="accordion__item-link"
-                    href="#">Бернардо</a>
-                  <a class="accordion__item-link" href="#">Пезеллино</a><br>
-                  <a class="accordion__item-link" href="#">Пьетро Перуджино</a><br>
-                  <a class="accordion__item-link" href="#">Перуцци</a>, <a class="accordion__item-link"
-                    href="#">Бальдассаре</a><br>
-                  <a class="accordion__item-link" href="#">Пизанелло</a><br>
-                  <a class="accordion__item-link" href="#">Пинтуриккьо</a>
+                  <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>, <button class="accordion__item-button"
+                   data-author-path="Bernardo">Бернардо</button>
+                  <button class="accordion__item-button" data-author-path="Pesellino">Пезеллино</button>
+                  <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро Перуджино</button><br>
+                  <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>, <button class="accordion__item-button"
+                   data-author-path="Baldassare">Бальдассаре</button>
+                  <button class="accordion__item-button" data-author-path="Pisanello">Пизанелло</button><br>
+                  <button class="accordion__item-button" data-author-path="Pinturicchio">Пинтуриккьо</button>
                 </li>
               </ul>
             </div>

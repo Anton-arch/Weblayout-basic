@@ -24,6 +24,29 @@ window.addEventListener('DOMContentLoaded', function () {
     }, 1000);
   });
 
+   // Header-dropdowns
+  const filter = document.querySelector('.header-section__filter');
+  const filterBtn = document.querySelectorAll('.filter-item__button');
+  const filterDropdovn = document.querySelectorAll('.filter-item__dropdown');
+
+  if (filter) {
+    filter.addEventListener('click', (e) => {
+      if (e.target.classList.contains('filter-item__button')) {
+        const filterPath = e.target.dataset.filterPath;
+        console.log(filterPath)
+        filterHandler(filterPath);
+      }
+    })
+  }
+
+  const filterHandler = (path) => {
+    filterBtn.forEach(el => {el.classList.remove('filter-item__button_active')});
+    document.querySelector(`[data-filter-path="${path}"]`).classList.add('filter-item__button_active');
+
+    filterDropdovn.forEach(el => {el.classList.remove('filter-item__dropdown_active')});
+    document.querySelector(`[data-filter-target="${path}"]`).classList.add('filter-item__dropdown_active');
+  };
+
   // Hero-swiper
   let heroSwiper = new Swiper('.hero__swiper-container', {
     // Optional parameters
@@ -122,27 +145,27 @@ window.addEventListener('DOMContentLoaded', function () {
     event.preventDefault();
   });
 
-  // catalog-Accordion-links
-  // const filter =  document.querySelector('.accordion__list');
-  // const filterBtn = document.querySelectorAll('.accordion__item-link');
-  // const filterContent = document.querySelectorAll('.catalog__figure');
+  const author = document.querySelector('.ui-accordion');
+  const authorBtn = document.querySelectorAll('.accordion__item-button');
+  const authorContent = document.querySelectorAll('.catalog__figure');
 
-  // if (filter) {
-  //   filter.addEventListener('click', (e) => {
-  //     if (e.target.classList.contains('accordion__item-link')) {
-  //       const filterPath = e.target.dataset.filterPath;
-  //       tabsHandler(filterPath);
-  //     }
-  //   })
-  // }
+  if (author) {
+    author.addEventListener('click', (e) => {
+      if (e.target.classList.contains('accordion__item-button')) {
+        const authorPath = e.target.dataset.authorPath;
+        console.log(authorPath)
+        authorHandler(authorPath);
+      }
+    })
+  }
 
-  // const tabsHandler = (filter) => {
-  //   filterBtn.forEach(el => {el.classList.remove('accordion__item-link_active')});
-  //   document.querySelector(`[data-tabs-path="${path}"]`).classList.add('accordion__item-link_active')
+  const authorHandler = (path) => {
+    authorBtn.forEach(el => {el.classList.remove('accordion__item-button_active')});
+    document.querySelector(`[data-author-path="${path}"]`).classList.add('accordion__item-button_active');
 
-  //   filterBtn.forEach(el => {el.classList.remove('catalog__figure_active')});
-  //   document.querySelector(`[data-tabs-target="${path}"]`).classList.add('catalog__figure_active')
-  // }
+    authorContent.forEach(el => {el.classList.remove('catalog__figure_active')});
+    document.querySelector(`[data-author-target="${path}"]`).classList.add('catalog__figure_active');
+  };
 
   // Events-card
   document.querySelector('.events__button').addEventListener('click', function () {
