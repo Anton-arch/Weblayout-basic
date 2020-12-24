@@ -99,6 +99,17 @@ ul {
   font-size: 48px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 /* HEADER */
 .header {
   position: relative;
@@ -176,6 +187,7 @@ ul {
   color: var(--white);
   background: rgba(0, 0, 0, 0.4);
   z-index: 2;
+  transform: translateY(-1px);
 }
 
 .header-bottom__container {
@@ -435,7 +447,7 @@ ul {
 
 @keyframes pulse {
   from {
-    transform: scale(1);
+    transform: scale(1.05);
   }
 
   50% {
@@ -443,7 +455,7 @@ ul {
   }
 
   to {
-    transform: scale(1);
+    transform: scale(1.05);
   }
 }
 

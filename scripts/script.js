@@ -33,7 +33,6 @@ window.addEventListener('DOMContentLoaded', function () {
     filter.addEventListener('click', (e) => {
       if (e.target.classList.contains('filter-item__button')) {
         const filterPath = e.target.dataset.filterPath;
-        console.log(filterPath)
         filterHandler(filterPath);
       }
     })
@@ -153,7 +152,6 @@ window.addEventListener('DOMContentLoaded', function () {
     author.addEventListener('click', (e) => {
       if (e.target.classList.contains('accordion__item-button')) {
         const authorPath = e.target.dataset.authorPath;
-        console.log(authorPath)
         authorHandler(authorPath);
       }
     })
