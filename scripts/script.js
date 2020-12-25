@@ -34,8 +34,8 @@ window.addEventListener('DOMContentLoaded', function () {
       if (e.target.classList.contains('filter-item__button')) {
         const filterPath = e.target.dataset.filterPath;
         filterHandler(filterPath);
-      }
-    })
+      };
+    });
   }
 
   const filterHandler = (path) => {
@@ -45,6 +45,15 @@ window.addEventListener('DOMContentLoaded', function () {
     filterDropdovn.forEach(el => {el.classList.remove('filter-item__dropdown_active')});
     document.querySelector(`[data-filter-target="${path}"]`).classList.add('filter-item__dropdown_active');
   };
+
+  document.addEventListener('click', (e) => {
+
+    if (!e.target.classList.contains('filter-item__button') && !e.target.classList.contains('filter-item__dropdown')) {
+
+        filterDropdovn.forEach(el => {el.classList.remove('filter-item__dropdown_active')});
+        filterBtn.forEach(el => {el.classList.remove('filter-item__button_active')});
+    }
+  })
 
   // Hero-swiper
   let heroSwiper = new Swiper('.hero__swiper-container', {
