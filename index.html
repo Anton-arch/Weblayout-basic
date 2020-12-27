@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/simplebar.css">
   <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/choices.min.css">
+  <link rel="stylesheet" type="text/css" href="css/justValidateTooltip.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="scripts/swiper-bundle.min.js"></script>
   <script src="scripts/jQuery-3.5.1.js"></script>
@@ -19,6 +20,8 @@
   <script src="scripts/api-maps.js"></script>
   <script src="scripts/choices.min.js"></script>
   <script src="scripts/focus-polyfill.js"></script>
+  <script src="scripts/inputmask.min.js"></script>
+  <script src="scripts/just-validate.min.js"></script>
   <script src="scripts/script.js"></script>
 </head>
 
@@ -280,7 +283,7 @@
           </li>
         </ul>
         <form class="header-bottom__search flex">
-          <input class="header-bottom__input" type="text" placeholder="Поиск по сайту">
+          <input class="header-bottom__input" type="search" placeholder="Поиск по сайту">
           <button class="header-bottom__btn"></button>
         </form>
       </div>
@@ -1334,19 +1337,19 @@
         <h2 class="events__title section__title" id="events">
           События
         </h2>
-        <div class="events__list flex">
-          <article class="events__item events-item">
-            <figure class="events__figure events-figure">
+        <ul class="events__list flex">
+          <li class="events__item events-item">
+            <div class="events__figure events-figure">
               <picture class="events-figure__picture">
                 <source srcset="images/Rectangle-98@1x.webp 1x, images/Rectangle-98@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-98@1x.jpg" srcset="images/Rectangle-98@2x.jpg 2x"
                   alt="Книжная гравюра в живом восприятии">
               </picture>
-              <figcaption class="events-figure__figcaption flex">
-                <small class="events-figure__small">
-                  Музей им. Щусева<br>
-                  с 20 марта по 30 апреля
-                </small>
+              <div class="events-figure__figcaption flex">
+                <div class="events-figure__signature flex">
+                  <div>Музей им. Щусева</div>
+                  <div>с 20 марта по 30 апреля</div>
+                </div>
                 <h3 class="events-figure__title">
                   Книжная гравюра в живом восприятии
                 </h3>
@@ -1355,21 +1358,21 @@
                   продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
                 </p>
                 <a class="events-item__link" href="#">Подробнее</a>
-              </figcaption>
-            </figure>
-          </article>
-          <article class="events__item events-item">
-            <figure class="events__figure events-figure">
+              </div>
+            </div>
+          </li>
+          <li class="events__item events-item">
+            <div class="events__figure events-figure">
               <picture class="events-figure__picture">
                 <source srcset="images/Rectangle-99@1x.webp 1x, images/Rectangle-99@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-99@1x.jpg" srcset="images/Rectangle-99@2x.jpg 2x"
                   alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
               </picture>
-              <figcaption class="events-figure__figcaption flex">
-                <small class="events-figure__small">
-                  ММОМА<br>
-                  24 марта 19:00
-                </small>
+              <div class="events-figure__figcaption flex">
+                <div class="events-figure__signature flex">
+                  <div>ММОМА</div>
+                  <div>24 марта 19:00</div>
+                </div>
                 <h3 class="events-figure__title">
                   «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
                 </h3>
@@ -1379,21 +1382,21 @@
                   эксперимент проверки новых принципов формирования...
                 </p>
                 <a class="events-item__link" href="#">Подробнее</a>
-              </figcaption>
-            </figure>
-          </article>
-          <article class="events__item events-item">
-            <figure class="events__figure events-figure">
+              </div>
+            </div>
+          </li>
+          <li class="events__item events-item">
+            <div class="events__figure events-figure">
               <picture class="events-figure__picture">
                 <source srcset="images/Rectangle-100@1x.webp 1x, images/Rectangle-100@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-100@1x.jpg" srcset="images/Rectangle-100@2x.jpg 2x"
                   alt="Выставка «Формация 2020»">
               </picture>
-              <figcaption class="events-figure__figcaption flex">
-                <small class="events-figure__small">
-                  Еврейский музей<br>
-                  с 31 марта по 21 апреля
-                </small>
+              <div class="events-figure__figcaption flex">
+                <div class="events-figure__signature flex">
+                  <div>Еврейский музей</div>
+                  <div>с 31 марта по 21 апреля</div>
+                </div>
                 <h3 class="events-figure__title">
                   Выставка «Формация 2020»
                 </h3>
@@ -1403,21 +1406,21 @@
                   значение для новых принципов формирования материально-технической и кадровой базы.
                 </p>
                 <a class="events-item__link" href="#">Подробнее</a>
-              </figcaption>
-            </figure>
-          </article>
-          <article class="events__item events-item">
-            <figure class="events__figure events-figure">
+              </div>
+            </div>
+          </li>
+          <li class="events__item events-item">
+            <div class="events__figure events-figure">
               <picture class="events-figure__picture">
                 <source srcset="images/Rectangle-101@1x.webp 1x, images/Rectangle-101@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-101@1x.jpg" srcset="images/Rectangle-101@2x.jpg 2x"
                   alt="XXIV Международная биеннале молодого искусства">
               </picture>
-              <figcaption class="events-figure__figcaption flex">
-                <small class="events-figure__small">
-                  Третьяковка на Крымском вал<br>
-                  с 30 марта по 30 апреля
-                </small>
+              <div class="events-figure__figcaption flex">
+                <div class="events-figure__signature flex">
+                  <div>Третьяковка на Крымском валу</div>
+                  <div>с 30 марта по 30 апреля</div>
+                </div>
                 <h3 class="events-figure__title">
                   XXIV Международная биеннале молодого искусства
                 </h3>
@@ -1427,21 +1430,21 @@
                   разрезе маркетинговых и финансовых...
                 </p>
                 <a class="events-item__link" href="#">Подробнее</a>
-              </figcaption>
-            </figure>
-          </article>
-          <article class="events__item events-item">
-            <figure class="events__figure events-figure">
+              </div>
+            </div>
+          </li>
+          <li class="events__item events-item">
+            <div class="events__figure events-figure">
               <picture class="events-figure__picture">
                 <source srcset="images/Rectangle-102@1x.webp 1x, images/Rectangle-102@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-102@1x.jpg" srcset="images/Rectangle-102@2x.jpg 2x"
                   alt="«Джон Винзор. Фотографии из серии «Метафора серебра»">
               </picture>
-              <figcaption class="events-figure__figcaption flex">
-                <small class="events-figure__small">
-                  ММАМ<br>
-                  с 8 апреля по 20 мая
-                </small>
+              <div class="events-figure__figcaption flex">
+                <div class="events-figure__signature flex">
+                  <div>ММАМ</div>
+                  <div>с 8 апреля по 20 мая</div>
+                </div>
                 <h3 class="events-figure__title">
                   Джон Винзор. Фотографии из серии «Метафора серебра»
                 </h3>
@@ -1450,10 +1453,10 @@
                   продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
                 </p>
                 <a class="events-item__link" href="#">Подробнее</a>
-              </figcaption>
-            </figure>
-          </article>
-        </div>
+              </div>
+            </div>
+          </li>
+        </ul>
         <button class="events__button">Все события</button>
       </div>
     </section>
@@ -1464,38 +1467,38 @@
           <h2 class="section__title edition__title" id="editions">
             Издания
           </h2>
-          <fieldset class="edition__categories flex">
-            <legend class="edition__categories-text">Категории</legend>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+          <div class="edition__categories flex">
+            <h3 class="edition__categories-text">Категории</h3>
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Бестселлеры</span> </label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Искусство</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Архитектура</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Дизайн</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Мода</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Детям</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Художественная
                 литература</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Публицистика</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Путеводители</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Философия</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Учебная
                 литература</span></label>
-            <label class="edition__label"><input class="edition__checkbox" type="checkbox"><span
+            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Журналы и газеты</span>
             </label>
-          </fieldset>
-          <fieldset class="edition__price">
-            <legend class="edition__price-text">Цена</legend>
+          </div>
+          <div class="edition__price">
+            <h3 class="edition__price-text">Цена</h3>
             <span class="edition__price-range flex">
               <label class="editor__price-label" for="edition__price-range_from">От</label><input
                 class="edition__price-range_from" id="edition__price-range_from" type="text" placeholder="50">
@@ -1503,7 +1506,7 @@
                 class="edition__price-range_before" id="edition__price-range_before" type="text" placeholder="25 000">
               <span class="editor_price-currency">рублей</span>
             </span>
-          </fieldset>
+          </div>
         </div>
         <div class="edition__gallery">
           <div class="edition__swiper-buttons flex">
@@ -1516,55 +1519,55 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <div class="gallery__row flex">
                   <div class="edition__card">
-                    <figure class="edition__wrapper-image">
+                    <div class="edition__wrapper-image">
                       <img class="gallery__image" src="images/Rectangle-107@2x.jpg"
                         alt="Искусство цвета, Иттен, Иоханнес">
-                      <figcaption class="edition__image-description flex">
+                      <div class="edition__image-description flex">
                         <h4 class="edition__image-name">
-                          Искусство цвета<br>
-                          <small class="edition__image-author">
+                          <div>Искусство цвета</div>
+                          <div class="edition__image-author">
                             Иттен, Иоханнес
-                          </small>
+                          </div>
                         </h4>
-                        <small class="edition__image-price">
+                        <span class="edition__image-price">
                           620 руб
-                        </small>
-                      </figcaption>
-                    </figure>
+                        </span>
+                      </div>
+                    </div>
                     <a class="edition__link" href="#">Заказать</a>
                   </div>
                   <div class="edition__card">
-                    <figure class="edition__wrapper-image">
+                    <div class="edition__wrapper-image">
                       <img class="gallery__image" src="images/Rectangle-108@2x.jpg" alt="Типографика, Рудер, Эмиль">
-                      <figcaption class="edition__image-description flex">
+                      <div class="edition__image-description flex">
                         <h4 class="edition__image-name">
-                          Типографика <br>
-                          <small class="edition__image-author">
+                          <div>Типографика</div>
+                          <div class="edition__image-author">
                             Рудер, Эмиль
-                          </small>
+                          </div>
                         </h4>
-                        <small class="edition__image-price">
+                        <span class="edition__image-price">
                           2 450 руб
-                        </small>
-                      </figcaption>
-                    </figure>
+                        </span>
+                      </div>
+                    </div>
                     <a class="edition__link" href="#">Заказать</a>
                   </div>
                   <div class="edition__card">
-                    <figure class="edition__wrapper-image">
+                    <div class="edition__wrapper-image">
                       <img class="gallery__image" src="images/Rectangle-109@2x.jpg" alt="Книга про буквы, Гордон, Юрий">
-                      <figcaption class="edition__image-description flex">
+                      <div class="edition__image-description flex">
                         <h4 class="edition__image-name">
-                          Книга про буквы<br>
-                          <small class="edition__image-author">
+                          <div>Книга про буквы</div>
+                          <div class="edition__image-author">
                             Гордон, Юрий
-                          </small>
+                          </div>
                         </h4>
-                        <small class="edition__image-price">
+                        <span class="edition__image-price">
                           2 200 руб
-                        </small>
-                      </figcaption>
-                    </figure>
+                        </span>
+                      </div>
+                    </div>
                     <a class="edition__link" href="#">Заказать</a>
                   </div>
                 </div>
@@ -1572,57 +1575,57 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <div class="gallery__row flex">
                   <div class="edition__card">
-                    <figure class="edition__wrapper-image">
+                    <div class="edition__wrapper-image">
                       <img class="gallery__image" src="images/Rectangle-103@2x.jpg"
                         alt="Николай Ильин, Кричевский, Владимир">
-                      <figcaption class="edition__image-description flex">
+                      <div class="edition__image-description flex">
                         <h4 class="edition__image-name">
-                          Николай Ильин<br>
-                          <small class="edition__image-author">
+                          <div>Николай Ильин</div>
+                          <div class="edition__image-author">
                             Кричевский, Владимир
-                          </small>
+                          </div>
                         </h4>
-                        <small class="edition__image-price">
+                        <span class="edition__image-price">
                           1 100 руб
-                        </small>
-                      </figcaption>
-                    </figure>
+                        </span>
+                      </div>
+                    </div>
                     <a class="edition__link" href="#">Заказать</a>
                   </div>
                   <div class="edition__card">
-                    <figure class="edition__wrapper-image">
+                    <div class="edition__wrapper-image">
                       <img class="gallery__image" src="images/Rectangle-104@2x.jpg"
                         alt="Модульные сетки в граф..., Мюллер-Брокманн, Йозеф">
-                      <figcaption class="edition__image-description flex">
+                      <div class="edition__image-description flex">
                         <h4 class="edition__image-name">
-                          Модульные сетки в граф...<br>
-                          <small class="edition__image-author">
+                          <div>Модульные сетки в граф...</div>
+                          <div class="edition__image-author">
                             Мюллер-Брокманн, Йозеф
-                          </small>
+                          </div>
                         </h4>
-                        <small class="edition__image-price">
+                        <span class="edition__image-price">
                           1 450 руб
-                        </small>
-                      </figcaption>
-                    </figure>
+                        </span>
+                      </div>
+                    </div>
                     <a class="edition__link" href="#">Заказать</a>
                   </div>
                   <div class="edition__card">
-                    <figure class="edition__wrapper-image">
+                    <div class="edition__wrapper-image">
                       <img class="gallery__image" src="images/Rectangle-105@2x.jpg"
                         alt="Эволюция графических ст..., Хеллер, Чваст">
-                      <figcaption class="edition__image-description flex">
+                      <div class="edition__image-description flex">
                         <h4 class="edition__image-name">
-                          Эволюция графических ст...<br>
-                          <small class="edition__image-author">
+                          <div>Эволюция графических ст...</div>
+                          <div class="edition__image-author">
                             Хеллер, Чваст
-                          </small>
+                          </div>
                         </h4>
-                        <small class="edition__image-price">
+                        <span class="edition__image-price">
                           3 200 руб
-                        </small>
-                      </figcaption>
-                    </figure>
+                        </span>
+                      </div>
+                    </div>
                     <a class="edition__link" href="#">Заказать</a>
                   </div>
                 </div>
@@ -1630,21 +1633,21 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <div class="gallery__row flex">
                   <div class="edition__card">
-                    <figure class="edition__wrapper-image">
+                    <div class="edition__wrapper-image">
                       <img class="gallery__image" src="images/Rectangle-106@2x.jpg"
                         alt="Искусство и визуальное в..., Арнхейм, Рудольф">
-                      <figcaption class="edition__image-description flex">
+                      <div class="edition__image-description flex">
                         <h4 class="edition__image-name">
-                          Искусство и визуальное в...<br>
-                          <small class="edition__image-author">
+                          <div>Искусство и визуальное в...</div>
+                          <div class="edition__image-author">
                             Арнхейм, Рудольф
-                          </small>
+                          </div>
                         </h4>
-                        <small class="edition__image-price">
+                        <span class="edition__image-price">
                           2 200 руб
-                        </small>
-                      </figcaption>
-                    </figure>
+                        </span>
+                      </div>
+                    </div>
                     <a class="edition__link" href="#">Заказать</a>
                   </div>
                 </div>
@@ -1792,11 +1795,17 @@
             <address class="contacts__address-text">
               Леонтьевский переулок, дом 5, строение 1
             </address>
-            <form class="contacts__address-form" id="subscribe">
+            <form class="contacts__address-form js-form form form__validate" id="subscribe" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <input type="hidden" name="admin_email[]" value="gats9@yandex.ru">
+              <input type="hidden" name="form_subject" value="Тема письма">
               <fieldset class="contacts__address-fieldset flex">
                 <legend class="contacts__address-legend">Заказать обратный звонок</legend>
-                <input class="contacts__address-input" type="text" placeholder="Имя*">
-                <input class="contacts__address-input" type="text" placeholder="Телефон*">
+                <div class="just-validate-tooltip-container">
+                  <input class="contacts__address-input" type="text" name="Имя*" placeholder="Имя*" data-validate-field="name" minlength="3" maxlength="15">
+                </div>
+                <div class="just-validate-tooltip-container">
+                  <input class="contacts__address-input" type="tel" name="Телефон*" placeholder="Телефон*" data-validate-field="tel">
+                </div>
                 <button class="contacts__address-button" type="submit">Заказать</button>
               </fieldset>
             </form>
