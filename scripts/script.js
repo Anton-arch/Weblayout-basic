@@ -55,6 +55,17 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   })
 
+  // Header-search
+  window.onload = function() {
+    document.getElementById('header-bottom__input').onfocus = function() {
+        document.getElementById('header-bottom__search').classList.add('header-bottom__search_focus');
+    };
+
+    document.getElementById('header-bottom__input').onblur = function() {
+        document.getElementById('header-bottom__search').classList.remove('header-bottom__search_focus');
+    };
+  };
+
   // Hero-swiper
   let heroSwiper = new Swiper('.hero__swiper-container', {
     // Optional parameters
