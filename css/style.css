@@ -453,6 +453,11 @@ ul {
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* MAIN */
+.main {
+  margin-top: -69px;
+}
+
 /* HERO */
 .hero-section {
   position: relative;
@@ -460,9 +465,10 @@ ul {
 
 .hero__container {
   position: relative;
-  padding-top: 73px;
-  padding-bottom: 193px;
+  padding-top: 143px;
+  padding-bottom: 120px;
   color: var(--white);
+  z-index: 1;
 }
 
 .hero__swiper-container {
@@ -471,7 +477,6 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
-  transform: translateY(-69px);
   overflow: hidden;
 }
 
@@ -553,8 +558,8 @@ ul {
 
 /* ABOUT-US */
 .about-us {
-  padding-top: 16px;
-  padding-bottom: 70px;
+  padding-top: 88px;
+  padding-bottom: 69px;
 }
 
 .about-us__title {
@@ -570,7 +575,7 @@ ul {
 /* GALLERY */
 .gallery-section {
   padding-top: 85px;
-  padding-bottom: 80px;
+  padding-bottom: 81px;
   color: var(--white);
   background: url(../images/birmingham-museums-4@1x.jpg) center center no-repeat transparent;
   background-size: cover;
@@ -1155,7 +1160,7 @@ ul {
 
 .events-figure__figcaption {
   flex-direction: column;
-  padding: 12px 16px 48px 50px;
+  padding: 14px 16px 48px 50px;
   min-height: 398px;
 }
 
@@ -1220,7 +1225,6 @@ ul {
   cursor: pointer;
 }
 
-
 .events__button:focus,
 .edition__link:focus,
 .contacts__address-button:focus {
@@ -1270,9 +1274,8 @@ ul {
 
 /* EDITION */
 .edition-section {
-  margin-bottom: 86px;
   padding-top: 88px;
-  padding-bottom: 80px;
+  padding-bottom: 81px;
   color: var(--white);
   background: url(../images/birmingham-museums-5@1x.jpg) center center no-repeat transparent;
   background-size: cover;
@@ -1478,7 +1481,7 @@ ul {
 
 /* PROJECTS */
 .projects-section {
-  margin-bottom: 88px;
+  padding-top: 88px;
 }
 
 .projects__title {
@@ -1627,6 +1630,10 @@ ul {
 }
 
 /* CONTACTS */
+.contacts-section {
+  padding-top: 86px;
+}
+
 .contacts__title {
   margin-bottom: 20px
 }
@@ -1746,32 +1753,6 @@ ul {
   min-height: 700px;
 }
 
-/* .ymaps-2-1-77-zoom {
-  border-radius: 7px !important;
-  height: auto !important;
-  box-shadow: 0 1px 2px 1px rgba(0,0,0,.15), 0 2px 5px -3px rgba(0,0,0,.15) !important;
-  overflow: hidden;
-} */
-
-/* .ymaps-2-1-77-zoom__button {
-  position: absolute;
-  box-shadow: none;
-} */
-
-/* .ymaps-2-1-77-map-copyrights-promo,
-.ymaps-2-1-77-search,
-.ymaps-2-1-77-traffic,
-.ymaps-2-1-77-listbox__button,
-.ymaps-2-1-77-copyright__content,
-#id_160908850719858313799,
-.ymaps-2-1-77-zoom__scale {
-  display: none;
-} */
-
-/* .ymaps-2-1-77-float-button {
-  float: right
-} */
-
 [class*="ground-pane"] {
   filter: grayscale(1);
 }
@@ -1782,7 +1763,7 @@ ul {
 }
 
 .footer_container {
-  padding: 50px 15px;
+  padding: 50px 15px 40px;
 }
 
 .footer__logo {
@@ -1831,4 +1812,32 @@ ul {
 
 .footer__social-link:active img {
   transform: scale(.85);
+}
+
+#back-top {
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  padding: 0px;
+  z-index: 5;
+}
+
+#back-top a{
+  display:block;
+  width: 77px;
+  height: 30px;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  text-align: center;
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+#back-top a:hover{
+  height: 70px;
+  background: #663399;
+  color: var(--white);
 }

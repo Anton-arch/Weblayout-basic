@@ -61,8 +61,16 @@ window.addEventListener('DOMContentLoaded', function () {
         document.getElementById('header-bottom__search').classList.add('header-bottom__search_focus');
     };
 
+    document.getElementById('header-bottom__btn').onfocus = function() {
+      document.getElementById('header-bottom__search').classList.add('header-bottom__search_focus');
+    };
+
     document.getElementById('header-bottom__input').onblur = function() {
         document.getElementById('header-bottom__search').classList.remove('header-bottom__search_focus');
+    };
+
+    document.getElementById('header-bottom__btn').onblur = function() {
+      document.getElementById('header-bottom__search').classList.remove('header-bottom__search_focus');
     };
   };
 
@@ -257,6 +265,16 @@ window.addEventListener('DOMContentLoaded', function () {
     myMap.setCenter([48.87219657376512, 2.354223999999991], 13);
     myMap.geoObjects.add(myPlacemark);
   };
+
+  // back to top button
+  function up() {
+    var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,((top+100)/-10));
+    t = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
+  }
 
   // inputmask
   let selector = document.querySelectorAll('input[type="tel"]');
