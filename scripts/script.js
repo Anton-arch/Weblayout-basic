@@ -254,15 +254,15 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
     // Создание геообъекта с типом точка (метка).
-    let myPlacemark = new ymaps.Placemark([48.87219657376512, 2.354223999999991], {}, {
+    let myPlacemark = new ymaps.Placemark([55.755590890639745, 37.59215232985252], {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../images/Subtract.svg',
-      iconImageSize: [28, 40],
+      iconImageHref: '../images/map-label.svg',
+      iconImageSize: [20, 20],
       iconImageOffset: [-3, -42]
     });
 
     // Размещение геообъекта на карте.
-    myMap.setCenter([48.87219657376512, 2.354223999999991], 13);
+    myMap.setCenter([55.755590890639745, 37.59215232985252], 13);
     myMap.geoObjects.add(myPlacemark);
   };
 
@@ -282,29 +282,59 @@ window.addEventListener('DOMContentLoaded', function () {
   im.mask(selector);
 
   // Form-validate
-  let validateForms = function(selector, rules, successModal, yaGoal) {
-    new window.JustValidate(selector, {
-      rules: rules,
-      submitHandler: function(form) {
-        let formData = new FormData(form);
+  new JustValidate('.form', {
+    rules: {
+        name: {
+            required: true,
+            minLenght: 2,
+            maxLenght: 30
+        },
+        phone: {
+            required: true,
+            function: (name, value) => {
+                const phone = selector.inputmask.unmaskedvalue()
 
-        let xhr = new XMLHttpRequest();
-
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-              console.log('Отправлено');
+                return Number(phone) && phone.lenght === 10
             }
-          }
-        };
+        },
+    },
+  });
 
-        xhr.open('POST', 'mail.php', true);
-        xhr.send(formData);
+  new window.JustValidate('.js-form', {
+    messages: {
+      name: 'Как вас зовут?',
+      phone: 'Укажите ваш телефон',
+    },
+      tooltip: {
+          fadeOutTime: 10000 // default value - 5000
+      },
+      colorWrong: 'rgb(110, 20, 0)',
+  });
 
-        form.reset();
-      }
-    });
-  }
 
-  validateForms('.form', {tel: {required: true}, name: {required: true} }, '.thanks-popup', '.send-goal')
+  // let validateForms = function(selector, rules, successModal, yaGoal) {
+  //   new window.JustValidate(selector, {
+  //     rules: rules,
+  //     submitHandler: function(form) {
+  //       let formData = new FormData(form);
+
+  //       let xhr = new XMLHttpRequest();
+
+  //       xhr.onreadystatechange = function() {
+  //         if (xhr.readyState === 4) {
+  //           if (xhr.status === 200) {
+  //             console.log('Отправлено');
+  //           }
+  //         }
+  //       };
+
+  //       xhr.open('POST', 'mail.php', true);
+  //       xhr.send(formData);
+
+  //       form.reset();
+  //     }
+  //   });
+  // }
+
+  // validateForms('.form', {tel: {required: true}, name: {required: true} }, '.thanks-popup', '.send-goal')
 });

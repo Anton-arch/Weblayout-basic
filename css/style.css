@@ -93,7 +93,7 @@ ul {
   display: flex;
 }
 
-.section__title {
+.section-title {
   font-weight: 400;
   font-size: 48px;
 }
@@ -209,7 +209,7 @@ ul {
 
 .header__log-in {
   margin-left: auto;
-  padding-left: 22px;
+  padding-left: 18px;
   color: var(--white);
   background: url(../images/To-come-in.svg) left center no-repeat;
   transition: color .15s ease-in-out, background .15s ease-in-out;
@@ -499,6 +499,10 @@ ul {
   }
 }
 
+.swiper-slide__image {
+  object-fit: contain;
+}
+
 .swiper-slide--image1 {
   background: url(../images/birmingham-museums-1@1x.jpg) center center no-repeat transparent;
   background-size: cover;
@@ -596,6 +600,11 @@ ul {
 }
 
 .gallery-description__link {
+  color: var(--purple-border);
+  transition: color .15s ease-in-out;
+}
+
+.gallery-description__link:hover {
   color: var(--purple-hover);
 }
 
@@ -792,7 +801,6 @@ ul {
 /* CATALOG */
 .catalog-section {
   padding-top: 82px;
-  padding-bottom: 43px;
 }
 
 .catalog__title {
@@ -1125,8 +1133,11 @@ ul {
 }
 
 /* EVENTS */
+.events-section {
+  padding-top: 86px;
+}
+
 .events__container {
-  padding-top: 43px;
   padding-bottom: 81px;
 }
 
@@ -1158,13 +1169,13 @@ ul {
   margin-right: 50px;
 }
 
-.events-figure__figcaption {
+.events-item__figcaption {
   flex-direction: column;
   padding: 14px 16px 48px 50px;
   min-height: 398px;
 }
 
-.events-figure__signature {
+.events-item__signature {
   display: block;
   flex-direction: column;
   margin-bottom: 7px;
@@ -1173,13 +1184,13 @@ ul {
   text-align: right;
 }
 
-.events-figure__title {
+.events-item__title {
   margin-bottom: 2px;
   font-size: 23px;
   line-height: 34px;
 }
 
-.events-figure__description {
+.events-item__description {
   margin-right: 30px;
   margin-bottom: 25px;
   line-height: 32px;
@@ -1309,6 +1320,14 @@ ul {
   padding-left: 23px;
   line-height: 20px;
   cursor: pointer;
+}
+
+.edition__label:hover {
+  color: var(--purple-hover);
+}
+
+.edition__label:hover > .edition__checkbox_custom {
+  border-color: var(--purple-hover);
 }
 
 .edition__label:not(:last-child) {
@@ -1524,7 +1543,7 @@ ul {
   opacity: 0;
   visibility: hidden;
   transform: translateX(-50%);
-  transition: opacity .15s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .projects___tooltip-btn:hover::before {
@@ -1547,7 +1566,7 @@ ul {
   text-align: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .15s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .projects___tooltip-btn:focus::before,
@@ -1617,7 +1636,7 @@ ul {
   width: 450px;
   height: 150px;
   filter: grayscale(1);
-  transition: filter .15s ease-in-out;
+  transition: filter .3s ease-in-out;
   cursor: pointer;
 }
 
@@ -1627,6 +1646,10 @@ ul {
 
 .project__row-card:not(:last-child) {
   margin-right: 15px;
+}
+
+.swiper-slide__image {
+  transform: scale(1.15);
 }
 
 /* CONTACTS */
@@ -1641,8 +1664,17 @@ ul {
 .contacts__address-form-social {
   flex-direction: column;
   justify-content: center;
-  flex: 1 .5 32.5%;
+  align-items: flex-end;
+  flex: 1 .5 41%;
+  padding-right: 20px;
+  padding-left: 20px;
   border-top: 1px solid var(--border)
+}
+
+.contacts__address-form-social-wrapper {
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
 }
 
 .contacts__address-form-title {
@@ -1677,8 +1709,13 @@ ul {
 
 .js-validate-error-label {
   position: absolute;
-  bottom: 105%;
+  bottom: calc(100% + 5px);
   left: 0;
+  padding: 0;
+  padding-left: 22px;
+  font-size: 14px;
+  color: rgb(110, 20, 0) !important;
+  background-color: transparent;
 }
 
 .contacts__address-input {
