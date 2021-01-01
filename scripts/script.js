@@ -145,7 +145,35 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Catalog-Accordion
   $(function () {
-    $("#accordion").accordion({
+    $("#accordion-France").accordion({
+      collapsible: true,
+      heightStyle: "content",
+    });
+  });
+
+  $(function () {
+    $("#accordion-Germany").accordion({
+      collapsible: true,
+      heightStyle: "content",
+    });
+  });
+
+  $(function () {
+    $("#accordion-Italy").accordion({
+      collapsible: true,
+      heightStyle: "content",
+    });
+  });
+
+  $(function () {
+    $("#accordion-Russia").accordion({
+      collapsible: true,
+      heightStyle: "content",
+    });
+  });
+
+  $(function () {
+    $("#accordion-Belgium").accordion({
       collapsible: true,
       heightStyle: "content",
     });
