@@ -56,22 +56,25 @@ window.addEventListener('DOMContentLoaded', function () {
   })
 
   // Header-search
+  const headerBottomInput = document.querySelector('.header-bottom__input');
+  const headerBottomBtn = document.querySelector('.header-bottom__btn');
+
   window.onload = function() {
-    document.getElementById('header-bottom__input').onfocus = function() {
-        document.getElementById('header-bottom__search').classList.add('header-bottom__search_focus');
-    };
+    headerBottomInput.addEventListener('focus', function () {
+      document.querySelector('.header-bottom__search').classList.add('header-bottom__search_focus');
+    });
 
-    document.getElementById('header-bottom__btn').onfocus = function() {
-      document.getElementById('header-bottom__search').classList.add('header-bottom__search_focus');
-    };
+    headerBottomBtn.addEventListener('focus', function () {
+      document.querySelector('.header-bottom__search').classList.add('header-bottom__search_focus');
+    });
 
-    document.getElementById('header-bottom__input').onblur = function() {
-        document.getElementById('header-bottom__search').classList.remove('header-bottom__search_focus');
-    };
+    headerBottomInput.addEventListener('blur', function () {
+        document.querySelector('.header-bottom__search').classList.remove('header-bottom__search_focus');
+    });
 
-    document.getElementById('header-bottom__btn').onblur = function() {
-      document.getElementById('header-bottom__search').classList.remove('header-bottom__search_focus');
-    };
+    headerBottomBtn.addEventListener('blur', function () {
+      document.querySelector('.header-bottom__search').classList.remove('header-bottom__search_focus');
+    });
   };
 
   // Hero-swiper
@@ -145,35 +148,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Catalog-Accordion
   $(function () {
-    $("#accordion-France").accordion({
-      collapsible: true,
-      heightStyle: "content",
-    });
-  });
-
-  $(function () {
-    $("#accordion-Germany").accordion({
-      collapsible: true,
-      heightStyle: "content",
-    });
-  });
-
-  $(function () {
-    $("#accordion-Italy").accordion({
-      collapsible: true,
-      heightStyle: "content",
-    });
-  });
-
-  $(function () {
-    $("#accordion-Russia").accordion({
-      collapsible: true,
-      heightStyle: "content",
-    });
-  });
-
-  $(function () {
-    $("#accordion-Belgium").accordion({
+    $(".ui-accordion").accordion({
       collapsible: true,
       heightStyle: "content",
     });
@@ -200,16 +175,18 @@ window.addEventListener('DOMContentLoaded', function () {
     event.preventDefault();
   });
 
-  const author = document.querySelector('.ui-accordion');
+  const author = document.querySelectorAll('.ui-accordion');
   const authorBtn = document.querySelectorAll('.accordion__item-button');
   const authorContent = document.querySelectorAll('.catalog__figure');
 
   if (author) {
-    author.addEventListener('click', (e) => {
-      if (e.target.classList.contains('accordion__item-button')) {
-        const authorPath = e.target.dataset.authorPath;
-        authorHandler(authorPath);
-      }
+    author.forEach(el => {
+      el.addEventListener('click', (e) => {
+        if (e.target.classList.contains('accordion__item-button')) {
+          const authorPath = e.target.dataset.authorPath;
+          authorHandler(authorPath);
+        }
+      })
     })
   }
 
@@ -227,6 +204,7 @@ window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.events__item:nth-child(5)').classList.toggle('visually')
     document.querySelector('.events__button').classList.toggle('hidden')
   });
+
 
   // Edition-swiper
   let editionSwiper = new Swiper('.edition__swiper-container', {
