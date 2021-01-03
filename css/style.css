@@ -1598,22 +1598,24 @@ ul {
   color: var(--purple-active);
 }
 
+.project__wrapper-swiper-container {
+  position: relative;
+}
+
 .projects__swiper-container {
   position: relative;
+  margin: 0 74px;
+  overflow: hidden;
 }
 
 .projects__partner-title {
   margin-bottom: 27px;
 }
 
-.projects__swiper-container {
-  overflow: hidden;
-}
-
 .project__row {
   justify-content: space-between;
-  padding: 0 74px;
 }
+
 
 .projects__partner-title {
   font-weight: 600;
@@ -1623,7 +1625,7 @@ ul {
 .partners-swiper-button-prev,
 .partners-swiper-button-next {
   position: absolute;
-  top: 73%;
+  top: 61%;
   border: 2px solid var(--border);
   background-color: var(--border);
   transform: translateY(-50%);
@@ -1864,6 +1866,8 @@ ul {
   bottom: 0px;
   right: 0;
   padding: 0px;
+  background: url(../images/birmingham-museums-4@1x.jpg) center center no-repeat transparent;
+  background-size: cover;
   z-index: 5;
 }
 
@@ -1883,6 +1887,4 @@ ul {
 
 #back-top a:hover{
   height: 70px;
-  background: #663399;
-  color: var(--white);
 }
