@@ -262,7 +262,7 @@ window.addEventListener('DOMContentLoaded', function () {
     // Создание геообъекта с типом точка (метка).
     let myPlacemark = new ymaps.Placemark([55.755590890639745, 37.59215232985252], {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../images/map-label.svg',
+      iconImageHref: 'images/map-label.svg',
       iconImageSize: [20, 20],
       iconImageOffset: [-3, -42]
     });

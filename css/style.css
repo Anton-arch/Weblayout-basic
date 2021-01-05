@@ -1625,7 +1625,7 @@ ul {
 .partners-swiper-button-prev,
 .partners-swiper-button-next {
   position: absolute;
-  top: 61%;
+  top: 63%;
   border: 2px solid var(--border);
   background-color: var(--border);
   transform: translateY(-50%);
@@ -1674,17 +1674,10 @@ ul {
 .contacts__address-form-social {
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  flex: 1 .5 41%;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-top: 1px solid var(--border)
-}
-
-.contacts__address-form-social-wrapper {
-  flex-direction: column;
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  max-width: 520px;
   width: 100%;
-  max-width: 500px;
 }
 
 .contacts__address-form-title {
@@ -1791,10 +1784,6 @@ ul {
 }
 
 /* Custom map */
-.contacts__map {
-  flex: 1 1 67.5%;
-}
-
 .map {
   width: 100%;
   min-height: 700px;
