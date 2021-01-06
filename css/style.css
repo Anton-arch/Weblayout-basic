@@ -1673,19 +1673,14 @@ ul {
 
 .contacts__address-form-social {
   align-items: center;
-  padding: 15px;
+  padding-left: max(15px, calc((100vw - 1620px)/2));
+  padding-right: max(15px, 120px);
   border-top: 1px solid var(--border);
   border-right: 1px solid var(--border);
-  width: 39vw;
 }
 
 .contacts__address-form-social_wrapper {
   flex-direction: column;
-  flex-shrink: 0;
-  margin-left: calc(50vw - 825px);
-  margin-right: 50px;
-  width: 100%;
-  max-width: 400px;
 }
 
 .contacts__address-form-title {
@@ -1738,8 +1733,12 @@ ul {
   border: 1px solid #333;
   padding: 8px 22px;
   border-radius: 100px;
-  width: 100%;
-  max-width: 400px;
+  min-width: 400px;
+}
+
+.contacts__address-input:focus {
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.9));
+  outline: none;
 }
 
 .contacts__address-input:focus::placeholder {
@@ -1796,7 +1795,7 @@ ul {
 
 /* Custom map */
 .map {
-  width: 61vw;
+  width: 100%;
   min-height: 700px;
 }
 
