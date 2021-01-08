@@ -1,0 +1,28 @@
+@media (max-width: 1500px) {
+  /* HEADER */
+  .burger__wand {
+    width: 36px;
+    height: 4px;
+    background: var(--white);
+  }
+
+  .burger__wand:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .burger__wand:nth-child(2) {
+    width: 28px;
+  }
+
+  .burger__wand:nth-child(3) {
+    width: 24px;
+  }
+
+  .nav {
+    position: absolute;
+  }
+
+  .header__log-in {
+    position: absolute;
+  }
+}

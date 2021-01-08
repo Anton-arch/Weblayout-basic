@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/choices.min.css">
   <link rel="stylesheet" type="text/css" href="css/justValidateTooltip.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/max-width1280.css">
   <script src="scripts/swiper-bundle.min.js"></script>
   <script src="scripts/jQuery-3.5.1.js"></script>
   <script src="scripts/jquery-1.12.4.js"></script>
@@ -30,6 +31,11 @@
   <header class="header">
     <div class="header__top header-top">
       <div class="container header-top__container flex">
+        <div class="burger">
+          <div class="burger__wand"></div>
+          <div class="burger__wand"></div>
+          <div class="burger__wand"></div>
+        </div>
         <a class="logo header__logo" href="#">
           <svg width="173" height="40" viewbox = "0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -3726,8 +3732,8 @@
             <address class="contacts__address-text">
               Леонтьевский переулок, дом 5, строение 1
             </address>
-            <form class="contacts__address-form js-form form form__validate" id="subscribe"
-              action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <form class="contacts__address-form js-form form form__validate" enctype="multipart/form-data" id="subscribe"
+              action="mail.php" method="POST">
               <input type="hidden" name="admin_email[]" value="gats9@yandex.ru">
               <input type="hidden" name="form_subject" value="Тема письма">
               <fieldset class="contacts__address-fieldset flex">
@@ -3917,9 +3923,7 @@
     </div>
   </footer>
 
-  <div id="back-top">
-    <a href="#" onclick="return up()">ВВЕРХ</a>
-  </div>
+  <a class="back_to_top" title="Наверх">Вверх</a>
 
 </body>
 

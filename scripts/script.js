@@ -200,9 +200,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Events-card
   document.querySelector('.events__button').addEventListener('click', function () {
-    document.querySelector('.events__item:nth-child(4)').classList.toggle('visually')
-    document.querySelector('.events__item:nth-child(5)').classList.toggle('visually')
-    document.querySelector('.events__button').classList.toggle('hidden')
+    document.querySelector('.events__item:nth-child(4)').classList.add('visually')
+    document.querySelector('.events__item:nth-child(5)').classList.add('visually')
+    document.querySelector('.events__button').classList.add('hidden')
   });
 
 
@@ -273,14 +273,33 @@ window.addEventListener('DOMContentLoaded', function () {
   };
 
   // back to top button
-  function up() {
-    var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-  if(top > 0) {
-    window.scrollBy(0,((top+100)/-10));
-    t = setTimeout('up()',20);
-  } else clearTimeout(t);
-  return false;
-  }
+  (function() {
+    'use strict';
+
+    function trackScroll() {
+      var scrolled = window.pageYOffset;
+      var coords = document.documentElement.clientHeight;
+
+      if (scrolled > coords) {
+        goTopBtn.classList.add('back_to_top-show');
+      }
+      if (scrolled < coords) {
+        goTopBtn.classList.remove('back_to_top-show');
+      }
+    }
+
+    function backToTop() {
+      if (window.pageYOffset > 0) {
+        window.scrollBy(0, -80);
+        setTimeout(backToTop, 0);
+      }
+    }
+
+    var goTopBtn = document.querySelector('.back_to_top');
+
+    window.addEventListener('scroll', trackScroll);
+    goTopBtn.addEventListener('click', backToTop);
+  })();
 
   // inputmask
   let selector = document.querySelectorAll('input[type="tel"]');
@@ -288,59 +307,47 @@ window.addEventListener('DOMContentLoaded', function () {
   im.mask(selector);
 
   // Form-validate
-  new JustValidate('.form', {
-    rules: {
-        name: {
-            required: true,
-            minLenght: 2,
-            maxLenght: 30
-        },
-        phone: {
-            required: true,
-            function: (name, value) => {
-                const phone = selector.inputmask.unmaskedvalue()
-
-                return Number(phone) && phone.lenght === 10
-            }
-        },
-    },
-  });
-
-  new window.JustValidate('.js-form', {
-    messages: {
-      name: 'Как вас зовут?',
-      phone: 'Укажите ваш телефон',
-    },
+  let validateForms = function(selector, rules, successModal, yaGoal) {
+    new window.JustValidate(selector, {
+      rules: rules,
+      messages: {
+            name: 'Как вас зовут?',
+            phone: 'Укажите ваш телефон',
+      },
       tooltip: {
-          fadeOutTime: 10000 // default value - 5000
+            fadeOutTime: 10000 // default value - 5000
       },
       colorWrong: 'rgb(110, 20, 0)',
-  });
+      submitHandler: function(form) {
+        let formData = new FormData(form);
 
+        let xhr = new XMLHttpRequest();
 
-  // let validateForms = function(selector, rules, successModal, yaGoal) {
-  //   new window.JustValidate(selector, {
-  //     rules: rules,
-  //     submitHandler: function(form) {
-  //       let formData = new FormData(form);
+       xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              console.log('Отправлено');
+            }
+          }
+        };
 
-  //       let xhr = new XMLHttpRequest();
+        xhr.open('POST', 'mail.php', true);
 
-  //       xhr.onreadystatechange = function() {
-  //         if (xhr.readyState === 4) {
-  //           if (xhr.status === 200) {
-  //             console.log('Отправлено');
-  //           }
-  //         }
-  //       };
+        xhr.send(formData);
 
-  //       xhr.open('POST', 'mail.php', true);
-  //       xhr.send(formData);
+        form.reset();
+      }
+    })
+  }
 
-  //       form.reset();
-  //     }
-  //   });
-  // }
-
-  // validateForms('.form', {tel: {required: true}, name: {required: true} }, '.thanks-popup', '.send-goal')
+  validateForms('.form', {
+    phone: {
+      required: true,
+    },
+    name: {
+      required: true,
+      minLenght: 2,
+      maxLenght: 15,
+    },
+  }, '.thanks-popup', '.send-goal');
 });
