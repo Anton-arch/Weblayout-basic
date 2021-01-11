@@ -1,9 +1,54 @@
 @media (max-width: 1500px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
   /* HEADER */
+  .header-top__container {
+    justify-content: space-between;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+
+  .burger::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 140%;
+    border: 2px solid var(--purple-active);
+    transform: translate(-50%, -50%);
+    transition: opacity .15s ease-in-out;
+    opacity: 0;
+  }
+
+  .burger:focus::before {
+    opacity: 1;
+  }
+
+  .burger:hover > .burger__wand {
+    background: var(--purple-hover);
+  }
+
+  .burger:hover > .burger__wand:nth-child(2),
+  .burger:hover > .burger__wand:nth-child(3) {
+    width: 36px;
+    background: var(--purple-hover);
+  }
+
   .burger__wand {
     width: 36px;
     height: 4px;
     background: var(--white);
+    transition: background .3s ease-in-out;
   }
 
   .burger__wand:not(:last-child) {
@@ -12,17 +57,208 @@
 
   .burger__wand:nth-child(2) {
     width: 28px;
+    transition: width .3s ease-in-out .3s, background .3s ease-in-out .3s;
   }
 
   .burger__wand:nth-child(3) {
     width: 24px;
+    transition: width .3s ease-in-out .6s, background .3s ease-in-out .6s;
+  }
+
+  .header__logo {
+    margin: 0;
+    transform: scale(1.1);
   }
 
   .nav {
+    display: none;
     position: absolute;
   }
 
   .header__log-in {
+    display: none;
     position: absolute;
+  }
+
+  .header-top__btn {
+    display: block;
+    border: none;
+    width: 29px;
+    height: 29px;
+    background: url(../images/Search.svg) center center no-repeat transparent;
+    background-size: contain;
+  }
+
+  .header__bottom {
+    display: none;
+  }
+
+  /* MAIN */
+  .main {
+    margin-top: 0;
+  }
+
+  /* HERO */
+  .hero__container {
+    padding-top: 113px;
+    padding-bottom: 114px;
+  }
+
+  .hero__title {
+    margin-bottom: 13px;
+  }
+
+  .hero__decription {
+    margin-bottom: 134px;
+    max-width: 661px;
+  }
+
+  /* GALLERY */
+  .gallery-section__filter {
+    flex: 1 1 35%;
+  }
+
+  .gallery-section__picture,
+  .edition__gallery {
+    min-height: 675px;
+  }
+
+  .gallery__wrapper-image {
+    max-width: 280px;
+    max-height: 280px;
+  }
+
+  /* CATALOG */
+  .catalog__list-countries {
+    transform: translateY(6px);
+  }
+
+  .catalog__description > p {
+    margin-bottom: 38px;
+  }
+
+  .catalog-wrapper__figure {
+    flex: 1 1 50%;
+  }
+
+  .accordion__list {
+    padding: 25px 0 29px 0;
+    height: 440px; /* Для макета */
+    column-count: 2;
+    column-gap: 60px;
+  }
+
+  /* EVENTS */
+  .events__item {
+    min-height: 685px;
+  }
+
+  .events__item:not(:nth-child(3n)) {
+    margin-right: 28px;
+  }
+
+  .events-item__picture > img {
+    min-height: 200px;
+    object-fit: cover;
+  }
+
+  .events-item__figcaption {
+    padding: 14px 14px 54px 34px;
+  }
+
+  .events-item__description {
+    display: -webkit-box;
+    margin-right: 18px;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* EDITION */
+  .edition__categories-prices {
+    margin-right: 15px;
+  }
+
+  .edition__price-text {
+    margin-bottom: 14px;
+  }
+
+  .edition__price-range {
+    padding: 0 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    line-height: 38px;
+  }
+
+  .edition__price-range_from,
+  .edition__price-range_before {
+    padding-left: 10px;
+    border: none;
+    max-width: 74px;
+    color: var(--white);
+    -webkit-text-fill-color: var(--white);
+    background-color: rgba(157, 92, 208, 0.5);
+  }
+
+  .editor__price-label {
+    padding: 0 8px;
+    cursor: pointer;
+  }
+
+  .edition__price-range_from::placeholder,
+  .edition__price-range_before::placeholder {
+    color: var(--white);
+  }
+
+  .edition__price-range_from:focus::placeholder,
+  .edition__price-range_before:focus::placeholder {
+    font-size: 0;
+  }
+
+  .editor_price-currency {
+    position: relative;
+    width: 48px;
+    font-size: 0;
+  }
+
+  .editor_price-currency::after {
+    content: 'руб.';
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    font-size: 16px;
+    color: var(--white);
+    transform: translate(-50%, -50%);
+  }
+
+  .edition__gallery  {
+    min-height: 597px;
+  }
+
+  .edition__image-description {
+    padding-top: 10px;
+  }
+
+  /* PROJECTS */
+  .projects__swiper-container {
+    margin: 0 53px;
+  }
+
+  .project__card {
+    min-height: 127px;
+  }
+
+  .partners-swiper-button-prev,
+  .partners-swiper-button-next {
+    top: 66%;
+  }
+
+  .contacts__address-form-social {
+    padding-left: max(50px, calc((100vw - 1600px)/2));
+    padding-right: max(50px, 100px);
+  }
+
+  .contacts__address-input {
+    min-width: 335px;
   }
 }

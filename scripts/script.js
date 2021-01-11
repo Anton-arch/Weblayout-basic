@@ -108,11 +108,24 @@ window.addEventListener('DOMContentLoaded', function () {
   let gallerySwiper = new Swiper('.gallery__swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 1,
+    slidesPerView: 3,
+    slidesPerColumn: 2,
+    slidesPerGroup: 3,
+    autoHeight: true,
     updateOnWindowResize: true,
-    spaceBetween: 50,
+    spaceBetween: 47,
+    breakpoints: {
+      1500: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      992: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 33,
+      },
+    },
     speed: 1500,
-    loop: true,
     pagination: {
       el: '.gallery-swiper-pagination',
       type: 'fraction',
@@ -200,19 +213,29 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Events-card
   document.querySelector('.events__button').addEventListener('click', function () {
-    document.querySelector('.events__item:nth-child(4)').classList.add('visually')
-    document.querySelector('.events__item:nth-child(5)').classList.add('visually')
-    document.querySelector('.events__button').classList.add('hidden')
+    document.querySelector('.events__list:nth-child(3)').classList.add('visually');
+    document.querySelector('.events__button').classList.add('hidden');
   });
-
 
   // Edition-swiper
   let editionSwiper = new Swiper('.edition__swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 1,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
     updateOnWindowResize: true,
     spaceBetween: 50,
+    breakpoints: {
+      1500: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      992: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 45,
+      },
+    },
     speed: 1500,
     loop: true,
     pagination: {
@@ -230,9 +253,21 @@ window.addEventListener('DOMContentLoaded', function () {
   let projectsSwiper = new Swiper('.projects__swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 1,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
     updateOnWindowResize: true,
     spaceBetween: 50,
+    breakpoints: {
+      1500: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      992: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 45,
+      },
+    },
     speed: 1500,
     loop: true,
     navigation: {
