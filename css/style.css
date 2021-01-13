@@ -465,6 +465,7 @@ ul {
 /* MAIN */
 .main {
   margin-top: -69px;
+  overflow: hidden;
 }
 
 /* HERO */
@@ -510,6 +511,7 @@ ul {
 
 .swiper-slide__image {
   object-fit: contain;
+  transform: scale(1.15);
 }
 
 .swiper-slide--image1 {
@@ -601,7 +603,7 @@ ul {
 }
 
 .gallery__title {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .gallery__filter-by {
@@ -1156,28 +1158,28 @@ ul {
   margin-bottom: 20px;
 }
 
-.events__list {
-  flex-flow: row nowrap;
+.events__swiper-wrapper {
+  flex-flow: row wrap;
+  column-count: 3;
+  column-gap: max(28px, calc((50vw - 860px)/2));
 }
 
 .events__item {
   flex: 0 1 31.25%;
   flex-direction: column;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
   min-height: 700px;
   border: 1px solid var(--border);
 }
 
-.events__list:nth-child(3) {
+.events__item:nth-child(4),
+.events__item:nth-child(5) {
   display: none;
 }
 
-.events__list:nth-child(3).visually {
+.events__item:nth-child(4).visually,
+.events__item:nth-child(5).visually {
   display: flex;
-}
-
-.events__item:not(:nth-child(3n)) {
-  margin-right: 50px;
 }
 
 .events-item__figcaption {
@@ -1203,6 +1205,7 @@ ul {
 
 .events-item__description {
   margin-right: 30px;
+  margin-bottom: 25px;
   line-height: 32px;
 }
 
@@ -1304,7 +1307,7 @@ ul {
 }
 
 .edition__categories-prices {
-  margin-right: 110px;
+  margin-right: 9vw;
 }
 
 .edition__title {
@@ -1328,6 +1331,7 @@ ul {
 
 .edition__label {
   position: relative;
+  display: flex;
   padding-left: 23px;
   line-height: 20px;
   cursor: pointer;
@@ -1413,7 +1417,7 @@ ul {
 }
 
 .edition__price-text {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   font-size: 16px;
 }
 
@@ -1428,14 +1432,14 @@ ul {
 .edition__price-range_before {
   padding-left: 10px;
   border: none;
-  max-width: 82px;
+  max-width: 74px;
   color: var(--white);
   -webkit-text-fill-color: var(--white);
   background-color: rgba(157, 92, 208, 0.5);
 }
 
 .editor__price-label {
-  padding: 0 11px;
+  padding: 0 8px;
   cursor: pointer;
 }
 
@@ -1450,8 +1454,8 @@ ul {
 }
 
 .editor_price-currency {
-  padding-right: 13px;
-  padding-left: 12px;
+  padding-right: 5px;
+  padding-left: 10px;
 }
 
 .edition__gallery {
@@ -1465,11 +1469,16 @@ ul {
 
 .edition__swiper-container {
   margin-top: 86px;
+  margin-bottom: -15px;
 }
 
 .edition__swiper {
   position: relative;
   flex: 1 1 75%;
+}
+
+.edition__swiper-slide {
+  flex-direction: column;
 }
 
 .edition__wrapper-image {
@@ -1493,6 +1502,7 @@ ul {
 
 .edition__image-price {
   font-size: 16px;
+  white-space: nowrap;
 }
 
 .edition__link {
@@ -1656,10 +1666,6 @@ ul {
   filter: grayscale(0);
 }
 
-.swiper-slide__image {
-  transform: scale(1.15);
-}
-
 /* CONTACTS */
 .contacts-section {
   padding-top: 86px;
@@ -1672,7 +1678,7 @@ ul {
 .contacts__address-form-social {
   align-items: center;
   padding-left: max(15px, calc((100vw - 1600px)/2));
-  padding-right: max(15px, 120px);
+  padding-right: max(50px, calc((100vw - 1680px)/2));
   border-top: 1px solid var(--border);
   border-right: 1px solid var(--border);
 }

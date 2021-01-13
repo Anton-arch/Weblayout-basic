@@ -1,0 +1,136 @@
+@media (max-width: 1200px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  /* HEADER */
+  .header-top__container {
+    justify-content: space-between;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+
+  .burger::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 140%;
+    border: 2px solid var(--purple-active);
+    transform: translate(-50%, -50%);
+    transition: opacity .15s ease-in-out;
+    opacity: 0;
+  }
+
+  .burger:focus::before {
+    opacity: 1;
+  }
+
+  .burger:hover > .burger__wand {
+    background: var(--purple-hover);
+  }
+
+  .burger:hover > .burger__wand:nth-child(2),
+  .burger:hover > .burger__wand:nth-child(3) {
+    width: 36px;
+    background: var(--purple-hover);
+  }
+
+  .burger__wand {
+    width: 36px;
+    height: 4px;
+    background: var(--white);
+    transition: background .3s ease-in-out;
+  }
+
+  .burger__wand:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .burger__wand:nth-child(2) {
+    width: 28px;
+    transition: width .3s ease-in-out .3s, background .3s ease-in-out .3s;
+  }
+
+  .burger__wand:nth-child(3) {
+    width: 24px;
+    transition: width .3s ease-in-out .6s, background .3s ease-in-out .6s;
+  }
+
+  .header__logo {
+    margin: 0;
+    transform: scale(1.1);
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+  }
+
+  .header__log-in {
+    display: none;
+    position: absolute;
+  }
+
+  .header-top__btn {
+    display: block;
+    border: none;
+    width: 29px;
+    height: 29px;
+    background: url(../images/Search.svg) center center no-repeat transparent;
+    background-size: contain;
+  }
+
+  .header__bottom {
+    display: none;
+  }
+
+  /* MAIN */
+  .main {
+    margin-top: 0;
+  }
+
+  /* HERO */
+  .hero__container {
+    padding-top: 113px;
+    padding-bottom: 114px;
+  }
+
+  /* EDITIONS */
+  .edition__categories-prices {
+    margin-right: 1.6vw;
+  }
+
+  /* PROJECTS */
+  .swiper-slide__image {
+    transform: scale(1);
+  }
+
+  /* CONTACTS */
+  .contacts__address-form-social {
+    padding-right: max(45px, calc((100vw - 820px)/2));
+  }
+
+  /* MAP */
+  .map {
+    position: relative;
+  }
+
+  .map::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+  }
+}

@@ -115,7 +115,7 @@ window.addEventListener('DOMContentLoaded', function () {
     updateOnWindowResize: true,
     spaceBetween: 47,
     breakpoints: {
-      1500: {
+      1400: {
         slidesPerView: 3,
         slidesPerGroup: 3,
       },
@@ -124,6 +124,11 @@ window.addEventListener('DOMContentLoaded', function () {
         slidesPerGroup: 2,
         spaceBetween: 33,
       },
+      576: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 32,
+      }
     },
     speed: 1500,
     pagination: {
@@ -213,28 +218,63 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Events-card
   document.querySelector('.events__button').addEventListener('click', function () {
-    document.querySelector('.events__list:nth-child(3)').classList.add('visually');
+    document.querySelector('.events__item:nth-child(3)').classList.add('visually');
+    document.querySelector('.events__item:nth-child(4)').classList.add('visually');
+    document.querySelector('.events__item:nth-child(5)').classList.add('visually');
     document.querySelector('.events__button').classList.add('hidden');
   });
 
+  // const eventSwiper = document.querySelector('.events__swiper-container');
+
+  // let evSwiper;
+
+  // function mobileSlider() {
+  //   if(window.innerWidth <= 600 && slider.dataset.mobile == 'false') {
+  //     evSwiper = new Swiper(slider, {
+  //       slidesPerView: 1,
+  //       spaceBetween: 10,
+  //       loop: true,
+  //       slideClass: 'events__item',
+  //     });
+
+  //     slider.dataset.mobile = 'true';
+  //   };
+
+  //   if (window.innerWidth > 600 ) {
+  //     slider.dataset.mobile = 'false';
+
+  //     evSwiper.destroy();
+  //   }
+  // };
+
+  // mobileSlider();
+
+  // window.addEventListener('resize', () => {
+  //   mobileSlider();
+  // });
+
   // Edition-swiper
   let editionSwiper = new Swiper('.edition__swiper-container', {
-    // Optional parameters
     direction: 'horizontal',
     slidesPerView: 3,
     slidesPerGroup: 3,
     updateOnWindowResize: true,
-    spaceBetween: 50,
+    spaceBetween: 45,
     breakpoints: {
-      1500: {
+      1400: {
         slidesPerView: 3,
         slidesPerGroup: 3,
       },
       992: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 45,
+        spaceBetween: 50,
       },
+      576: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 10,
+      }
     },
     speed: 1500,
     loop: true,
@@ -258,7 +298,7 @@ window.addEventListener('DOMContentLoaded', function () {
     updateOnWindowResize: true,
     spaceBetween: 50,
     breakpoints: {
-      1500: {
+      1400: {
         slidesPerView: 3,
         slidesPerGroup: 3,
       },
@@ -267,6 +307,11 @@ window.addEventListener('DOMContentLoaded', function () {
         slidesPerGroup: 2,
         spaceBetween: 45,
       },
+      576: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+      }
     },
     speed: 1500,
     loop: true,

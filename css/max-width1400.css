@@ -1,0 +1,118 @@
+@media (max-width: 1400px) {
+  /* HEADER */
+  .header__logo {
+    margin-right: 79px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  .filter__item:not(:last-child) {
+    margin-right: 46px;
+  }
+
+  /* HERO */
+  .hero__title {
+    margin-bottom: 13px;
+  }
+
+  .hero__decription {
+    margin-bottom: 134px;
+    max-width: 661px;
+  }
+
+  /* GALLERY */
+  .gallery-section__filter {
+    flex: 1 1 35%;
+  }
+
+  .gallery-section__picture,
+  .edition__gallery {
+    min-height: 675px;
+  }
+
+  .gallery__wrapper-image {
+    max-width: 280px;
+    max-height: 280px;
+  }
+
+  /* CATALOG */
+  .catalog__list-countries {
+    transform: translateY(6px);
+  }
+
+  .catalog__description > p {
+    margin-bottom: 38px;
+  }
+
+  .catalog-wrapper__figure {
+    flex: 1 1 50%;
+  }
+
+  .accordion__list {
+    padding: 25px 0 29px 0;
+    height: 440px; /* Для макета */
+    column-count: 2;
+    column-gap: 50px;
+  }
+
+  /* EVENTS */
+  .events__item {
+    margin-bottom: 52px;
+    min-height: 685px;
+  }
+
+  .events-item__picture > img {
+    min-height: 200px;
+    object-fit: cover;
+  }
+
+  .events-item__title {
+    line-height: 33px;
+  }
+
+  .events-item__figcaption {
+    padding: 14px 18px 54px 35px;
+  }
+
+  .events-item__description {
+    display: -webkit-box;
+    margin-right: 13px;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* EDITION */
+  .edition__gallery  {
+    min-height: 597px;
+  }
+
+  .edition__image-description {
+    padding-top: 10px;
+  }
+
+  /* PROJECTS */
+  .projects__swiper-container {
+    margin: 0 53px;
+  }
+
+  .project__card {
+    min-height: 127px;
+  }
+
+  .partners-swiper-button-prev,
+  .partners-swiper-button-next {
+    top: 66%;
+  }
+
+  /* CONTACTS */
+  .contacts__address-form-social {
+    padding-left: max(50px, calc((100vw - 1600px)/2));
+  }
+
+  .contacts__address-input {
+    min-width: 335px;
+  }
+}
