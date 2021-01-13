@@ -599,7 +599,7 @@ ul {
 .gallery-section__filter {
   flex-direction: column;
   flex: 1 1 26%;
-  margin-right: 52px;
+  margin-right: max(52px, calc((100vw - 1080px)/2));
 }
 
 .gallery__title {

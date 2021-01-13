@@ -132,7 +132,7 @@
   }
 
   .edition__swiper-slide {
-    padding-right: 24px;
+    padding-right: max(24px, calc((100vw - 720px)/2));
   }
 
   .edition__image-description {
