@@ -15,6 +15,8 @@
   <link rel="stylesheet" type="text/css" href="css/max-width1400.css">
   <link rel="stylesheet" type="text/css" href="css/max-width1200.css">
   <link rel="stylesheet" type="text/css" href="css/max-width992.css">
+  <link rel="stylesheet" type="text/css" href="css/max-width768.css">
+  <link rel="stylesheet" type="text/css" href="css/max-width576.css">
   <script src="scripts/swiper-bundle.min.js"></script>
   <script src="scripts/jQuery-3.5.1.js"></script>
   <script src="scripts/jquery-1.12.4.js"></script>
@@ -39,7 +41,7 @@
           <div class="burger__wand"></div>
         </button>
         <a class="logo header__logo" href="#">
-          <svg width="173" height="40" viewbox = "0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewbox = "0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M2.78965 32.7802L0.289746 29.1348H2.09561L3.79365 31.7425L5.50518 29.1348H7.29756L4.79092 32.7802L7.42559 36.5873H5.6332L3.79365 33.7977L1.96084 36.5873H0.168457L2.78965 32.7802Z"
               fill="white" />
@@ -154,7 +156,7 @@
         <a class="header__log-in" href="#">
           Войти
         </a>
-        <button class="header-top__btn"></button>
+        <button class="header-bottom__btn header-bottom__btn_top" id="header-bottom__btn"></button>
       </div>
     </div>
     <div class="header__bottom header-bottom">
@@ -459,7 +461,7 @@
               class="gallery-description__link" href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией.
           </p>
         </div>
-        <div class="gallery-section__picture">
+        <div class="gallery-section__picture flex">
           <div class="gallery__swiper-buttons flex">
             <button class="swiper-button-prev gallery-swiper-button-prev"></button>
             <div class="gallery-swiper-pagination"></div>
@@ -471,7 +473,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-92@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-92@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-92@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -480,7 +482,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-94@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-95@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-95@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -489,7 +491,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-93@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-93@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-93@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -498,7 +500,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-96@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-96@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-96@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -507,7 +509,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-94@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-94@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -516,7 +518,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-97@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-97@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -525,7 +527,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-70@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-70@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -534,7 +536,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-72@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-72@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -543,7 +545,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-68@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-68@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -552,7 +554,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-71@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-71@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -561,7 +563,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-69@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-69@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -570,7 +572,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-73@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-73@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -579,7 +581,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-77@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-77@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -588,7 +590,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-78@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-78@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -597,7 +599,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-74@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-74@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -606,7 +608,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-75@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-75@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -615,7 +617,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-79@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-79@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>
@@ -624,7 +626,7 @@
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
-                    <!-- <source srcset="images/Rectangle-79@1x.jpg" media="(max-width: 1500px)"> -->
+                    <source srcset="images/Rectangle-76@1x(media-320).jpg" media="(max-width: 576px)">
                     <img class="gallery__image" src="images/Rectangle-76@1x.jpg" alt="Экспозиция">
                   </picture>
                 </button>

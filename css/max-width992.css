@@ -1,9 +1,22 @@
 @media (max-width: 992px) {
+  .container {
+    padding-right: max(15px, calc((100vw - 668px)/2));
+    padding-left: max(15px, calc((100vw - 668px)/2));
+  }
+
+  /* HERO */
+  .hero__title {
+    font-size: clamp(32px, 9.38vw, 72px);
+  }
+
+  .hero__decription {
+    font-size: clamp(12px, 2.35vw, 18px);
+  }
+
   /* Gallery */
   .gallery-section {
     position: relative;
     padding-bottom: 163px;
-
   }
 
   .gallery__container {
@@ -34,12 +47,20 @@
   }
 
   /* CATALOG */
+  .catalog__title {
+    margin-right: clamp(5px, 5.25vw, 40px);
+  }
+
+  .catalog__title-list-countries {
+    margin-bottom: 16px;
+  }
+
   .catalog__list-countries {
     transform: translateY(0);
   }
 
   .catalog__item-countries:not(:last-child) {
-    margin-right: 34px;
+    margin-right: clamp(34px, 7vw, 54px);
   }
 
   .catalog__description > p {
@@ -76,16 +97,17 @@
   }
 
   .events__container {
-    padding-bottom: 83px;
+    padding-bottom: 85px;
   }
 
   .events__swiper-wrapper {
     column-count: 2;
-    column-gap: 33px;
+    column-gap: clamp(10px, 4.3vw, 33px);
   }
 
   .events__item {
     flex: 0 1 47.5%;
+    margin-bottom: 51px;
   }
 
   .events__item:nth-child(3) {
@@ -105,10 +127,6 @@
     margin-bottom: 28px;
   }
 
-  .edition__categories-prices {
-    margin-bottom: 23px;
-  }
-
   .edition__categories-text {
     margin-bottom: 11px;
   }
@@ -121,6 +139,7 @@
 
   .edition__price-range {
     display: inline-flex;
+    margin-bottom: 20px;
   }
 
   .edition__gallery {
@@ -132,7 +151,7 @@
   }
 
   .edition__swiper-slide {
-    padding-right: max(24px, calc((100vw - 720px)/2));
+    padding-right: max(24px, calc((100vw - 920px)/2));
   }
 
   .edition__image-description {
@@ -149,6 +168,7 @@
   }
 
   .project__card {
+    padding: 18px;
     min-height: 106px;
   }
 
@@ -156,4 +176,13 @@
   .partners-swiper-button-next {
     top: 70%;
   }
+
+  /* CONTACTS */
+  .contacts-section {
+    padding-top: 76px;
+  }
+
+ .contacts__address-form-social {
+  padding-left: max(15px, calc((100vw - 668px)/2));
+ }
 }

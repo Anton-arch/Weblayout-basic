@@ -1,0 +1,143 @@
+@media (max-width: 576px) {
+  /* HEADER */
+  .header-top__container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .burger:hover > .burger__wand:nth-child(2),
+  .burger:hover > .burger__wand:nth-child(3) {
+    width: 20px;
+  }
+
+  .burger__wand {
+    width: 20px;
+    height: 2px;
+  }
+
+  .burger__wand:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .burger__wand:nth-child(2) {
+    width: 16px;
+  }
+
+  .burger__wand:nth-child(3) {
+    width: 13px;
+  }
+
+  .header__logo {
+    width: 97px;
+  }
+
+  .header-bottom__btn_top {
+    width: 16px;
+  }
+
+  /* HERO */
+  .hero__container {
+    text-align: center;
+  }
+
+  .hero__title {
+    max-width: clamp(258px, 80.65vw,585px);
+  }
+
+  .hero__decription {
+    margin-right: 0;
+    max-width: 265px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  /* GALLERY */
+  .choices {
+    width: 310px;
+  }
+
+  .gallery-swiper-pagination,
+  .gallery-swiper-button-next {
+    margin-left: 15px;
+  }
+
+  .gallery__description {
+    bottom: 78px;
+    padding-right: max(15px, calc((100vw - 1600px)/2));
+  }
+
+  .gallery__swiper-slide {
+    text-align: center;
+  }
+
+  /* CATALOG */
+  .catalog__title {
+    margin-bottom: 12px;
+  }
+
+  .catalog__button {
+    width: clamp(32px, 10vw, 46px);
+    height: clamp(32px, 10vw, 46px);
+  }
+
+  .catalog__button::after {
+    width: 44px;
+    height: 44px;
+  }
+
+  .catalog__item-countries:not(:last-child) {
+    margin-right: clamp(32px, 7vw, 54px);
+  }
+
+  .catalog__description > p {
+    display: none;
+  }
+
+  .ui-accordion-header {
+    min-height: clamp(73px, 22.9vw, 114px);
+  }
+
+  .ui-accordion-header-text {
+    font-size: clamp(18px, 5.65vw,24px);
+  }
+
+  .ui-icon {
+    width: clamp(30px, 9.4vw, 50px);
+    height: clamp(30px, 9.4vw, 50px);
+  }
+
+  .ui-icon::before,
+  .ui-icon::after {
+    height: 7px;
+  }
+
+  .ui-icon::before {
+    left: 40%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .ui-icon::after {
+    right: 40%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .accordion__list {
+    padding: 18px 0 20px 0;
+    height: 810px; /* Для макета */
+    column-count: 1;
+  }
+
+  .catalog__figure {
+    padding-top: 0;
+  }
+
+  .catalog-wrapper__title {
+    padding-top: 22px;
+    padding-bottom: 18px;
+  }
+
+  /* EVENTS */
+  .events-section {
+    padding-top: 55px;
+  }
+}

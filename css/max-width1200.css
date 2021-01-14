@@ -7,6 +7,8 @@
   /* HEADER */
   .header-top__container {
     justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 27px;
   }
 
   .burger {
@@ -67,7 +69,7 @@
 
   .header__logo {
     margin: 0;
-    transform: scale(1.1);
+    width: 188px;
   }
 
   .nav {
@@ -80,8 +82,9 @@
     position: absolute;
   }
 
-  .header-top__btn {
+  .header-bottom__btn_top {
     display: block;
+    margin-right: 0;
     border: none;
     width: 29px;
     height: 29px;
@@ -101,12 +104,29 @@
   /* HERO */
   .hero__container {
     padding-top: 113px;
-    padding-bottom: 114px;
+    padding-bottom: 113px;
+  }
+
+  /* EVENTS */
+  .events-section {
+    padding-top: 88px;
+  }
+
+  .events__item {
+    margin-bottom: 49px;
   }
 
   /* EDITIONS */
+  .edition-section {
+    padding-bottom: 82px;
+  }
+
   .edition__categories-prices {
     margin-right: 1.6vw;
+  }
+
+  .edition__swiper-container {
+    margin-top: 89px;
   }
 
   /* PROJECTS */

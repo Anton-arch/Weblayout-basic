@@ -108,26 +108,30 @@ window.addEventListener('DOMContentLoaded', function () {
   let gallerySwiper = new Swiper('.gallery__swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 3,
-    slidesPerColumn: 2,
-    slidesPerGroup: 3,
     autoHeight: true,
     updateOnWindowResize: true,
-    spaceBetween: 47,
     breakpoints: {
       1400: {
         slidesPerView: 3,
         slidesPerGroup: 3,
+        slidesPerColumn: 2,
       },
       992: {
         slidesPerView: 2,
         slidesPerGroup: 2,
+        slidesPerColumn: 2,
         spaceBetween: 33,
       },
       576: {
         slidesPerView: 2,
         slidesPerGroup: 2,
         spaceBetween: 32,
+      },
+      300: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 32,
+        loop: true,
       }
     },
     speed: 1500,

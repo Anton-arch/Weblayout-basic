@@ -123,7 +123,7 @@ ul {
   display: none;
 }
 
-.header-top__btn {
+.header-bottom__btn_top {
   display: none;
 }
 
@@ -134,6 +134,8 @@ ul {
 }
 
 .header__logo {
+  display: block;
+  width: 173px;
   margin-right: 179px;
 }
 
@@ -574,7 +576,7 @@ ul {
 /* ABOUT-US */
 .about-us {
   padding-top: 86px;
-  padding-bottom: 71px;
+  padding-bottom: 69px;
 }
 
 .about-us__title {
@@ -590,7 +592,7 @@ ul {
 /* GALLERY */
 .gallery-section {
   padding-top: 85px;
-  padding-bottom: 79px;
+  padding-bottom: 81px;
   color: var(--white);
   background: url(../images/birmingham-museums-4@1x.jpg) center center no-repeat transparent;
   background-size: cover;
@@ -599,11 +601,11 @@ ul {
 .gallery-section__filter {
   flex-direction: column;
   flex: 1 1 26%;
-  margin-right: max(52px, calc((100vw - 1080px)/2));
+  margin-right: 52px;
 }
 
 .gallery__title {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .gallery__filter-by {
@@ -692,6 +694,10 @@ ul {
   position: relative;
   flex: 1 1 75%;
   min-height: 830px;
+}
+
+.gallery-section__picture {
+  flex-direction: column;
 }
 
 .gallery__swiper-buttons,
@@ -806,11 +812,11 @@ ul {
 
 /* CATALOG */
 .catalog-section {
-  padding-top: 82px;
+  padding-top: 85px;
 }
 
 .catalog__title {
-  margin-right: 30px;
+  margin-right: 40px;
   margin-bottom: 5px;
 }
 
@@ -820,9 +826,6 @@ ul {
 }
 
 .catalog__item-countries {
-  padding: 10px;
-  width: 66px;
-  height: 66px;
   cursor: pointer;
   transition: filter .15s ease-in-out;
 }
@@ -915,7 +918,7 @@ ul {
 }
 
 .catalog__item-countries:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .catalog__description {
@@ -1147,7 +1150,7 @@ ul {
 
 /* EVENTS */
 .events-section {
-  padding-top: 83px;
+  padding-top: 85px;
 }
 
 .events__container {
@@ -1534,7 +1537,7 @@ ul {
 }
 
 .projects__description {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   max-width: 1080px;
   line-height: 32px;
 }
@@ -1627,7 +1630,7 @@ ul {
 }
 
 .projects__partner-title {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .projects__partner-title {

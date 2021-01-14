@@ -24,7 +24,8 @@
 
   /* GALLERY */
   .gallery-section__filter {
-    flex: 1 1 35%;
+    flex: 1 1 35.3%;
+    margin-right: 49px;
   }
 
   .gallery-section__picture,
@@ -44,6 +45,10 @@
 
   .catalog__description > p {
     margin-bottom: 38px;
+  }
+
+  .catalog__figure {
+    padding-top: 3px;
   }
 
   .catalog-wrapper__figure {
