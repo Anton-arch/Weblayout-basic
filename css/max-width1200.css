@@ -107,26 +107,28 @@
     padding-bottom: 113px;
   }
 
+  /* GALLERY */
+
+  .gallery__swiper-container {
+    height: clamp(678px, 66.23vw, 830px);
+  }
+
   /* EVENTS */
   .events-section {
     padding-top: 88px;
   }
 
-  .events__item {
-    margin-bottom: 49px;
+  .events-card__description {
+    margin-bottom: 31px;
   }
 
   /* EDITIONS */
   .edition-section {
-    padding-bottom: 82px;
+    padding-bottom: 80px;
   }
 
   .edition__categories-prices {
     margin-right: 1.6vw;
-  }
-
-  .edition__swiper-container {
-    margin-top: 89px;
   }
 
   /* PROJECTS */

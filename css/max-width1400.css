@@ -23,19 +23,13 @@
   }
 
   /* GALLERY */
+  .gallery-section {
+    padding-bottom: 78px;
+  }
+
   .gallery-section__filter {
-    flex: 1 1 35.3%;
+    flex: 1 1 34%;
     margin-right: 49px;
-  }
-
-  .gallery-section__picture,
-  .edition__gallery {
-    min-height: 675px;
-  }
-
-  .gallery__wrapper-image {
-    max-width: 280px;
-    max-height: 280px;
   }
 
   /* CATALOG */
@@ -63,25 +57,24 @@
   }
 
   /* EVENTS */
-  .events__item {
+  .events__card {
     margin-bottom: 52px;
-    min-height: 685px;
   }
 
-  .events-item__picture > img {
+  .events-card__picture > img {
     min-height: 200px;
     object-fit: cover;
   }
 
-  .events-item__title {
+  .events-card__title {
     line-height: 33px;
   }
 
-  .events-item__figcaption {
+  .events-card__figcaption {
     padding: 14px 18px 54px 35px;
   }
 
-  .events-item__description {
+  .events-card__description {
     display: -webkit-box;
     margin-right: 13px;
     -webkit-line-clamp: 6;
@@ -90,10 +83,6 @@
   }
 
   /* EDITION */
-  .edition__gallery  {
-    min-height: 597px;
-  }
-
   .edition__image-description {
     padding-top: 10px;
   }

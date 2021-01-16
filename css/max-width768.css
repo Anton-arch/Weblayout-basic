@@ -36,7 +36,7 @@
   /* GALLERY */
   .gallery-section {
     padding-top: clamp(50px, 15.65vw, 85px);
-    padding-bottom: 240px;
+    padding-bottom: 166px;
   }
 
   .gallery-section__filter  {
@@ -48,7 +48,9 @@
   }
 
   .gallery__swiper-container {
+    flex-direction: column-reverse;
     margin-top: 30px;
+    height: 400px;
   }
 
   .gallery__swiper-buttons {
@@ -56,9 +58,9 @@
     padding: 0;
   }
 
-  .gallery-section__picture {
-    flex-direction: column-reverse;
-    min-height: 457px;
+  .gallery__swiper-slide {
+    max-height: 367px;
+    overflow: hidden;
   }
 
   /* CATALOG */
@@ -75,5 +77,11 @@
   .section-title {
     font-size: clamp(23px, 8.8vw, 48px);
     transform: translateX(-2px);
+  }
+
+  /* EVENTS */
+  .events__swiper-wrapper {
+    flex-flow: row wrap;
+    column-gap: clamp(27px, 2.75vw, 33px);
   }
 }

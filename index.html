@@ -461,15 +461,13 @@
               class="gallery-description__link" href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией.
           </p>
         </div>
-        <div class="gallery-section__picture flex">
-          <div class="gallery__swiper-buttons flex">
-            <button class="swiper-button-prev gallery-swiper-button-prev"></button>
-            <div class="gallery-swiper-pagination"></div>
-            <button class="swiper-button-next gallery-swiper-button-next"></button>
-          </div>
-          <div class="gallery__swiper-container">
-            <div class="swiper-wrapper gallery__swiper-wrapper">
-
+          <div class="gallery__swiper-container swiper-container flex">
+            <div class="gallery__swiper-buttons flex">
+              <button class="swiper-button-prev gallery-swiper-button-prev"></button>
+              <div class="gallery-swiper-pagination"></div>
+              <button class="swiper-button-next gallery-swiper-button-next"></button>
+            </div>
+            <div class="gallery__swiper-wrapper swiper-wrapper">
               <div class="swiper-slide gallery__swiper-slide">
                 <button class="gallery__wrapper-image">
                   <picture>
@@ -634,7 +632,6 @@
 
             </div>
           </div>
-        </div>
       </div>
     </section>
 
@@ -3145,114 +3142,115 @@
         <h2 class="events__title section-title">
           События
         </h2>
-        <div class="events__list events__swiper-container" data-mobile="false">
-          <div class="events__swiper-wrapper flex">
-            <div class="events__item events-item flex">
-              <picture class="events-item__picture">
+
+        <div class="events__swiper-container flex" data-mobile="false">
+          <div class="events__swiper-wrapper swiper-wrapper flex">
+            <div class="events__card events-card flex">
+              <picture class="events-card__picture">
                 <source srcset="images/Rectangle-98@1x.webp 1x, images/Rectangle-98@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-98@1x.jpg" srcset="images/Rectangle-98@2x.jpg 2x"
                   alt="Книжная гравюра в живом восприятии">
               </picture>
-              <div class="events-item__figcaption flex">
-                <div class="events-item__signature flex">
+              <div class="events-card__figcaption flex">
+                <div class="events-card__signature flex">
                   <div>Музей им. Щусева</div>
                   <div>с 20 марта по 30 апреля</div>
                 </div>
-                <h3 class="events-item__title">
+                <h3 class="events-card__title">
                   Книжная гравюра в живом восприятии
                 </h3>
-                <p class="events-item__description">
+                <p class="events-card__description">
                   Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
                   продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
                 </p>
-                <a class="events-item__link" href="#">Подробнее</a>
+                <a class="events-card__link" href="#">Подробнее</a>
               </div>
             </div>
-            <div class="events__item events-item flex">
-              <picture class="events-item__picture">
+            <div class="events__card events-card flex">
+              <picture class="events-card__picture">
                 <source srcset="images/Rectangle-99@1x.webp 1x, images/Rectangle-99@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-99@1x.jpg" srcset="images/Rectangle-99@2x.jpg 2x"
                   alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
               </picture>
-              <div class="events-item__figcaption flex">
-                <div class="events-item__signature flex">
+              <div class="events-card__figcaption flex">
+                <div class="events-card__signature flex">
                   <div>ММОМА</div>
                   <div>24 марта 19:00</div>
                 </div>
-                <h3 class="events-item__title">
+                <h3 class="events-card__title">
                   «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
                 </h3>
-                <p class="events-item__description">
+                <p class="events-card__description">
                   Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
                   факта: постоянный количественный рост и сфера нашей активности представляет собой интересный
                   эксперимент проверки новых принципов формирования...
                 </p>
-                <a class="events-item__link" href="#">Подробнее</a>
+                <a class="events-card__link" href="#">Подробнее</a>
               </div>
             </div>
-            <div class="events__item events-item flex">
-              <picture class="events-item__picture">
+            <div class="events__card events-card flex">
+              <picture class="events-card__picture">
                 <source srcset="images/Rectangle-100@1x.webp 1x, images/Rectangle-100@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-100@1x.jpg" srcset="images/Rectangle-100@2x.jpg 2x"
                   alt="Выставка «Формация 2020»">
               </picture>
-              <div class="events-item__figcaption flex">
-                <div class="events-item__signature flex">
+              <div class="events-card__figcaption flex">
+                <div class="events-card__signature flex">
                   <div>Еврейский музей</div>
                   <div>с 31 марта по 21 апреля</div>
                 </div>
-                <h3 class="events-item__title">
+                <h3 class="events-card__title">
                   Выставка «Формация 2020»
                 </h3>
-                <p class="events-item__description">
+                <p class="events-card__description">
                   Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
                   формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
                   значение для новых принципов формирования материально-технической и кадровой базы.
                 </p>
-                <a class="events-item__link" href="#">Подробнее</a>
+                <a class="events-card__link" href="#">Подробнее</a>
               </div>
             </div>
-            <div class="events__item events-item flex">
-              <picture class="events-item__picture">
+            <div class="events__card events-card flex">
+              <picture class="events-card__picture">
                 <source srcset="images/Rectangle-101@1x.webp 1x, images/Rectangle-101@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-101@1x.jpg" srcset="images/Rectangle-101@2x.jpg 2x"
                   alt="XXIV Международная биеннале молодого искусства">
               </picture>
-              <div class="events-item__figcaption flex">
-                <div class="events-item__signature flex">
+              <div class="events-card__figcaption flex">
+                <div class="events-card__signature flex">
                   <div>Третьяковка на Крымском валу</div>
                   <div>с 30 марта по 30 апреля</div>
                 </div>
-                <h3 class="events-item__title">
+                <h3 class="events-card__title">
                   XXIV Международная биеннале молодого искусства
                 </h3>
-                <p class="events-item__description">
+                <p class="events-card__description">
                   Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что
                   иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в
                   разрезе маркетинговых и финансовых...
                 </p>
-                <a class="events-item__link" href="#">Подробнее</a>
+                <a class="events-card__link" href="#">Подробнее</a>
               </div>
             </div>
-            <div class="events__item events-item flex">
-              <picture class="events-item__picture">
+            <div class="events__card events-card flex">
+              <picture class="events-card__picture">
                 <source srcset="images/Rectangle-102@1x.webp 1x, images/Rectangle-102@2x.webp 2x" type="image/webp">
                 <img src="images/Rectangle-102@1x.jpg" srcset="images/Rectangle-102@2x.jpg 2x"
                   alt="«Джон Винзор. Фотографии из серии «Метафора серебра»">
               </picture>
-              <div class="events-item__figcaption flex">
-                <div class="events-item__signature flex">
+              <div class="events-card__figcaption flex">
+                <div class="events-card__signature flex">
                   <div>ММАМ</div>
                   <div>с 8 апреля по 20 мая</div>
                 </div>
-                <h3 class="events-item__title">
+                <h3 class="events-card__title">
                   Джон Винзор. Фотографии из серии «Метафора серебра»
                 </h3>
-                <p class="events-item__description">
+                <p class="events-card__description">
                   Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
                   продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
                 </p>
-                <a class="events-item__link" href="#">Подробнее</a>
+                <a class="events-card__link" href="#">Подробнее</a>
               </div>
             </div>
           </div>
@@ -3309,164 +3307,165 @@
             </span>
           </div>
         </div>
-        <div class="edition__gallery">
+
+        <div class="edition__swiper-container">
+
           <div class="edition__swiper-buttons flex">
             <button class="swiper-button-prev edition-swiper-button-prev"></button>
             <div class="edition-swiper-pagination"></div>
             <button class="swiper-button-next edition-swiper-button-next"></button>
           </div>
-          <div class="edition__swiper-container">
-            <div class="swiper-wrapper edition__swiper-wrapper">
 
-              <div class="swiper-slide edition__swiper-slide">
-                <div class="edition__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-107@1x(media-768).jpg" media="(max-width: 992px)">
-                    <img class="edition__image" src="images/Rectangle-107@2x.jpg"
-                      alt="Искусство цвета, Иттен, Иоханнес">
-                  </picture>
-                  <div class="edition__image-description flex">
-                    <h4 class="edition__image-name flex">
-                      <span>Искусство цвета</span>
-                      <span class="edition__image-author">
-                        Иттен, Иоханнес
-                      </span>
-                    </h4>
-                    <span class="edition__image-price">
-                      620 руб
+          <div class="swiper-wrapper edition__swiper-wrapper">
+
+            <div class="swiper-slide edition__swiper-slide">
+              <div class="edition__wrapper-image">
+                <picture>
+                  <source srcset="images/Rectangle-107@1x(media-768).jpg" media="(max-width: 992px)">
+                  <img class="edition__image" src="images/Rectangle-107@1x.jpg"
+                    alt="Искусство цвета, Иттен, Иоханнес">
+                </picture>
+                <div class="edition__image-description flex">
+                  <h4 class="edition__image-name flex">
+                    <span>Искусство цвета</span>
+                    <span class="edition__image-author">
+                      Иттен, Иоханнес
                     </span>
-                  </div>
+                  </h4>
+                  <span class="edition__image-price">
+                    620 руб
+                  </span>
                 </div>
-                <a class="edition__link" href="#"><span>Заказать</span></a>
               </div>
-
-              <div class="swiper-slide edition__swiper-slide">
-                <div class="edition__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-108@1x(media-768).jpg" media="(max-width: 992px)">
-                    <img class="edition__image" src="images/Rectangle-108@2x.jpg" alt="Типографика, Рудер, Эмиль">
-                  </picture>
-                  <div class="edition__image-description flex">
-                    <h4 class="edition__image-name flex">
-                      <span>Типографика</span>
-                      <span class="edition__image-author">
-                        Рудер, Эмиль
-                      </span>
-                    </h4>
-                    <span class="edition__image-price">
-                      2 450 руб
-                    </span>
-                  </div>
-                </div>
-                <a class="edition__link" href="#"><span>Заказать</span></a>
-              </div>
-
-              <div class="swiper-slide edition__swiper-slide">
-                <div class="edition__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-109@1x(media-768).jpg" media="(max-width: 992px)">
-                    <img class="edition__image" src="images/Rectangle-109@2x.jpg" alt="Книга про буквы, Гордон, Юрий">
-                  </picture>
-                  <div class="edition__image-description flex">
-                    <h4 class="edition__image-name flex">
-                      <span>Книга про буквы</span>
-                      <span class="edition__image-author">
-                        Гордон, Юрий
-                      </span>
-                    </h4>
-                    <span class="edition__image-price">
-                      2 200 руб
-                    </span>
-                  </div>
-                </div>
-                <a class="edition__link" href="#"><span>Заказать</span></a>
-              </div>
-
-              <div class="swiper-slide edition__swiper-slide">
-                <div class="edition__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-103@1x(media-768).jpg" media="(max-width: 992px)">
-                    <img class="edition__image" src="images/Rectangle-103@2x.jpg" alt="Николай Ильин, Кричевский, Владимир">
-                  </picture>
-                  <div class="edition__image-description flex">
-                    <h4 class="edition__image-name flex">
-                      <span>Николай Ильин</span>
-                      <span class="edition__image-author">
-                        Кричевский, Владимир
-                      </span>
-                    </h4>
-                    <span class="edition__image-price">
-                      1 100 руб
-                    </span>
-                  </div>
-                </div>
-                <a class="edition__link" href="#"><span>Заказать</span></a>
-              </div>
-
-              <div class="swiper-slide edition__swiper-slide">
-                <div class="edition__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-104@1x(media-768).jpg" media="(max-width: 992px)">
-                    <img class="edition__image" src="images/Rectangle-104@2x.jpg" alt="Модульные сетки в граф..., Мюллер-Брокманн, Йозеф">
-                  </picture>
-                  <div class="edition__image-description flex">
-                    <h4 class="edition__image-name flex">
-                      <span>Модульные сетки в граф...</span>
-                      <span class="edition__image-author">
-                        Мюллер-Брокманн, Йозеф
-                      </span>
-                    </h4>
-                    <span class="edition__image-price">
-                      1 450 руб
-                    </span>
-                  </div>
-                </div>
-                <a class="edition__link" href="#"><span>Заказать</span></a>
-              </div>
-
-              <div class="swiper-slide edition__swiper-slide">
-                <div class="edition__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-105@1x(media-768).jpg" media="(max-width: 992px)">
-                      <img class="edition__image" src="images/Rectangle-105@2x.jpg" alt="Эволюция графических ст..., Хеллер, Чваст">
-                  </picture>
-                  <div class="edition__image-description flex">
-                    <h4 class="edition__image-name flex">
-                      <span>Эволюция графических ст...</span>
-                      <span class="edition__image-author">
-                        Хеллер, Чваст
-                      </span>
-                    </h4>
-                    <span class="edition__image-price">
-                      3 200 руб
-                    </span>
-                  </div>
-                </div>
-                <a class="edition__link" href="#"><span>Заказать</span></a>
-              </div>
-
-              <div class="swiper-slide edition__swiper-slide">
-                <div class="edition__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-106@1x(media-768).jpg" media="(max-width: 992px)">
-                    <img class="edition__image" src="images/Rectangle-106@2x.jpg" alt="Искусство и визуальное в..., Арнхейм, Рудольф">
-                  </picture>
-                  <div class="edition__image-description flex">
-                    <h4 class="edition__image-name flex">
-                      <span>Искусство и визуальное в...</span>
-                      <span class="edition__image-author">
-                        Арнхейм, Рудольф
-                      </span>
-                    </h4>
-                    <span class="edition__image-price">
-                      2 200 руб
-                    </span>
-                  </div>
-                </div>
-                <a class="edition__link" href="#"><span>Заказать</span></a>
-              </div>
-
+              <a class="edition__link" href="#"><span>Заказать</span></a>
             </div>
+
+            <div class="swiper-slide edition__swiper-slide">
+              <div class="edition__wrapper-image">
+                <picture>
+                  <source srcset="images/Rectangle-108@1x(media-768).jpg" media="(max-width: 992px)">
+                  <img class="edition__image" src="images/Rectangle-108@1x.jpg" alt="Типографика, Рудер, Эмиль">
+                </picture>
+                <div class="edition__image-description flex">
+                  <h4 class="edition__image-name flex">
+                    <span>Типографика</span>
+                    <span class="edition__image-author">
+                      Рудер, Эмиль
+                    </span>
+                  </h4>
+                  <span class="edition__image-price">
+                    2 450 руб
+                  </span>
+                </div>
+              </div>
+              <a class="edition__link" href="#"><span>Заказать</span></a>
+            </div>
+
+            <div class="swiper-slide edition__swiper-slide">
+              <div class="edition__wrapper-image">
+                <picture>
+                  <source srcset="images/Rectangle-109@1x(media-768).jpg" media="(max-width: 992px)">
+                  <img class="edition__image" src="images/Rectangle-109@1x.jpg" alt="Книга про буквы, Гордон, Юрий">
+                </picture>
+                <div class="edition__image-description flex">
+                  <h4 class="edition__image-name flex">
+                    <span>Книга про буквы</span>
+                    <span class="edition__image-author">
+                      Гордон, Юрий
+                    </span>
+                  </h4>
+                  <span class="edition__image-price">
+                    2 200 руб
+                  </span>
+                </div>
+              </div>
+              <a class="edition__link" href="#"><span>Заказать</span></a>
+            </div>
+
+            <div class="swiper-slide edition__swiper-slide">
+              <div class="edition__wrapper-image">
+                <picture>
+                  <source srcset="images/Rectangle-103@1x(media-768).jpg" media="(max-width: 992px)">
+                  <img class="edition__image" src="images/Rectangle-103@1x.jpg" alt="Николай Ильин, Кричевский, Владимир">
+                </picture>
+                <div class="edition__image-description flex">
+                  <h4 class="edition__image-name flex">
+                    <span>Николай Ильин</span>
+                    <span class="edition__image-author">
+                      Кричевский, Владимир
+                    </span>
+                  </h4>
+                  <span class="edition__image-price">
+                    1 100 руб
+                  </span>
+                </div>
+              </div>
+              <a class="edition__link" href="#"><span>Заказать</span></a>
+            </div>
+
+            <div class="swiper-slide edition__swiper-slide">
+              <div class="edition__wrapper-image">
+                <picture>
+                  <source srcset="images/Rectangle-104@1x(media-768).jpg" media="(max-width: 992px)">
+                  <img class="edition__image" src="images/Rectangle-104@1x.jpg" alt="Модульные сетки в граф..., Мюллер-Брокманн, Йозеф">
+                </picture>
+                <div class="edition__image-description flex">
+                  <h4 class="edition__image-name flex">
+                    <span>Модульные сетки в граф...</span>
+                    <span class="edition__image-author">
+                      Мюллер-Брокманн, Йозеф
+                    </span>
+                  </h4>
+                  <span class="edition__image-price">
+                    1 450 руб
+                  </span>
+                </div>
+              </div>
+              <a class="edition__link" href="#"><span>Заказать</span></a>
+            </div>
+
+            <div class="swiper-slide edition__swiper-slide">
+              <div class="edition__wrapper-image">
+                <picture>
+                  <source srcset="images/Rectangle-105@1x(media-768).jpg" media="(max-width: 992px)">
+                    <img class="edition__image" src="images/Rectangle-105@1x.jpg" alt="Эволюция графических ст..., Хеллер, Чваст">
+                </picture>
+                <div class="edition__image-description flex">
+                  <h4 class="edition__image-name flex">
+                    <span>Эволюция графических ст...</span>
+                    <span class="edition__image-author">
+                      Хеллер, Чваст
+                    </span>
+                  </h4>
+                  <span class="edition__image-price">
+                    3 200 руб
+                  </span>
+                </div>
+              </div>
+              <a class="edition__link" href="#"><span>Заказать</span></a>
+            </div>
+
+            <div class="swiper-slide edition__swiper-slide">
+              <div class="edition__wrapper-image">
+                <picture>
+                  <source srcset="images/Rectangle-106@1x(media-768).jpg" media="(max-width: 992px)">
+                  <img class="edition__image" src="images/Rectangle-106@1x.jpg" alt="Искусство и визуальное в..., Арнхейм, Рудольф">
+                </picture>
+                <div class="edition__image-description flex">
+                  <h4 class="edition__image-name flex">
+                    <span>Искусство и визуальное в...</span>
+                    <span class="edition__image-author">
+                      Арнхейм, Рудольф
+                    </span>
+                  </h4>
+                  <span class="edition__image-price">
+                    2 200 руб
+                  </span>
+                </div>
+              </div>
+              <a class="edition__link" href="#"><span>Заказать</span></a>
+            </div>
+
           </div>
         </div>
       </div>
