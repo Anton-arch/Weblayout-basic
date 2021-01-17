@@ -135,13 +135,13 @@ ul {
 
 .header__logo {
   display: block;
-  width: 173px;
   margin-right: 179px;
 }
 
 .logo {
   display: inline-block;
   flex-shrink: 0;
+  width: 173px;
   transition: filter .15s ease-in-out;
 }
 
@@ -882,8 +882,8 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 65px;
-  height: 65px;
+  width: 145%;
+  height: 145%;
   border: 2px solid var(--purple-focus);
   border-radius: 50%;
   opacity: 0;
@@ -1604,9 +1604,6 @@ ul {
 
 .projects__partner-title {
   margin-bottom: 25px;
-}
-
-.projects__partner-title {
   font-weight: 600;
   font-size: 24px;
 }
@@ -1631,8 +1628,8 @@ ul {
 .project__card {
   align-items: center;
   justify-content: center;
+  height: 150px;
   border: 1px solid var(--border);
-  min-height: 150px;
   filter: grayscale(1);
   transition: filter .3s ease-in-out;
   cursor: pointer;
@@ -1663,21 +1660,22 @@ ul {
   flex-direction: column;
 }
 
+.contacts__wrapper_address-form-title {
+  margin-bottom: 37px;
+}
+
 .contacts__address-form-title {
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   font-weight: 600;
   font-size: 24px;
-  line-height: 32px;
 }
 
 .contacts__address-text {
-  margin-bottom: 26px;
   font-style: inherit;
-  line-height: 32px;
 }
 
 .contacts__address-form {
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 .contacts__address-fieldset {
@@ -1688,7 +1686,7 @@ ul {
 }
 
 .contacts__address-legend {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   line-height: 32px;
   font-size: 24px;
 }
@@ -1705,15 +1703,15 @@ ul {
 }
 
 .just-validate-tooltip-container {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .contacts__address-input {
   position: relative;
   border: 1px solid #333;
-  padding: 8px 22px;
+  padding: 10px 22px;
   border-radius: 100px;
-  min-width: 400px;
+  width: clamp(335px, 32.75vw, 400px);
 }
 
 .js-validate-error-field {
@@ -1761,7 +1759,7 @@ ul {
 .contacts__social-icons {
   position: relative;
   display: inline-block;
-  margin-right: 21px;
+  margin-right: 20px;
   transition: filter .15s ease-in-out;
 }
 
@@ -1780,7 +1778,7 @@ ul {
 /* Custom map */
 .map {
   width: 100%;
-  min-height: 698px;
+  height: 698px;
 }
 
 [class*="ground-pane"] {
@@ -1793,6 +1791,7 @@ ul {
 }
 
 .footer_container {
+  align-items: center;
   padding: 50px 15px 40px;
 }
 
@@ -1807,6 +1806,8 @@ ul {
 .footer__social-link {
   position: relative;
   display: inline-block;
+  width: 46px;
+  height: 46px;
   transition: opacity .15s ease-in-out;
 }
 

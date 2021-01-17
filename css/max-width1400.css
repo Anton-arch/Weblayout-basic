@@ -92,10 +92,6 @@
     margin: 0 53px;
   }
 
-  .project__card {
-    min-height: 127px;
-  }
-
   .partners-swiper-button-prev,
   .partners-swiper-button-next {
     top: 66%;
@@ -104,9 +100,5 @@
   /* CONTACTS */
   .contacts__address-form-social {
     padding-left: max(50px, calc((100vw - 1600px)/2));
-  }
-
-  .contacts__address-input {
-    min-width: 335px;
   }
 }

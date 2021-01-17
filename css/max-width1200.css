@@ -136,6 +136,10 @@
     transform: scale(1);
   }
 
+  .project__card {
+    height: clamp(128px, 10.35vw, 150px);
+  }
+
   /* CONTACTS */
   .contacts__address-form-social {
     padding-right: max(45px, calc((100vw - 820px)/2));
