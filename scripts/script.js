@@ -236,6 +236,29 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
   // Events-mobile-swiper
+  let eventSwiper = new Swiper('.events__swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    autoHeight: true,
+    updateOnWindowResize: true,
+    loop: true,
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
+    },
+    speed: 1500,
+    pagination: {
+      el: '.events__swiper-pagination',
+      type: 'bullets',
+      clicable: false,
+    },
+  });
+
+    if (window.innerWidth > 576 ) {
+      eventSwiper.destroy();
+    }
+
   // const eventSwiper = document.querySelector('.events__swiper-container');
 
   // let evSwiper;
@@ -299,6 +322,56 @@ window.addEventListener('DOMContentLoaded', function () {
       prevEl: '.partners-swiper-button-prev',
     },
   });
+
+  // EDITION SPOILER
+  let spoiler =  document.querySelector('.edition__categories-text');
+
+  spoiler.addEventListener('click', function(ev) {
+    ev.target.classList.toggle('is-open');
+  });
+
+  let editionSwiper = new Swiper('.edition__swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    autoHeight: true,
+    updateOnWindowResize: true,
+    loop: true,
+    breakpoints: {
+      1400: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+      },
+      992: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 50,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      577: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 15,
+      },
+    },
+    speed: 1500,
+    pagination: {
+      el: '.edition-swiper-pagination',
+      type: 'fraction',
+      clicable: false,
+    },
+    navigation: {
+      nextEl: '.edition-swiper-button-next',
+      prevEl: '.edition-swiper-button-prev',
+    },
+  });
+
+    if (window.innerWidth < 576 ) {
+      editionSwiper.destroy();
+    }
 
   // Contacts-map
   // Функция ymaps.ready() будет вызвана, когда

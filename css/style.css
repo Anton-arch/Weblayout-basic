@@ -1160,7 +1160,7 @@ ul {
 }
 
 .events__card {
-  flex: 0 1 31.25%;
+  width: 31.25%;
   flex-direction: column;
   margin-bottom: 50px;
   border: 1px solid var(--border);
@@ -1305,7 +1305,7 @@ ul {
 }
 
 .edition__title {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .edition__categories,
@@ -1319,8 +1319,10 @@ ul {
 }
 
 .edition__categories-text {
-  margin-bottom: 14px;
-  font-size: 17px;
+  position: relative;
+  margin-bottom: 3px;
+  font-size: 16px;
+  line-height: 38px;
 }
 
 .edition__label {
@@ -1452,6 +1454,11 @@ ul {
   padding-left: 10px;
 }
 
+.edition__swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
 .edition__swiper-buttons {
   padding-top: 44px;
   padding-left: 0;
@@ -1468,6 +1475,13 @@ ul {
 
 .edition__image-name {
   flex-direction: column;
+}
+
+.edition__image-title ,
+.edition__image-author{
+  overflow: hidden;
+  padding-right: 5px;
+  text-overflow: ellipsis;
 }
 
 .edition__image-author {
@@ -1658,6 +1672,7 @@ ul {
 
 .contacts__address-form-social_wrapper {
   flex-direction: column;
+  padding-top: 7px;
 }
 
 .contacts__wrapper_address-form-title {
@@ -1675,7 +1690,7 @@ ul {
 }
 
 .contacts__address-form {
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .contacts__address-fieldset {
@@ -1703,7 +1718,7 @@ ul {
 }
 
 .just-validate-tooltip-container {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .contacts__address-input {
@@ -1778,7 +1793,7 @@ ul {
 /* Custom map */
 .map {
   width: 100%;
-  height: 698px;
+  height: 700px;
 }
 
 [class*="ground-pane"] {
@@ -1847,7 +1862,7 @@ ul {
 
 .back_to_top {
   position: fixed;
-  bottom: 0;
+  bottom: 12vw;
   right: 0;
   width: 80px;
   height: 40px;

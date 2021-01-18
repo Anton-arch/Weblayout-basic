@@ -84,7 +84,11 @@
 
   /* EDITION */
   .edition__image-description {
-    padding-top: 10px;
+    padding: 10px 0 16px 0;
+  }
+
+  .edition__wrapper-image {
+    display: inline-block;
   }
 
   /* PROJECTS */

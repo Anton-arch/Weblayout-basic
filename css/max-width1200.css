@@ -108,7 +108,6 @@
   }
 
   /* GALLERY */
-
   .gallery__swiper-container {
     height: clamp(678px, 66.23vw, 830px);
   }
@@ -141,6 +140,14 @@
   }
 
   /* CONTACTS */
+  .contacts__address-form-social_wrapper {
+    padding-top: 7px;
+  }
+
+  .contacts__wrapper_address-form-title {
+    margin-bottom: 37px;
+  }
+
   .contacts__address-form-social {
     padding-right: max(45px, calc((100vw - 820px)/2));
   }
