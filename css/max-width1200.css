@@ -17,6 +17,8 @@
     border: none;
     background: transparent;
     outline: none;
+    z-index: 3;
+    cursor: pointer;
   }
 
   .burger::before {
@@ -73,23 +75,51 @@
   }
 
   .nav {
-    display: none;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: max(50px, 15vw);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    transform: translateX(-100vw);
+    transition: transform .3s ease-in-out;
+    overflow-y: auto;
+    z-index: 2;
+  }
+
+  .nav--open {
+    align-items: center;
+    max-height: 100vh;
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, .9);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__item {
+    letter-spacing: .5em;
+    margin-bottom: 20px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0;
   }
 
   .header__log-in {
-    display: none;
-    position: absolute;
+    margin-left: 0;
   }
 
   .header-bottom__btn_top {
     display: block;
     margin-right: 0;
     border: none;
-    width: 29px;
-    height: 29px;
-    background: url(../images/Search.svg) center center no-repeat transparent;
-    background-size: contain;
+    transform: scale(1.3);
   }
 
   .header__bottom {

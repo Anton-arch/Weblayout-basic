@@ -149,6 +149,11 @@ ul {
   filter: drop-shadow(0px 0px 20px rgba(247, 246, 248, 0.7));
 }
 
+.nav {
+  display: flex;
+  width: 100%;
+}
+
 .nav__list {
   font-weight: 600;
 }
@@ -410,22 +415,18 @@ ul {
 }
 
 .header-bottom__btn {
+  margin-right: 10px;
   border: none;
-  order: 1;
-  width: 22px;
+  width: 23px;
   height: 22px;
+  order: 1;
   background: url(../images/Search.svg) center center no-repeat transparent;
   cursor: pointer;
   transition: background .15s ease-in-out;
 }
 
-.header-bottom__btn {
-  margin-right: 10px;
-  transition: background .15s ease-in-out;
-}
-
-.header-bottom__input:focus+.header-bottom__btn,
-.header-bottom__input:hover+.header-bottom__btn,
+.header-bottom__input:focus + .header-bottom__btn,
+.header-bottom__input:hover + .header-bottom__btn,
 .header-bottom__btn:focus,
 .header-bottom__btn:hover {
   background: url(../images/Search-hover.svg) center center no-repeat transparent;
@@ -495,20 +496,6 @@ ul {
 .hero__swiper-wrapper {
   transform: scale(1);
   animation: pulse 8s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  from {
-    transform: scale(1.05);
-  }
-
-  50% {
-    transform: scale(1.5);
-  }
-
-  to {
-    transform: scale(1.05);
-  }
 }
 
 .swiper-slide__image {
@@ -761,6 +748,7 @@ ul {
   display: inline-block;
   border: none;
   height: 100%;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -795,6 +783,188 @@ ul {
 
 .gallery__wrapper-image:active:after {
   background: linear-gradient(0deg, rgba(221, 220, 223, 0.4), rgba(194, 131, 243, 0.4));
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 50vh;
+  background-color: transparent;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s ease-in-out;
+}
+
+.modal--visible {
+  display: flex;
+}
+
+.gallery-modal-card-img {
+  flex: 0 0 50%;
+  margin-right: 15px;
+}
+
+.gallery-modal-card-text {
+  flex: 0 1 50%;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--dark);
+  background-color: var(--white);
+  line-height: 24px;
+}
+
+.gallery-modal-card-text__header,
+.gallery-modal-card-text__name,
+.gallery-modal-card-text__year {
+  margin-bottom: 10px;
+}
+
+.modal--1 {
+  height: 100%;
+  background: url(../images/Rectangle-92@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--2 {
+  height: 100%;
+  background: url(../images/Rectangle-95@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--3 {
+  height: 100%;
+  background: url(../images/Rectangle-93@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--4 {
+  height: 100%;
+  background: url(../images/Rectangle-96@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--5 {
+  height: 100%;
+  background: url(../images/Rectangle-94@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--6 {
+  height: 100%;
+  background: url(../images/Rectangle-97@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--7 {
+  height: 100%;
+  background: url(../images/Rectangle-70@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--8 {
+  height: 100%;
+  background: url(../images/Rectangle-72@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--9 {
+  height: 100%;
+  background: url(../images/Rectangle-68@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--10 {
+  height: 100%;
+  background: url(../images/Rectangle-71@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--11 {
+  height: 100%;
+  background: url(../images/Rectangle-69@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--12 {
+  height: 100%;
+  background: url(../images/Rectangle-73@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--13 {
+  height: 100%;
+  background: url(../images/Rectangle-77@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--14 {
+  height: 100%;
+  background: url(../images/Rectangle-78@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--15 {
+  height: 100%;
+  background: url(../images/Rectangle-74@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--16 {
+  height: 100%;
+  background: url(../images/Rectangle-75@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--17 {
+  height: 100%;
+  background: url(../images/Rectangle-79@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
+}
+
+.modal--18 {
+  height: 100%;
+  background: url(../images/Rectangle-76@1x.jpg) center center no-repeat transparent;
+  background-size: contain;
+  background-position: right;
 }
 
 /* CATALOG */
@@ -910,6 +1080,7 @@ ul {
 
 .catalog__description {
   display: none;
+  opacity: 0;
 }
 
 .catalog__description > p {
@@ -920,6 +1091,8 @@ ul {
 
 .catalog__description_active {
   display: block;
+  opacity: 1;
+  animation: fadeIn .5s ease-in-out;
 }
 
 .catalog-wrapper__figure {
@@ -929,10 +1102,13 @@ ul {
 
 .catalog__figure {
   display: none;
+  opacity: 0;
 }
 
 .catalog__figure_active {
   display: block;
+  opacity: 1;
+  animation: fadeIn .5s ease-in-out;
 }
 
 .catalog-wrapper__title {
@@ -1169,11 +1345,14 @@ ul {
 .events__card:nth-child(4),
 .events__card:nth-child(5) {
   display: none;
+  opacity: 0;
 }
 
 .events__card:nth-child(4).visually,
 .events__card:nth-child(5).visually {
   display: flex;
+  opacity: 1;
+  animation: fadeIn .5s ease-in-out;
 }
 
 .events-card__figcaption {
@@ -1228,6 +1407,10 @@ ul {
 
 .events-card__link:active::after {
   background-color: var(--purple-active);
+}
+
+.events__swiper-pagination {
+  display: none;
 }
 
 .events__button {
@@ -1883,4 +2066,29 @@ ul {
 
 .back_to_top-show {
   opacity: 1;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1.05);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

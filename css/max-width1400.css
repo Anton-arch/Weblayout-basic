@@ -1,7 +1,7 @@
 @media (max-width: 1400px) {
   /* HEADER */
   .header__logo {
-    margin-right: 79px;
+    margin-right: clamp(79px, 6.6vw, 179px);
   }
 
   .nav__item:not(:last-child) {
@@ -9,7 +9,7 @@
   }
 
   .filter__item:not(:last-child) {
-    margin-right: 46px;
+    margin-right: clamp(46px, 3.85vw, 62px);
   }
 
   /* HERO */

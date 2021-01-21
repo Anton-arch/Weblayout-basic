@@ -84,6 +84,16 @@
     flex-flow: row wrap;
   }
 
+  .events__card {
+    width: 100%;
+    margin: 10px 0;
+    flex-shrink: 0;
+  }
+
+  .events-card__picture > img {
+    width: 100%;
+  }
+
   /* CONTACTS */
   .contacts-section {
     padding-top: clamp(53px, 16.9vw, 79px);

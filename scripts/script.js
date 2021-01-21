@@ -24,6 +24,20 @@ window.addEventListener('DOMContentLoaded', function () {
     }, 1000);
   });
 
+  // Burger
+  const burger = document.querySelector('.burger');
+  const navItem = document.querySelectorAll('.nav__item')
+
+  burger.addEventListener('click', function() {
+    document.querySelector('.nav').classList.toggle('nav--open');
+  });
+
+  navItem.forEach(el => {
+    el.addEventListener('click', function() {
+      document.querySelector('.nav').classList.remove('nav--open');
+    });
+  });
+
    // Header-dropdowns
   const filter = document.querySelector('.header-section__filter');
   const filterBtn = document.querySelectorAll('.filter-item__button');
@@ -109,6 +123,7 @@ window.addEventListener('DOMContentLoaded', function () {
     // Optional parameters
     direction: 'horizontal',
     autoHeight: true,
+    watchOverflow: true,
     updateOnWindowResize: true,
     breakpoints: {
       1400: {
@@ -151,6 +166,35 @@ window.addEventListener('DOMContentLoaded', function () {
       nextEl: '.gallery-swiper-button-next',
       prevEl: '.gallery-swiper-button-prev',
     },
+  });
+
+  // Gallery-modals
+  const btns = document.querySelectorAll('.gallery__wrapper-image');
+  const modalOverlay = document.querySelector('.modal-overlay');
+  const modals = document.querySelectorAll('.modal');
+
+  btns.forEach((el) => {
+    el.addEventListener('click', (e) => {
+      let path = e.currentTarget.getAttribute('data-modal-path');
+
+      modals.forEach((el) => {
+        el.classList.remove('modal--visible');
+      });
+
+      document.querySelector(`[data-modal-target="${path}"]`).classList.add('modal--visible');
+      modalOverlay.classList.add('modal-overlay--visible');
+
+    });
+  });
+
+  modalOverlay.addEventListener('click', (e) => {
+
+    if (e.target == modalOverlay) {
+      modalOverlay.classList.remove('modal-overlay--visible');
+      modals.forEach((el) => {
+        el.classList.remove('modal--visible');
+      });
+    };
   });
 
   // Catalog-tabs-countries
@@ -236,56 +280,37 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
   // Events-mobile-swiper
-  let eventSwiper = new Swiper('.events__swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    autoHeight: true,
-    updateOnWindowResize: true,
-    loop: true,
-    breakpoints: {
-      300: {
-        slidesPerView: 1,
-      },
-    },
-    speed: 1500,
-    pagination: {
-      el: '.events__swiper-pagination',
-      type: 'bullets',
-      clicable: false,
-    },
-  });
+  const slider = document.querySelector('.events__swiper-container');
+  let eventsSwiper;
 
-    if (window.innerWidth > 576 ) {
-      eventSwiper.destroy();
+  function mobileSlider() {
+    if (window.innerWidth <= 576 && slider.dataset.mobile == 'false') {
+      eventsSwiper = new Swiper(slider, {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        slideClass: 'events__card',
+        wrapperClass: 'events__swiper-wrapper',
+        pagination: {
+          el: '.events__swiper-pagination',
+        }
+      });
+
+      slider.dataset.mobile = 'true';
     }
 
-  // const eventSwiper = document.querySelector('.events__swiper-container');
+    if (window.innerWidth > 576) {
+      slider.dataset.mobile = 'false';
+      if (slider.classList.contains('swiper-container-initialized')) {
+        eventsSwiper.destroy();
+      }
+    }
+  }
 
-  // let evSwiper;
+  mobileSlider()
 
-  // function mobileSlider() {
-  //   if(window.innerWidth <= 576 && eventSwiper.dataset.mobile == 'false') {
-  //     evSwiper = new Swiper(eventSwiper, {
-  //       slidesPerView: 1,
-  //       spaceBetween: 10,
-  //       loop: true,
-  //     });
-
-  //     eventSwiper.dataset.mobile = 'true';
-  //   };
-
-  //   if (window.innerWidth > 576 ) {
-  //     eventSwiper.dataset.mobile = 'false';
-
-  //     evSwiper.destroy();
-  //   }
-  // };
-
-  // mobileSlider();
-
-  // window.addEventListener('resize', () => {
-  //   mobileSlider();
-  // });
+  window.addEventListener('resize', () => {
+    mobileSlider();
+  });
 
   // Project-swiper
   let projectsSwiper = new Swiper('.projects__swiper-container', {
@@ -323,55 +348,78 @@ window.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  // EDITION SPOILER
-  let spoiler =  document.querySelector('.edition__categories-text');
+  // Edition-Spoiler
+  const spoiler =  document.querySelector('.edition__categories-text');
+  const editionCheckbox = document.querySelectorAll('.edition__checkbox');
+  const editionLabel = document.querySelectorAll('.edition__label');
 
   spoiler.addEventListener('click', function(ev) {
     ev.target.classList.toggle('is-open');
   });
 
-  let editionSwiper = new Swiper('.edition__swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    autoHeight: true,
-    updateOnWindowResize: true,
-    loop: true,
-    breakpoints: {
-      1400: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 50,
-      },
-      992: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 50,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-      },
-      577: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 15,
-      },
-    },
-    speed: 1500,
-    pagination: {
-      el: '.edition-swiper-pagination',
-      type: 'fraction',
-      clicable: false,
-    },
-    navigation: {
-      nextEl: '.edition-swiper-button-next',
-      prevEl: '.edition-swiper-button-prev',
-    },
-  });
 
-    if (window.innerWidth < 576 ) {
-      editionSwiper.destroy();
+  // Edition-Swiper
+  const sliders = document.querySelector('.edition__swiper-container');
+  let editionsSwiper;
+
+  function mobileSliders() {
+    if (window.innerWidth > 576 && sliders.dataset.mobiles == 'false') {
+      editionsSwiper = new Swiper(sliders, {
+        direction: 'horizontal',
+        autoHeight: true,
+        updateOnWindowResize: true,
+        loop: true,
+        breakpoints: {
+          1400: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 50,
+          },
+          992: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 50,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          577: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 15,
+          },
+        },
+        speed: 1500,
+        pagination: {
+          el: '.edition-swiper-pagination',
+          type: 'fraction',
+          clicable: false,
+        },
+        navigation: {
+          nextEl: '.edition-swiper-button-next',
+          prevEl: '.edition-swiper-button-prev',
+        },
+        slideClass: 'edition__swiper-slide',
+        wrapperClass: 'edition__swiper-wrapper',
+      });
+
+      sliders.dataset.mobile = 'true';
     }
+
+    if (window.innerWidth <= 576) {
+      sliders.dataset.mobile = 'false';
+      if (sliders.classList.contains('swiper-container-initialized')) {
+        editionsSwiper.destroy();
+      }
+    }
+  }
+
+  mobileSliders()
+
+  window.addEventListener('resize', () => {
+    mobileSliders();
+  });
 
   // Contacts-map
   // Функция ymaps.ready() будет вызвана, когда

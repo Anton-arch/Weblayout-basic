@@ -152,11 +152,11 @@
               <a class="nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
+          <a class="header__log-in" href="#">
+            Войти
+          </a>
         </nav>
-        <a class="header__log-in" href="#">
-          Войти
-        </a>
-        <button class="header-bottom__btn header-bottom__btn_top" id="header-bottom__btn"></button>
+        <button class="header-bottom__btn header-bottom__btn_top"></button>
       </div>
     </div>
     <div class="header__bottom header-bottom">
@@ -395,7 +395,7 @@
         </ul>
         <form class="header-bottom__search flex">
           <input class="header-bottom__input" type="search" placeholder="Поиск по сайту">
-          <button class="header-bottom__btn" id="header-bottom__btn"></button>
+          <button class="header-bottom__btn"></button>
         </form>
       </div>
     </div>
@@ -461,178 +461,363 @@
               class="gallery-description__link" href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией.
           </p>
         </div>
-          <div class="gallery__swiper-container swiper-container flex">
-            <div class="gallery__swiper-buttons flex">
-              <button class="swiper-button-prev gallery-swiper-button-prev"></button>
-              <div class="gallery-swiper-pagination"></div>
-              <button class="swiper-button-next gallery-swiper-button-next"></button>
-            </div>
-            <div class="gallery__swiper-wrapper swiper-wrapper">
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-92@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-92@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+        <div class="gallery__swiper-container swiper-container flex">
+          <div class="gallery__swiper-buttons flex">
+            <button class="swiper-button-prev gallery-swiper-button-prev"></button>
+            <div class="gallery-swiper-pagination"></div>
+            <button class="swiper-button-next gallery-swiper-button-next"></button>
+          </div>
+          <div class="gallery__swiper-wrapper swiper-wrapper">
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="one">
+              <picture>
+                <source srcset="images/Rectangle-92@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-92@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-95@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-95@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="two">
+              <picture>
+                <source srcset="images/Rectangle-95@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-95@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-93@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-93@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="three">
+              <picture>
+                <source srcset="images/Rectangle-93@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-93@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-96@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-96@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="four">
+              <picture>
+                <source srcset="images/Rectangle-96@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-96@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-94@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-94@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="five">
+              <picture>
+                <source srcset="images/Rectangle-94@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-94@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-97@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-97@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="six">
+              <picture>
+                <source srcset="images/Rectangle-97@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-97@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-70@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-70@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="seven">
+              <picture>
+                <source srcset="images/Rectangle-70@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-70@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-72@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-72@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="eight">
+              <picture>
+                <source srcset="images/Rectangle-72@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-72@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-68@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-68@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="nine">
+              <picture>
+                <source srcset="images/Rectangle-68@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-68@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-71@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-71@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="ten">
+              <picture>
+                <source srcset="images/Rectangle-71@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-71@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-69@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-69@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="eleven">
+              <picture>
+                <source srcset="images/Rectangle-69@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-69@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-73@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-73@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="twelve">
+              <picture>
+                <source srcset="images/Rectangle-73@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-73@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-77@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-77@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="thirteen">
+              <picture>
+                <source srcset="images/Rectangle-77@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-77@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-78@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-78@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="fourteen">
+              <picture>
+                <source srcset="images/Rectangle-78@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-78@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-74@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-74@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="fifteen">
+              <picture>
+                <source srcset="images/Rectangle-74@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-74@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-75@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-75@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="sixteen">
+              <picture>
+                <source srcset="images/Rectangle-75@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-75@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-79@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-79@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="seventeen">
+              <picture>
+                <source srcset="images/Rectangle-79@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-79@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
-              <div class="swiper-slide gallery__swiper-slide">
-                <button class="gallery__wrapper-image">
-                  <picture>
-                    <source srcset="images/Rectangle-76@1x(media-320).jpg" media="(max-width: 576px)">
-                    <img class="gallery__image" src="images/Rectangle-76@1x.jpg" alt="Экспозиция">
-                  </picture>
-                </button>
-              </div>
+            <button class="gallery__wrapper-image swiper-slide gallery__swiper-slide" data-modal-path="eighteen">
+              <picture>
+                <source srcset="images/Rectangle-76@1x(media-320).jpg" media="(max-width: 576px)">
+                <img class="gallery__image" src="images/Rectangle-76@1x.jpg" alt="Экспозиция">
+              </picture>
+            </button>
 
+          </div>
+        </div>
+      </div>
+
+      <div class="modals">
+        <div class="modal-overlay flex">
+          <div class="modal" data-modal-target="one">
+            <div class="gallery-modal-card-img modal--1"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">“Торс”</p>
+              <p class="gallery-modal-card-text__year text-mini">1929 год</p>
+              <p class="gallery-modal-card-text__text">В 20-х годах Малевич пишет серии картин с крестьянами. Люди
+                без лиц, разделенные на две половины по цветам. Это тоже загадка Малевича. В основном все
+                пишут о Квадрате и супрематизме, то есть о беспредметной живописи. А вот эти крестьяне – это что?
+                Возвращение к фигуративной живописи? Или все-таки попытка дальнейшего создания нового мира, создания
+                человека из простейших форм?</p>
             </div>
           </div>
+          <div class="modal" data-modal-target="two">
+            <div class="gallery-modal-card-img modal--2"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Иван Клюн</h3>
+              <p class="gallery-modal-card-text__name">«Супрематизм. Конструкция»</p>
+              <p class="gallery-modal-card-text__year text-mini">1915 год</p>
+              <p class="gallery-modal-card-text__text"> Иван Клюн умер в 1943 году уже практически забытым. За 10
+                лет до
+                смерти он разорвал отношения с авангардом, но реалистом стать не смог. Георгий Костаки наткнулся на
+                работы Клюна практически случайно, интуиция позволила ему игнорировать общее мнение «Клюн —
+                мазила-авангардист второго ряда, эпигон Малевича» и собрать первую в мире коллекцию его работ.</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="three">
+            <div class="gallery-modal-card-img modal--3"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Женщина с граблями»</p>
+              <p class="gallery-modal-card-text__year text-mini">1931-1932</p>
+              <p class="gallery-modal-card-text__text">«Женщина с граблями» — это картина из второй серии
+                крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах,
+                после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году
+              </p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="four">
+            <div class="gallery-modal-card-img modal--4"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Крестьянки с ведрами»</p>
+              <p class="gallery-modal-card-text__year text-mini">1912 - 1913 г. </p>
+              <p class="gallery-modal-card-text__text">Эта картина стала одной из тех, что положили начало
+                формированию нового художественного строя картины: она была призвана воздействовать на зрителя уже
+                не фабулой, темой, а прежде всего выразительной игрой живописных элементов. У картин Малевича своя
+                логика и своя выразительность, они построены на сочетаниях оттенков и контрастах и отличаются
+                сложной композицией</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="five">
+            <div class="gallery-modal-card-img modal--5"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Уборка ржи»</p>
+              <p class="gallery-modal-card-text__year text-mini"> 1912 год</p>
+              <p class="gallery-modal-card-text__text">Одна из первых картин, явившая признаки
+                кубофутуристической живописи. Стога сена в виде цилиндров и четкие формы человеческих фигур
+                составляют довольно сильную и устойчивую композицию. Интересно, что верхняя часть полотна, будто бы
+                выходит из-под контроля этой жесткой схемы. Стога располагаются беспорядочно, нарушая порядок,
+                создавая хаотичность и необузданность</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="six">
+            <div class="gallery-modal-card-img modal--6"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Супрематизм»</p>
+              <p class="gallery-modal-card-text__year text-mini"> 1916 год</p>
+              <p class="gallery-modal-card-text__text">«Супрематизм устанавливает связи с Землею, но в силу
+                экономических своих построений изменяет всю архитектуру вещей Земли, в мирском смысле слова
+                соединяясь с пространством движущихся однолитных масс планетной системы».
+                Казимир Малевич</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="seven">
+            <div class="gallery-modal-card-img modal--7"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Плотник»</p>
+              <p class="gallery-modal-card-text__year text-mini">1929 год</p>
+              <p class="gallery-modal-card-text__text">Ощущение покоя, очищения, защиты несет эта картина. Пожалуй,
+                ее можно назвать «иконой нового времени». Все говорит об этом: фронтальность, плоскостность, выбор
+                больших главных элементов, бесспорный символизм цвета, обратная перспектива, присутствие креста, и,
+                конечно же, прямая ассоциация с Христом, который был сыном плотника в земной жизни</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="eight">
+            <div class="gallery-modal-card-img modal--8"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Крестьянин»</p>
+              <p class="gallery-modal-card-text__year text-mini">1929 год</p>
+              <p class="gallery-modal-card-text__text">В фигуре крестьянина, застывшей в трагическом оцепенении,
+                запрессована совокупность страданий и чаяний всего русского крестьянства. Перед нами не какой-либо
+                конкретный человек с его переживаниями, а русский крестьянин вообще, с его болью и упованием </p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="nine">
+            <div class="gallery-modal-card-img modal--9"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Два крестьянина на фоне полей»</p>
+              <p class="gallery-modal-card-text__year text-mini">1930 год</p>
+              <p class="gallery-modal-card-text__text"> Совершенно обезличенные фигуры, различающиеся только цветом
+                туловища, окрашенного у одной фигуры в желтый, у другой – в красный цвет. Лица похожи на белые
+                овалы, обрамленные сверху и снизу черной затушевкой, означающей бороду и волосы. На заднем плане –
+                обширная перспектива – поля, составленные из разноцветных полос, линия горизонта и синее небо</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="ten">
+            <div class="gallery-modal-card-img modal--10"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Супрематизм»</p>
+              <p class="gallery-modal-card-text__year text-mini">1916-1917</p>
+              <p class="gallery-modal-card-text__text">Казимир Малевич совершил один из самых грандиозных
+                переворотов в развитии русского авангарда, истории живописи, - изобрёл художественно-философскую
+                систему - супрематизм. В её основе лежит выражение беспредельной абстрактной вселенной посредством
+                простейших геометрических форм и цвета</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="eleven">
+            <div class="gallery-modal-card-img modal--11"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Супрематизм»</p>
+              <p class="gallery-modal-card-text__year text-mini">1916-1917</p>
+              <p class="gallery-modal-card-text__text">Казимир Малевич совершил один из самых грандиозных
+                переворотов в развитии русского авангарда, истории живописи, - изобрёл художественно-философскую
+                систему - супрематизм. В её основе лежит выражение беспредельной абстрактной вселенной посредством
+                простейших геометрических форм и цвета</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="twelve">
+            <div class="gallery-modal-card-img modal--12"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Девушки в поле»</p>
+              <p class="gallery-modal-card-text__year text-mini">1928-1929</p>
+              <p class="gallery-modal-card-text__text"> Малевич подчеркивает безликость персонажей картины, что
+                соответствует его идее о "космическом" восприятии мира. Вместе с тем в композиции "Девушки в поле"
+                ощущается отдаленная связь с обобщенными образами древнерусских фресок.</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="thirteen">
+            <div class="gallery-modal-card-img modal--13"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Женщина с граблями»</p>
+              <p class="gallery-modal-card-text__year text-mini">1931-1932</p>
+              <p class="gallery-modal-card-text__text">Картина из второй серии крестьянского цикла работ Казимира
+                Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян
+                после Берлинской и Варшавской выставок в 1927 году.</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="fourteen">
+            <div class="gallery-modal-card-img modal--14"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Письменный стол и комната»</p>
+              <p class="gallery-modal-card-text__year text-mini">1913 год</p>
+              <p class="gallery-modal-card-text__text"> «Письменный стол и комната» от 1913 года в последний раз
+                выставлялась на выставке в 2014 году в британской галерее «Тейт-Модерн»</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="fifteen">
+            <div class="gallery-modal-card-img modal--15"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Супрематизм»</p>
+              <p class="gallery-modal-card-text__year text-mini">1916-1917</p>
+              <p class="gallery-modal-card-text__text">Термином "супрематизм", Малевич подразумевал "постановку
+                опыта чистой, не имеющей практического значения беспредметности". Свои работы он поначалу компоновал
+                преимущественно из квадратов; позже он стал работать с линиями, кругами, прямоугольниками и
+                крестами</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="sixteen">
+            <div class="gallery-modal-card-img modal--16"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Зимний пейзаж»</p>
+              <p class="gallery-modal-card-text__year text-mini">1930 год</p>
+              <p class="gallery-modal-card-text__text"> Манера письма
+                примитивистская, картина написана будто бы неумелой детской рукой, когда еще нет навыков рисования
+                сложных объектов, и неопытный художник рисует геометрическими фигурами увиденное. Малевич, опытный
+                художник, специально применил этот метод для передачи ощущения зимнего дня.
+              </p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="seventeen">
+            <div class="gallery-modal-card-img modal--17"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">«Спортсмены»</p>
+              <p class="gallery-modal-card-text__year text-mini">1928 - 1932</p>
+              <p class="gallery-modal-card-text__text">Если присмотреться, окажется, что супрематический квартет
+                больше смахивает на классическую икону с изображением четверки святых. И если сейчас для нас это не
+                так очевидно, то для постреволюционного человека, который обычно все еще имел тесные связи с
+                православием, это было ясно, как божий день</p>
+            </div>
+          </div>
+          <div class="modal" data-modal-target="eighteen">
+            <div class="gallery-modal-card-img modal--18"></div>
+            <div class="gallery-modal-card-text">
+              <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
+              <p class="gallery-modal-card-text__name">На жатву (Марфа и Ванька)»</p>
+              <p class="gallery-modal-card-text__year text-mini">1928—1929</p>
+              <p class="gallery-modal-card-text__text"> Несмотря на примитивность форм, художнику удалось передать
+                движение — мы отчетливо понимаем, что мальчик идет вперед, удаляясь от нас.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
     </section>
 
     <section class="catalog-section catalog" id="catalog">
@@ -3254,8 +3439,8 @@
               </div>
             </div>
           </div>
-          <div class="events__swiper-pagination"></div>
         </div>
+        <div class="events__swiper-pagination"></div>
         <button class="events__button"><span>Все события</span></button>
       </div>
     </section>
@@ -3308,7 +3493,7 @@
           </div>
         </div>
 
-        <div class="edition__swiper-container">
+        <div class="edition__swiper-container" data-mobiles="false">
 
           <div class="edition__swiper-buttons flex">
             <button class="swiper-button-prev edition-swiper-button-prev"></button>
