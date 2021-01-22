@@ -212,6 +212,7 @@
   }
 
   .edition__categories-text {
+    position: relative;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     line-height: 38px;
@@ -243,6 +244,11 @@
   }
 
   .edition__categories {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
     column-count: 1;
   }
 

@@ -355,6 +355,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
   spoiler.addEventListener('click', function(ev) {
     ev.target.classList.toggle('is-open');
+    // editionCheckbox.forEach((el) => {
+    //   if (editionCheckbox.checked = true) {
+    //     editionLabel.style.display = flex;
+    //   } else if (editionCheckbox.checked = false) {
+    //     editionLabel.style.display = none;
+    //   }
+    // });
   });
 
 
@@ -363,7 +370,7 @@ window.addEventListener('DOMContentLoaded', function () {
   let editionsSwiper;
 
   function mobileSliders() {
-    if (window.innerWidth > 576 && sliders.dataset.mobiles == 'false') {
+    if (window.innerWidth > 576 && sliders.dataset.mobile == 'false') {
       editionsSwiper = new Swiper(sliders, {
         direction: 'horizontal',
         autoHeight: true,
