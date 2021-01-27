@@ -354,16 +354,33 @@ window.addEventListener('DOMContentLoaded', function () {
   const editionLabel = document.querySelectorAll('.edition__label');
 
   spoiler.addEventListener('click', function(ev) {
-    ev.target.classList.toggle('is-open');
-    // editionCheckbox.forEach((el) => {
-    //   if (editionCheckbox.checked = true) {
-    //     editionLabel.style.display = flex;
-    //   } else if (editionCheckbox.checked = false) {
-    //     editionLabel.style.display = none;
-    //   }
-    // });
-  });
+    if (!ev.currentTarget.classList.contains('is-open')) {
 
+      ev.currentTarget.classList.add('is-open');
+
+      editionLabel.forEach(el => {el.style.display = 'flex'});
+
+    } else {
+
+      ev.currentTarget.classList.remove('is-open');
+
+      editionCheckbox.forEach((el) => {
+
+        if (el.checked) {
+
+          el.closest('.edition__label').style.display = 'flex';
+
+        } else {
+
+          el.closest('.edition__label').style.display = 'none';
+
+        }
+
+      });
+
+    }
+
+  });
 
   // Edition-Swiper
   const sliders = document.querySelector('.edition__swiper-container');

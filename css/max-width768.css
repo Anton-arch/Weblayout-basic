@@ -80,10 +80,6 @@
   }
 
   /* EVENTS */
-  .events__swiper-wrapper {
-    flex-flow: row wrap;
-  }
-
   .events__card {
     width: 100%;
     margin: 10px 0;
