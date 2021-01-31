@@ -354,6 +354,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const editionLabel = document.querySelectorAll('.edition__label');
 
   spoiler.addEventListener('click', function(ev) {
+
     if (!ev.currentTarget.classList.contains('is-open')) {
 
       ev.currentTarget.classList.add('is-open');
@@ -387,7 +388,7 @@ window.addEventListener('DOMContentLoaded', function () {
   let editionsSwiper;
 
   function mobileSliders() {
-    if (window.innerWidth > 576 && sliders.dataset.mobile == 'false') {
+    if (window.innerWidth > 576 && sliders.dataset.mobiles == 'false') {
       editionsSwiper = new Swiper(sliders, {
         direction: 'horizontal',
         autoHeight: true,

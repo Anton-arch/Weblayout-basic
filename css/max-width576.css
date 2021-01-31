@@ -165,7 +165,7 @@
 
   .events__swiper-wrapper {
     flex-wrap: nowrap;
-    column-count: 1;
+    column-gap: initial;
   }
 
   .events__card {
@@ -176,6 +176,7 @@
   .events__card:nth-child(4),
   .events__card:nth-child(5) {
     display: flex;
+    opacity: 1;
   }
 
   .events-card__figcaption {
