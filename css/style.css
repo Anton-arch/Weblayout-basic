@@ -93,6 +93,14 @@ ul {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.dark {
+  background: #18171b;
+}
+
 .section-title {
   font-weight: 400;
   font-size: 48px;
@@ -123,10 +131,6 @@ ul {
   display: none;
 }
 
-.header-bottom__btn_top {
-  display: none;
-}
-
 .header-top__container {
   align-items: center;
   padding: 29px 15px;
@@ -152,6 +156,10 @@ ul {
 .nav {
   display: flex;
   width: 100%;
+}
+
+.nav__close {
+  display: none;
 }
 
 .nav__list {
@@ -415,12 +423,12 @@ ul {
 }
 
 .header-bottom__btn {
-  margin-right: 10px;
   border: none;
   width: 23px;
   height: 22px;
   order: 1;
   background: url(../images/Search.svg) center center no-repeat transparent;
+  background-size: cover;
   cursor: pointer;
   transition: background .15s ease-in-out;
 }
@@ -429,7 +437,10 @@ ul {
 .header-bottom__input:hover + .header-bottom__btn,
 .header-bottom__btn:focus,
 .header-bottom__btn:hover {
+  width: 23px;
+  height: 22px;
   background: url(../images/Search-hover.svg) center center no-repeat transparent;
+  background-size: cover;
 }
 
 .header-bottom__input:focus::placeholder {
@@ -446,6 +457,7 @@ ul {
 }
 
 .header-bottom__input {
+  margin-left: 10px;
   border: none;
   order: 2;
   border-bottom: 1px solid var(--white);
@@ -463,6 +475,10 @@ ul {
 .header-bottom__input::placeholder {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.85);
+}
+
+.header-bottom__search_top {
+  display: none;
 }
 
 /* MAIN */
@@ -803,12 +819,12 @@ ul {
 }
 
 .modal {
+  position: relative;
   display: none;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  height: 80vh;
-  background-color: transparent;
+  width: 900px;
+  background: var(--white);
 }
 
 .modal-overlay--visible {
@@ -821,134 +837,71 @@ ul {
   display: flex;
 }
 
-.gallery-modal-card-img {
-  flex: 0 0 50%;
-  margin-right: 15px;
+.modal__picture {
+  flex: 1 0 40%;
 }
 
 .gallery-modal-card-text {
-  flex: 0 1 50%;
-  padding: 10px;
-  border-radius: 10px;
-  max-height: 100%;
-  overflow-y: auto;
-  color: var(--dark);
-  background-color: var(--white);
-  line-height: 24px;
+  flex: 0 1 60%;
+  padding: 0 50px;
+  color: #333;
 }
 
-.gallery-modal-card-text__header,
-.gallery-modal-card-text__name,
+.gallery-modal-card-text__header {
+  line-height: 28px;
+}
+
+.gallery-modal-card-text__name {
+  line-height: 28px;
+  font-weight: bold;
+}
+
 .gallery-modal-card-text__year {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: #969696;
 }
 
-.modal--1 {
-  height: 100%;
-  background: url(../images/Rectangle-92@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  border: none;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  cursor: pointer;
 }
 
-.modal--2 {
-  height: 100%;
-  background: url(../images/Rectangle-95@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
+.modal__close::before,
+.modal__close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transition: background .15s ease-in-out;
 }
 
-.modal--3 {
-  height: 100%;
-  background: url(../images/Rectangle-93@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
+.modal__close::before {
+  transform: rotate(45deg) translateY(-50%);
 }
 
-.modal--4 {
-  height: 100%;
-  background: url(../images/Rectangle-96@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
+.modal__close::after {
+  transform: rotate(-45deg) translateY(-50%);
 }
 
-.modal--5 {
-  height: 100%;
-  background: url(../images/Rectangle-94@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
+.modal__close:hover::before,
+.modal__close:hover::after {
+  background: var(--purple-hover);
 }
 
-.modal--6 {
-  height: 100%;
-  background: url(../images/Rectangle-97@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--7 {
-  height: 100%;
-  background: url(../images/Rectangle-70@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--8 {
-  height: 100%;
-  background: url(../images/Rectangle-72@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--9 {
-  height: 100%;
-  background: url(../images/Rectangle-68@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--10 {
-  height: 100%;
-  background: url(../images/Rectangle-71@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--11 {
-  height: 100%;
-  background: url(../images/Rectangle-69@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--12 {
-  height: 100%;
-  background: url(../images/Rectangle-73@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--13 {
-  height: 100%;
-  background: url(../images/Rectangle-77@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--14 {
-  height: 100%;
-  background: url(../images/Rectangle-78@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--15 {
-  height: 100%;
-  background: url(../images/Rectangle-74@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--16 {
-  height: 100%;
-  background: url(../images/Rectangle-75@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--17 {
-  height: 100%;
-  background: url(../images/Rectangle-79@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
-}
-
-.modal--18 {
-  height: 100%;
-  background: url(../images/Rectangle-76@1x.jpg) center center no-repeat transparent;
-  background-size: cover;
+.modal__close:active::before,
+.modal__close:active::after {
+  background: var(--purple-active);
 }
 
 /* CATALOG */
@@ -1476,13 +1429,22 @@ ul {
 }
 
 .edition__categories,
-.edition__price {
+.edition__price,
+.edition__categoties_wrapper {
   flex-direction: column;
   border: none;
 }
 
+.edition__categoties_wrapper {
+  white-space: nowrap;
+}
+
 .edition__categories {
   margin-bottom: 40px;
+}
+
+.edition__categoties_wrapper:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .edition__categories-text {

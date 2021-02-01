@@ -129,6 +129,7 @@
           </svg>
         </a>
         <nav class="nav">
+          <button class="nav__close"></button>
           <ul class="nav__list flex">
             <li class="nav__item">
               <a class="nav__link" href="#about-us">О нас</a>
@@ -156,7 +157,10 @@
             Войти
           </a>
         </nav>
-        <button class="header-bottom__btn header-bottom__btn_top"></button>
+        <div class="header-bottom__search flex header-bottom__search_top dark">
+          <input class="header-bottom__input" type="search" placeholder="Поиск по сайту">
+          <button class="header-bottom__btn"></button>
+        </div>
       </div>
     </div>
     <div class="header__bottom header-bottom">
@@ -601,7 +605,10 @@
       <div class="modals">
         <div class="modal-overlay flex">
           <div class="modal" data-modal-target="one">
-            <div class="gallery-modal-card-img modal--1"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-92@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-92@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">“Торс”</p>
@@ -612,9 +619,13 @@
                 Возвращение к фигуративной живописи? Или все-таки попытка дальнейшего создания нового мира, создания
                 человека из простейших форм?</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="two">
-            <div class="gallery-modal-card-img modal--2"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-95@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-95@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Иван Клюн</h3>
               <p class="gallery-modal-card-text__name">«Супрематизм. Конструкция»</p>
@@ -625,9 +636,13 @@
                 работы Клюна практически случайно, интуиция позволила ему игнорировать общее мнение «Клюн —
                 мазила-авангардист второго ряда, эпигон Малевича» и собрать первую в мире коллекцию его работ.</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="three">
-            <div class="gallery-modal-card-img modal--3"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-93@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-93@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Женщина с граблями»</p>
@@ -637,9 +652,13 @@
                 после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году
               </p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="four">
-            <div class="gallery-modal-card-img modal--4"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-96@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-96@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Крестьянки с ведрами»</p>
@@ -650,9 +669,13 @@
                 логика и своя выразительность, они построены на сочетаниях оттенков и контрастах и отличаются
                 сложной композицией</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="five">
-            <div class="gallery-modal-card-img modal--5"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-94@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-94@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Уборка ржи»</p>
@@ -663,9 +686,13 @@
                 выходит из-под контроля этой жесткой схемы. Стога располагаются беспорядочно, нарушая порядок,
                 создавая хаотичность и необузданность</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="six">
-            <div class="gallery-modal-card-img modal--6"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-97@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-97@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Супрематизм»</p>
@@ -675,9 +702,13 @@
                 соединяясь с пространством движущихся однолитных масс планетной системы».
                 Казимир Малевич</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="seven">
-            <div class="gallery-modal-card-img modal--7"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-70@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-70@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Плотник»</p>
@@ -687,9 +718,13 @@
                 больших главных элементов, бесспорный символизм цвета, обратная перспектива, присутствие креста, и,
                 конечно же, прямая ассоциация с Христом, который был сыном плотника в земной жизни</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="eight">
-            <div class="gallery-modal-card-img modal--8"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-72@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-72@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Крестьянин»</p>
@@ -698,9 +733,13 @@
                 запрессована совокупность страданий и чаяний всего русского крестьянства. Перед нами не какой-либо
                 конкретный человек с его переживаниями, а русский крестьянин вообще, с его болью и упованием </p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="nine">
-            <div class="gallery-modal-card-img modal--9"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-68@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-68@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Два крестьянина на фоне полей»</p>
@@ -710,9 +749,13 @@
                 овалы, обрамленные сверху и снизу черной затушевкой, означающей бороду и волосы. На заднем плане –
                 обширная перспектива – поля, составленные из разноцветных полос, линия горизонта и синее небо</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="ten">
-            <div class="gallery-modal-card-img modal--10"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-71@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-71@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Супрематизм»</p>
@@ -722,9 +765,13 @@
                 систему - супрематизм. В её основе лежит выражение беспредельной абстрактной вселенной посредством
                 простейших геометрических форм и цвета</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="eleven">
-            <div class="gallery-modal-card-img modal--11"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-69@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-69@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Супрематизм»</p>
@@ -734,9 +781,13 @@
                 систему - супрематизм. В её основе лежит выражение беспредельной абстрактной вселенной посредством
                 простейших геометрических форм и цвета</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="twelve">
-            <div class="gallery-modal-card-img modal--12"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-73@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-73@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Девушки в поле»</p>
@@ -745,9 +796,13 @@
                 соответствует его идее о "космическом" восприятии мира. Вместе с тем в композиции "Девушки в поле"
                 ощущается отдаленная связь с обобщенными образами древнерусских фресок.</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="thirteen">
-            <div class="gallery-modal-card-img modal--13"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-77@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-77@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Женщина с граблями»</p>
@@ -756,9 +811,13 @@
                 Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян
                 после Берлинской и Варшавской выставок в 1927 году.</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="fourteen">
-            <div class="gallery-modal-card-img modal--14"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-78@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-78@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Письменный стол и комната»</p>
@@ -766,9 +825,13 @@
               <p class="gallery-modal-card-text__text"> «Письменный стол и комната» от 1913 года в последний раз
                 выставлялась на выставке в 2014 году в британской галерее «Тейт-Модерн»</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="fifteen">
-            <div class="gallery-modal-card-img modal--15"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-74@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-74@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Супрематизм»</p>
@@ -778,9 +841,13 @@
                 преимущественно из квадратов; позже он стал работать с линиями, кругами, прямоугольниками и
                 крестами</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="sixteen">
-            <div class="gallery-modal-card-img modal--16"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-75@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-75@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Зимний пейзаж»</p>
@@ -791,9 +858,13 @@
                 художник, специально применил этот метод для передачи ощущения зимнего дня.
               </p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="seventeen">
-            <div class="gallery-modal-card-img modal--17"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-79@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-79@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">«Спортсмены»</p>
@@ -803,9 +874,13 @@
                 так очевидно, то для постреволюционного человека, который обычно все еще имел тесные связи с
                 православием, это было ясно, как божий день</p>
             </div>
+            <button class="modal__close"></button>
           </div>
           <div class="modal" data-modal-target="eighteen">
-            <div class="gallery-modal-card-img modal--18"></div>
+            <picture class="modal__picture">
+              <source srcset="images/Rectangle-76@1x(media-320).jpg" media="(max-width: 576px)">
+              <img class="gallery__image" src="images/Rectangle-76@1x.jpg" alt="Экспозиция">
+            </picture>
             <div class="gallery-modal-card-text">
               <h3 class="gallery-modal-card-text__header text">Казимир Малевич</h3>
               <p class="gallery-modal-card-text__name">На жатву (Марфа и Ванька)»</p>
@@ -814,6 +889,7 @@
                 движение — мы отчетливо понимаем, что мальчик идет вперед, удаляясь от нас.
               </p>
             </div>
+            <button class="modal__close"></button>
           </div>
         </div>
       </div>
@@ -3453,33 +3529,39 @@
           </h2>
           <h3 class="edition__categories-text is-open">Категории</h3>
           <div class="edition__categories flex">
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+            <div class="edition__categoties_wrapper flex">
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Бестселлеры</span> </label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Искусство</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Архитектура</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Дизайн</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Искусство</span></label>
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Архитектура</span></label>
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Дизайн</span></label>
+            </div>
+            <div class="edition__categoties_wrapper flex">
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Мода</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Детям</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Художественная
-                литература</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Публицистика</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Детям</span></label>
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Художественная
+                  литература</span></label>
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Публицистика</span></label>
+            </div>
+            <div class="edition__categoties_wrapper flex">
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                 class="edition__checkbox_custom"></span><span class="edition__label-text">Путеводители</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Философия</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Учебная
-                литература</span></label>
-            <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Журналы и газеты</span>
-            </label>
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Философия</span></label>
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Учебная
+                  литература</span></label>
+              <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Журналы и газеты</span>
+              </label>
+            </div>
           </div>
           <div class="edition__price">
             <h3 class="edition__price-text">Цена</h3>
@@ -3838,7 +3920,7 @@
             <h3 class="contacts__address-social">
               Связаться в один клик
             </h3>
-            <div class="flex">
+            <div class="contacts__wrapper_social flex">
               <a class="contacts__social-icons" href="https://web.whatsapp.com/" target="_blank">
                 <svg width="40" height="40" viewbox = "0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path

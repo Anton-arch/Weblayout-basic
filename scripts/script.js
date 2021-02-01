@@ -26,16 +26,29 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Burger
   const burger = document.querySelector('.burger');
-  const navItem = document.querySelectorAll('.nav__item')
+  const navItem = document.querySelectorAll('.nav__item');
+  const burgerClose = document.querySelector('.nav__close');
 
   burger.addEventListener('click', function() {
-    document.querySelector('.nav').classList.toggle('nav--open');
+    document.querySelector('.nav').classList.add('nav--open');
+  });
+
+  burgerClose.addEventListener('click', function() {
+    document.querySelector('.nav').classList.remove('nav--open');
   });
 
   navItem.forEach(el => {
     el.addEventListener('click', function() {
       document.querySelector('.nav').classList.remove('nav--open');
     });
+  });
+
+  // Header-top-search
+  const headerTopSearch = document.querySelector('.header-bottom__btn');
+
+  headerTopSearch.addEventListener('click', function() {
+    document.querySelector('.header-bottom__input').classList.toggle('hidden');
+    document.querySelector('.header-bottom__search_top').classList.toggle('dark');
   });
 
    // Header-dropdowns
@@ -172,6 +185,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const btns = document.querySelectorAll('.gallery__wrapper-image');
   const modalOverlay = document.querySelector('.modal-overlay');
   const modals = document.querySelectorAll('.modal');
+  const modalClose = document.querySelectorAll('.modal__close');
 
   btns.forEach((el) => {
     el.addEventListener('click', (e) => {
@@ -196,6 +210,20 @@ window.addEventListener('DOMContentLoaded', function () {
       });
     };
   });
+
+  // modalClose.forEach((el) => {
+  //   el.addEventListener('click', (e) => {
+
+  //     if (e.target == modalClose) {
+  //       modalOverlay.classList.remove('modal-overlay--visible');
+  //       modals.forEach((el) => {
+  //         el.classList.remove('modal--visible');
+  //       });
+  //     };
+  //   });
+  // }
+
+
 
   // Catalog-tabs-countries
   const tabs = document.querySelector('.catalog__list-countries');

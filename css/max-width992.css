@@ -124,7 +124,7 @@
 
   /* EDITIONS */
   .edition-section {
-    padding-bottom: 81px;
+    padding-bottom: 38px;
   }
 
   .edition__container {
@@ -136,9 +136,12 @@
   }
 
   .edition__categories {
-    display: block;
-    margin-bottom: 20px;
-    column-count: 3;
+    flex-direction: row;
+    margin-bottom: 28px;
+  }
+
+  .edition__categoties_wrapper:not(:last-child) {
+    margin-right: 57px;
   }
 
   .edition__price-range {

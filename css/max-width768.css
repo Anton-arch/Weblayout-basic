@@ -102,7 +102,7 @@
   .contacts__address-map {
     position: relative;
     flex-direction: column-reverse;
-    padding-bottom: 17px;
+    padding-bottom: 6px;
   }
 
   .contacts__wrapper_address-form-title {
@@ -153,7 +153,7 @@
   }
 
   .contacts__address-social {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     font-weight: 400;
     font-size: 18px;
   }
