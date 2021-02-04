@@ -70,27 +70,9 @@
     transform: scale(1.1);
   }
 
-  .nav {
-    display: none;
-    position: absolute;
-  }
-
   .header__log-in {
     display: none;
     position: absolute;
-  }
-
-  .header-top__btn {
-    display: block;
-    border: none;
-    width: 29px;
-    height: 29px;
-    background: url(../images/Search.svg) center center no-repeat transparent;
-    background-size: contain;
-  }
-
-  .header__bottom {
-    display: none;
   }
 
   /* MAIN */

@@ -1,8 +1,14 @@
 @media (max-width: 576px) {
   /* HEADER */
+  .header__top_background {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.65));
+  }
+
   .header-top__container {
-    padding-top: 12px;
+    position: relative;
+    padding-top: 13px;
     padding-bottom: 8px;
+    transition: all .3s ease-in-out;
   }
 
   .burger {
@@ -35,8 +41,33 @@
     width: 97px;
   }
 
-  .header-bottom__btn_top {
-    transform: scale(.75) translate(5px,-2px);
+  .header-top__btn,
+  .header-top__close {
+    width: 16px;
+    height: 16px;
+  }
+
+  .header-top__btn_end {
+    align-self: flex-end;
+  }
+
+  .header-top__input:focus + .header-top__btn,
+  .header-top__input:hover + .header-top__btn,
+  .header-top__btn:focus,
+  .header-top__btn:hover {
+    width: 16px;
+    height: 16px;
+    background: url(../images/Search-hover.svg) center center no-repeat transparent;
+    background-size: cover;
+  }
+
+  .header-top__container_searching {
+    padding-bottom: 20px;
+    transition: padding-bottom .3s ease-in-out;
+  }
+
+  .header-top__search_wrapper--height {
+    height: 38px;
   }
 
   /* HERO */

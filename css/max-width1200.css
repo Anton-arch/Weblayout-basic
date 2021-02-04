@@ -6,9 +6,10 @@
 
   /* HEADER */
   .header-top__container {
+    position: relative;
     justify-content: space-between;
-    padding-top: 28px;
-    padding-bottom: 27px;
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 
   .burger {
@@ -69,8 +70,12 @@
   }
 
   .header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     margin: 0;
     width: 188px;
+    transform: translate(-50%, -50%);
   }
 
   .nav {
@@ -154,31 +159,84 @@
     background: url(../images/To-come-in.svg) 65px center no-repeat;
   }
 
-  .header-bottom__search_top {
+  .header__log-in:hover {
+    background: url(../images/To-come-in-hover.svg) 65px center no-repeat;
+  }
+
+  .header-top__search {
     display: flex;
+    align-items: center;
+    padding: 0px 5px 3px 0;
+    transform: translate(5px, 4px);
+    overflow: hidden;
   }
 
-  .header-bottom__btn {
-    width: 29px;
-    height: 29px;
+  .header-top__search_wrapper {
+    transform: translateX(90%);
+    transition: transform .3s ease-in-out;
   }
 
-  .header-bottom__input:focus + .header-bottom__btn,
-  .header-bottom__input:hover + .header-bottom__btn,
-  .header-bottom__btn:focus,
-  .header-bottom__btn:hover {
-    width: 29px;
-    height: 29px;
+  .header-top__search_open {
+    transform: translateX(0);
+  }
+
+  .header-top__btn {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: url(../images/Search.svg) center center no-repeat transparent;
+    background-size: cover;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+  }
+
+  .header-top__input:focus + .header-top__btn,
+  .header-top__input:hover + .header-top__btn,
+  .header-top__btn:focus,
+  .header-top__btn:hover {
+    width: 30px;
+    height: 30px;
     background: url(../images/Search-hover.svg) center center no-repeat transparent;
     background-size: cover;
   }
 
-  .header-bottom__input::placeholder {
+  .header-top__input:focus::placeholder {
     font-size: 0;
   }
 
-  .header__log-in:hover {
-    background: url(../images/To-come-in-hover.svg) 65px center no-repeat;
+  .header-top__input:focus,
+  .header-top__btn:focus {
+    outline: none;
+  }
+
+  .header-top__btn:active {
+    background: url(../images/Search-active.svg) center center no-repeat transparent;
+    background-size: cover;
+  }
+
+  .header-top__input {
+    margin-left: 10px;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    width: 218px;
+    color: var(--purple-hover);
+    -webkit-text-fill-color: var(--white);
+    background: transparent;
+    transition: border-bottom .15s ease-in-out, background .15s ease-in-out;
+  }
+
+  .header-top__input:hover {
+    border-bottom-color: var(--purple-hover);
+  }
+
+  .header-top__input::placeholder {
+    font-size: 0;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .header-top__close {
+    display: none;
   }
 
   .header__bottom {
