@@ -128,11 +128,6 @@
     margin-bottom: clamp(26px, 8.15vw, 36px);
   }
 
-  .contacts__address-form-social_wrapper {
-    margin-top: 22px;
-    margin-bottom: 20px;
-  }
-
   .contacts__address-legend {
     margin-bottom: 17px;
     font-size: clamp(18px, 5.65vw, 24px);

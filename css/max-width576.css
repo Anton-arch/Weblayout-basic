@@ -37,6 +37,39 @@
     width: 13px;
   }
 
+  .nav {
+    padding: 56px 15px;
+  }
+
+  .nav__item {
+    margin-bottom: 18px;
+    font-size: 16px;
+  }
+
+  .nav__close {
+    top: 15px;
+    left: 16px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .nav__close::before,
+  .nav__close::after {
+    height: 2px;
+  }
+
+  .header__log-in {
+    padding: 11px 31px 11px 41px;
+    font-size: 12px;
+    background: url(../images/To-come-in.svg) 25px center no-repeat;
+    background-size: 9px;
+  }
+
+  .header__log-in:hover {
+    background: url(../images/To-come-in-hover.svg) 25px center no-repeat;
+    background-size: 12px;
+  }
+
   .logo {
     width: 97px;
   }
@@ -66,6 +99,20 @@
     transition: padding-bottom .3s ease-in-out;
   }
 
+  .header-top__search {
+    padding: 0px 2 3px 0;
+    transform: translate(0, 2px);
+  }
+
+  .header-top__search_wrapper {
+    transform: translateX(96%);
+    transition: transform .3s ease-in-out;
+  }
+
+  .header-top__search_open {
+    transform: translateX(0);
+  }
+
   .header-top__search_wrapper--height {
     height: 38px;
   }
@@ -91,6 +138,14 @@
   }
 
   /* GALLERY */
+  .gallery-section {
+    padding-top: 54px;
+  }
+
+  .gallery__title {
+    margin-bottom: 22px;
+  }
+
   .choices {
     width: 290px;
   }
@@ -115,7 +170,7 @@
 
   /* CATALOG */
   .catalog__title {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 
   .catalog__button {
@@ -132,10 +187,11 @@
   }
 
   .ui-accordion-header {
-    min-height: clamp(73px, 22.9vw, 114px);
+    min-height: clamp(74px, 22.9vw, 114px);
   }
 
   .ui-accordion-header-text {
+    transform: translate(0);
     font-size: clamp(18px, 5.65vw,24px);
   }
 
@@ -157,9 +213,13 @@
     right: clamp(40%, 50vw, 41.5%);
   }
 
+  #accordion-Italy {
+    margin-bottom: 49px;
+  }
+
   .accordion__list {
-    padding: 18px 0 20px 0;
-    height: 810px; /* Для макета */
+    padding: 15px 0;
+    height: 807px; /* Для макета */
     column-count: 1;
   }
 
@@ -179,7 +239,7 @@
 
   /* EVENTS */
   .events-section {
-    padding-top: 55px;
+    padding-top: 52px;
   }
 
   .events__container {
@@ -191,7 +251,7 @@
   }
 
   .events__swiper-container {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .events__swiper-wrapper {
@@ -210,8 +270,20 @@
     opacity: 1;
   }
 
+  .events-card__signature > div {
+    line-height: 15px;
+  }
+
+  .events-card__title {
+    margin-bottom: 35px;
+  }
+
   .events-card__figcaption {
     padding: 14px 10px 54px 28px;
+  }
+
+  .events-card__description {
+    margin-bottom: 0;
   }
 
   .events__button {
@@ -236,7 +308,7 @@
   /* EDITIONS */
   .edition-section {
     padding-top: 52px;
-    padding-bottom: 4px;
+    padding-bottom: 5px;
   }
 
   .edition__categories-prices {
@@ -268,7 +340,7 @@
 
   .edition__categories {
     flex-direction: column;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 
   .edition__categoties_wrapper:not(:last-child) {
@@ -277,12 +349,49 @@
   }
 
   .edition__label {
+    position: relative;
+    display: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     line-height: 35px;
   }
 
   .edition__label:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .label__close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: none;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    transform: translateY(-50%);
+  }
+
+  .label__close::before,
+  .label__close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: var(--purple-hover);
+    transform: translateY(-50%);
+  }
+
+  .label__close::before {
+    transform: rotate(45deg);
+  }
+
+  .label__close::after {
+    transform: rotate(-45deg);
+  }
+
+  .edition__checkbox:checked ~ .label__close {
+    display: block;
   }
 
   .edition__price {
@@ -381,6 +490,15 @@
   }
 
   /* CONTACTS */
+  .contacts__address-form-social {
+    padding-top: 22px;
+    padding-bottom: 23px;
+  }
+
+  .contacts__address-form-social_wrapper {
+    padding-top: 0;
+  }
+
   .contacts__address-form-title {
     font-size: clamp(18px, 5.7vw, 24px);
   }

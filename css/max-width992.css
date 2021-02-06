@@ -158,6 +158,10 @@
     display: block;
   }
 
+  .catalog-wrapper__title {
+    padding-top: 32px;
+  }
+
   .accordion__list {
     padding: 25px 0 29px 0;
     height: 342px; /* Для макета */
@@ -167,7 +171,7 @@
 
   /* EVENTS */
   .events-section {
-    padding-top: 75px;
+    padding-top: 76px;
   }
 
   .events__container {
@@ -193,7 +197,7 @@
 
   /* EDITIONS */
   .edition-section {
-    padding-bottom: 38px;
+    padding-bottom: 85px;
   }
 
   .edition__container {
@@ -241,10 +245,6 @@
   }
 
   /* CONTACTS */
-  .contacts__address-form-social_wrapper {
-    padding-top: 2px;
-  }
-
   .contacts__wrapper_address-form-title {
     margin-bottom: 35px;
   }
@@ -255,9 +255,5 @@
 
   .contacts__address-form-social {
     padding-left: max(15px, calc((100vw - 668px)/2));
-  }
-
-  .map {
-    height: 698px;
   }
 }

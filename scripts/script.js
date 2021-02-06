@@ -25,21 +25,26 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
   // Burger
+  const body = document.querySelector('.body');
   const burger = document.querySelector('.burger');
   const navItem = document.querySelectorAll('.nav__item');
   const burgerClose = document.querySelector('.nav__close');
+  const nav = document.querySelector('.nav');
 
   burger.addEventListener('click', function() {
-    document.querySelector('.nav').classList.add('nav--open');
+    nav.classList.add('nav--open');
+    body.classList.add('modal-open');
   });
 
   burgerClose.addEventListener('click', function() {
-    document.querySelector('.nav').classList.remove('nav--open');
+    nav.classList.remove('nav--open');
+    body.classList.remove('modal-open');
   });
 
   navItem.forEach(el => {
     el.addEventListener('click', function() {
-      document.querySelector('.nav').classList.remove('nav--open');
+      nav.classList.remove('nav--open');
+      body.classList.remove('modal-open');
     });
   });
 
@@ -404,35 +409,43 @@ window.addEventListener('DOMContentLoaded', function () {
   const spoiler =  document.querySelector('.edition__categories-text');
   const editionCheckbox = document.querySelectorAll('.edition__checkbox');
   const editionLabel = document.querySelectorAll('.edition__label');
+  const labelClose = document.querySelectorAll('.label__close');
 
   spoiler.addEventListener('click', function(ev) {
 
-    if (!ev.currentTarget.classList.contains('is-open')) {
+    if (window.innerWidth < 577) {
+      if (!ev.currentTarget.classList.contains('is-open')) {
 
-      ev.currentTarget.classList.add('is-open');
+        ev.currentTarget.classList.add('is-open');
 
-      editionLabel.forEach(el => {el.style.display = 'flex'});
+        editionLabel.forEach(el => {el.style.display = 'flex'});
 
-    } else {
+      } else {
 
-      ev.currentTarget.classList.remove('is-open');
+        ev.currentTarget.classList.remove('is-open');
 
-      editionCheckbox.forEach((el) => {
+        editionCheckbox.forEach((el) => {
 
-        if (el.checked) {
+          if (el.checked) {
 
-          el.closest('.edition__label').style.display = 'flex';
+            el.closest('.edition__label').style.display = 'flex';
 
-        } else {
+          } else {
 
-          el.closest('.edition__label').style.display = 'none';
+            el.closest('.edition__label').style.display = 'none';
 
-        }
+          }
 
-      });
+        });
 
+      }
     }
 
+  });
+
+  labelClose.forEach((el) => {
+    el.addEventListener('click', function(ev) {
+    });
   });
 
   // Edition-Swiper

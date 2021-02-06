@@ -30,15 +30,15 @@
   <script src="scripts/script.js"></script>
 </head>
 
-<body>
+<body class="body">
   <h1 class="visually-hidden">Blanchart, художественная галерея</h1>
   <header class="header">
     <div class="header__top header-top">
       <div class="container header-top__container flex">
         <button class="burger">
-          <div class="burger__wand"></div>
-          <div class="burger__wand"></div>
-          <div class="burger__wand"></div>
+          <span class="burger__wand"></span>
+          <span class="burger__wand"></span>
+          <span class="burger__wand"></span>
         </button>
         <a class="logo header__logo" href="#">
           <svg viewbox = "0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,13 +157,13 @@
             Войти
           </a>
         </nav>
-        <dib class="header-top__search">
+        <div class="header-top__search">
           <div class="header-top__search_wrapper flex">
             <button class="header-top__btn"></button>
             <input class="header-top__input" type="search" placeholder="Поиск по сайту">
             <button class="header-top__close"></button>
           </div>
-        </dib>
+        </div>
       </div>
     </div>
     <div class="header__bottom header-bottom">
@@ -1091,46 +1091,37 @@
                 <button class="accordion__item-button" data-author-path="Engerrand-Cardboard">Энгерран Куартон</button>
                 <button class="accordion__item-button" data-author-path="Henri-Bellos">Анри Бельчоз</button>
                 <button class="accordion__item-button" data-author-path="Simon-Marmion">Симон Мармион</button>
-                <button class="accordion__item-button" data-author-path="Jean-Fouquet">Жан Фуке</button>, <button
-                    class="accordion__item-button" data-author-path="Jean-Colombe">Жан Коломб</button>
+                <button class="accordion__item-button" data-author-path="Jean-Fouquet">Жан Фуке</button>
+                <button class="accordion__item-button" data-author-path="Jean-Colombe">Жан Коломб</button>
                 <button class="accordion__item-button" data-author-path="Michel-Colombe">Мишель Коломб</button>
               </div>
               <h3 class="ui-accordion-header flex"><span class="ui-accordion-header-text">C 1500 по 1599 гг.</span></h3>
               <div class="accordion__list">
-                <button class="accordion__item-button" data-author-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди
-                    Биндо</button>
-                <button class="accordion__item-button" data-author-path="Ambrodgio-Bissolo">Бергоньоне,
-                    Амброджо</button>
-                <button class="accordion__item-button" data-author-path="Francesco-Boltraffio">Биссоло,
-                    Франческо</button>
-                <button class="accordion__item-button" data-author-path="Giovanni-Bonsignori">Больтраффио,
-                    Джованни</button>
-                <button class="accordion__item-button" data-author-path="Francesco-Botticini">Бонсиньори,
-                    Франческо</button>
-                <button class="accordion__item-button" data-author-path="Rafaello-Bramantino">Боттичини,
-                    Рафаэлло</button>
+                <button class="accordion__item-button" data-author-path="Benedetto-di-Bindo-Bergognone">Бенедетто ди Биндо</button>
+                <button class="accordion__item-button" data-author-path="Ambrodgio-Bissolo">Бергоньоне, Амброджо</button>
+                <button class="accordion__item-button" data-author-path="Francesco-Boltraffio">Биссоло, Франческо</button>
+                <button class="accordion__item-button" data-author-path="Giovanni-Bonsignori">Больтраффио, Джованни</button>
+                <button class="accordion__item-button" data-author-path="Francesco-Botticini">Бонсиньори, Франческо</button>
+                <button class="accordion__item-button" data-author-path="Rafaello-Bramantino">Боттичини, Рафаэлло</button>
                 <button class="accordion__item-button" data-author-path="Bramantino">Брамантино</button>
                 <button class="accordion__item-button" data-author-path="Brea-Ludovico">Бреа, Людовико</button>
-                <button class="accordion__item-button" data-author-path="Ludovico-Biagio-dAntonio-Tucci">Бьяджо
-                    д’Антонио Туччи</button>
+                <button class="accordion__item-button" data-author-path="Ludovico-Biagio-dAntonio-Tucci">Бьяджо д’Антонио Туччи</button>
                 <button class="accordion__item-button" data-author-path="Vecchietta">Веккьетта</button>
                 <button class="accordion__item-button" data-author-path="Andrea-Verrochio">Андреа Верроккьо</button>
-                <button class="accordion__item-button accordion__item-button_active"
-                  data-author-path="Dominico-Girlandio">Доменико Гирландайо</button>
+                <button class="accordion__item-button accordion__item-button_active" data-author-path="Dominico-Girlandio">Доменико Гирландайо</button>
                 <button class="accordion__item-button" data-author-path="Benozzo-Gozzoli">Беноццо Гоццоли</button>
-                <button class="accordion__item-button" data-author-path="Granacci">Граначчи</button> <button
-                    class="accordion__item-button" data-author-path="Francesco">Франческо</button>
+                <button class="accordion__item-button" data-author-path="Granacci">Граначчи</button>
+                <button class="accordion__item-button" data-author-path="Francesco">Франческо</button>
                 <button class="accordion__item-button" data-author-path="Gregorio-Di-Cecco">Грегорио ди Чекко</button>
                 <button class="accordion__item-button" data-author-path="Giovanni-Da-Udine">Джованни да Удине</button>
                 <button class="accordion__item-button" data-author-path="Giovanni-Di-Paolo">Джованни ди Паоло</button>
                 <button class="accordion__item-button" data-author-path="Giorgione">Джорджоне</button>
-                <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>, <button
-                    class="accordion__item-button" data-author-path="Bernardo">Бернардо</button>
+                <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>
+                <button class="accordion__item-button" data-author-path="Bernardo">Бернардо</button>
                 <button class="accordion__item-button" data-author-path="Pesellino">Пезеллино</button>
-                <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро
-                    Перуджино</button>
-                <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>, <button
-                    class="accordion__item-button" data-author-path="Baldassare">Бальдассаре</button>
+                <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро Перуджино</button>
+                <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>
+                <button class="accordion__item-button" data-author-path="Baldassare">Бальдассаре</button>
                 <button class="accordion__item-button" data-author-path="Pisanello">Пизанелло</button>
                 <button class="accordion__item-button" data-author-path="Pinturicchio">Пинтуриккьо</button>
               </div>
@@ -1497,8 +1488,8 @@
                 <button class="accordion__item-button" data-author-path="Oscar-Blum">Оскар Блюм</button>
                 <button class="accordion__item-button" data-author-path="Lukas-CRANACH">Лукас КРАНАХ</button>
                 <button class="accordion__item-button" data-author-path="Franz-Xaver-1">Франц-Ксавер 1</button>
-                <button class="accordion__item-button" data-author-path="August-Judith">Август Джудит</button>, <button
-                    class="accordion__item-button" data-author-path="Fenner-Behmer-Hermann">Феннер Бехмер Герман</button>
+                <button class="accordion__item-button" data-author-path="August-Judith">Август Джудит</button>
+                <button class="accordion__item-button" data-author-path="Fenner-Behmer-Hermann">Феннер Бехмер Герман</button>
                 <button class="accordion__item-button" data-author-path="Georg-Engelhardt">Георг Энгельгардт</button>
               </div>
               <h3 class="ui-accordion-header flex"><span class="ui-accordion-header-text">C 1500 по 1599 гг.</span></h3>
@@ -2342,13 +2333,12 @@
               <button class="accordion__item-button" data-author-path="Giovanni-Da-Udine">Джованни да Удине</button>
               <button class="accordion__item-button" data-author-path="Giovanni-Di-Paolo">Джованни ди Паоло</button>
               <button class="accordion__item-button" data-author-path="Giorgione">Джорджоне</button>
-              <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>, <button
-                  class="accordion__item-button" data-author-path="Bernardo">Бернардо</button>
+              <button class="accordion__item-button" data-author-path="Parentino">Парентино</button>
+              <button class="accordion__item-button" data-author-path="Bernardo">Бернардо</button>
               <button class="accordion__item-button" data-author-path="Pesellino">Пезеллино</button>
-              <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро
-                  Перуджино</button>
-              <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>, <button
-                  class="accordion__item-button" data-author-path="Baldassare">Бальдассаре</button>
+              <button class="accordion__item-button" data-author-path="Pietro-Perugino">Пьетро Перуджино</button>
+              <button class="accordion__item-button" data-author-path="Peruzzi">Перуцци</button>
+              <button class="accordion__item-button" data-author-path="Baldassare">Бальдассаре</button>
               <button class="accordion__item-button" data-author-path="Pisanello">Пизанелло</button>
               <button class="accordion__item-button" data-author-path="Pinturicchio">Пинтуриккьо</button>
               </div>
@@ -3532,40 +3522,40 @@
           <h2 class="section-title edition__title">
             Издания
           </h2>
-          <h3 class="edition__categories-text is-open">Категории</h3>
+          <h3 class="edition__categories-text">Категории</h3>
           <div class="edition__categories flex">
             <div class="edition__categoties_wrapper flex">
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Бестселлеры</span> </label>
+                class="edition__checkbox_custom"></span><span class="edition__label-text">Бестселлеры</span><button class="label__close"></button></label>
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                  class="edition__checkbox_custom"></span><span class="edition__label-text">Искусство</span></label>
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Искусство</span><button class="label__close"></button></label>
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                  class="edition__checkbox_custom"></span><span class="edition__label-text">Архитектура</span></label>
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Архитектура</span><button class="label__close"></button></label>
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                  class="edition__checkbox_custom"></span><span class="edition__label-text">Дизайн</span></label>
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Дизайн</span><button class="label__close"></button></label>
             </div>
             <div class="edition__categoties_wrapper flex">
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Мода</span></label>
+                class="edition__checkbox_custom"></span><span class="edition__label-text">Мода</span><button class="label__close"></button></label>
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                  class="edition__checkbox_custom"></span><span class="edition__label-text">Детям</span></label>
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Детям</span><button class="label__close"></button></label>
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                   class="edition__checkbox_custom"></span><span class="edition__label-text">Художественная
-                  литература</span></label>
+                  литература</span><button class="label__close"></button></label>
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                  class="edition__checkbox_custom"></span><span class="edition__label-text">Публицистика</span></label>
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Публицистика</span><button class="label__close"></button></label>
             </div>
             <div class="edition__categoties_wrapper flex">
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                class="edition__checkbox_custom"></span><span class="edition__label-text">Путеводители</span></label>
+                class="edition__checkbox_custom"></span><span class="edition__label-text">Путеводители</span><button class="label__close"></button></label>
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
-                  class="edition__checkbox_custom"></span><span class="edition__label-text">Философия</span></label>
+                  class="edition__checkbox_custom"></span><span class="edition__label-text">Философия</span><button class="label__close"></button></label>
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                   class="edition__checkbox_custom"></span><span class="edition__label-text">Учебная
-                  литература</span></label>
+                  литература</span><button class="label__close"></button></label>
               <label class="edition__label"><input class="edition__checkbox visually-hidden" type="checkbox"><span
                   class="edition__checkbox_custom"></span><span class="edition__label-text">Журналы и газеты</span>
-              </label>
+              <button class="label__close"></button></label>
             </div>
           </div>
           <div class="edition__price">
@@ -3947,7 +3937,6 @@
                   <defs>
                     <lineargradient id="paint0_linear" x1="20" y1="0" x2="20" y2="39.7033"
                       gradientunits="userSpaceOnUse">
-                      <stop stop-color="#2AABEE" />
                       <stop offset="1" stop-color="#229ED9" />
                     </lineargradient>
                   </defs>
