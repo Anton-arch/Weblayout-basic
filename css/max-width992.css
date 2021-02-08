@@ -77,6 +77,15 @@
     color: rgba(255, 255, 255, 0.85);
   }
 
+  .nav {
+    padding-right: max(15px, calc((100vw - 668px)/2));
+    padding-left: max(15px, calc((100vw - 668px)/2));
+  }
+
+  .nav__close {
+    left: max(15px, calc((100vw - 668px)/2));
+  }
+
   /* HERO */
   .hero__title {
     font-size: clamp(32px, 9.38vw, 72px);
@@ -164,7 +173,7 @@
 
   .accordion__list {
     padding: 25px 0 29px 0;
-    height: 342px; /* Для макета */
+    /* height: 342px; Для макета */
     column-count: 3;
     column-gap: 40px;
   }

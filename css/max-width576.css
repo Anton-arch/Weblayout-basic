@@ -219,7 +219,7 @@
 
   .accordion__list {
     padding: 15px 0;
-    height: 807px; /* Для макета */
+    /* height: 807px; Для макета */
     column-count: 1;
   }
 
