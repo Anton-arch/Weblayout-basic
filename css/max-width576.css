@@ -104,17 +104,20 @@
     transform: translate(0, 2px);
   }
 
-  .header-top__search_wrapper {
-    transform: translateX(96%);
-    transition: transform .3s ease-in-out;
-  }
-
   .header-top__search_open {
     transform: translateX(0);
   }
 
   .header-top__search_wrapper--height {
     height: 38px;
+  }
+
+  .header-top__search_wrapper {
+    transform: translateX(96%);
+  }
+
+  .header-top__search_open {
+    transform: translateX(0);
   }
 
   /* HERO */
@@ -135,6 +138,15 @@
     max-width: 265px;
     line-height: 16px;
     font-weight: 400;
+  }
+
+  .hero__link {
+    padding: 10px 17px;
+  }
+
+  /* About-US */
+  .about-us__title {
+    margin-bottom: 16px;
   }
 
   /* GALLERY */
@@ -165,6 +177,7 @@
   }
 
   .gallery__swiper-slide {
+    max-height: 380px;
     text-align: center;
   }
 
@@ -233,7 +246,7 @@
   }
 
   /* GALLERY */
-    .gallery__swiper-buttons {
+  .gallery__swiper-buttons {
     transform: translateY(-55px);
   }
 

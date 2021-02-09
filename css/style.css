@@ -1935,6 +1935,8 @@ ul {
 .contacts__address-social {
   margin-bottom: 18px;
   font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.058rem;
 }
 
 .contacts__social-icons {
@@ -1959,6 +1961,7 @@ ul {
 /* Custom map */
 .map {
   width: 100%;
+  overflow: hidden;
 }
 
 [class*="ground-pane"] {
