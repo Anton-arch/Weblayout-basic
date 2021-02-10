@@ -249,6 +249,11 @@
     margin-top: 0;
   }
 
+  /* ABOUT-US */
+  .about-us__description {
+    line-height: 32px;
+  }
+
   /* HERO */
   .hero__container {
     padding-top: 113px;
@@ -273,9 +278,16 @@
     padding-top: 32px;
   }
 
+  .catalog__description > p,
+  .catalog-wrapper__description,
+  .projects__description {
+    line-height: 32px;
+  }
+
   /* EVENTS */
   .events-section {
     padding-top: 86px;
+    padding-bottom: 78px;
   }
 
   .events__card {
@@ -297,7 +309,7 @@
 
   /* PROJECTS */
   .projects-section {
-    padding-top: 87px;
+    padding-top: 86px;
   }
   .swiper-slide__image {
     transform: scale(1);

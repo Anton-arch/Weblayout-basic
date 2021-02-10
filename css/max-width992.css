@@ -177,7 +177,7 @@
 
   .accordion__list {
     padding: 25px 0 29px 0;
-    /* height: 342px; Для макета */
+    height: 342px; /*Для макета*/
     column-count: 3;
     column-gap: 40px;
   }
@@ -185,10 +185,7 @@
   /* EVENTS */
   .events-section {
     padding-top: 76px;
-  }
-
-  .events__container {
-    padding-bottom: 85px;
+    padding-bottom: 84px;
   }
 
   .events__swiper-wrapper {
@@ -210,7 +207,7 @@
 
   /* EDITIONS */
   .edition-section {
-    padding-bottom: 85px;
+    padding-bottom: 87px;
   }
 
   .edition__container {
@@ -223,7 +220,7 @@
 
   .edition__categories {
     flex-direction: row;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 
   .edition__categoties_wrapper:not(:last-child) {
@@ -263,7 +260,11 @@
   }
 
   .contacts-section {
-    padding-top: 87px;
+    padding-top: 84px;
+  }
+
+  .contacts__title {
+    margin-bottom: 24px;
   }
 
   .contacts__address-form-social {

@@ -135,7 +135,7 @@ ul {
 
 .header-top__container {
   align-items: center;
-  padding: 28px 15px 30px;
+  padding: 29px 15px 30px;
   font-size: 18px;
 }
 
@@ -585,8 +585,8 @@ ul {
 
 /* ABOUT-US */
 .about-us {
-  padding-top: 86px;
-  padding-bottom: 70px;
+  padding-top: 88px;
+  padding-bottom: 68px;
 }
 
 .about-us__title {
@@ -596,13 +596,13 @@ ul {
 
 .about-us__description {
   max-width: 1080px;
-  line-height: 32px;
+  line-height: 33px;
 }
 
 /* GALLERY */
 .gallery-section {
   padding-top: 85px;
-  padding-bottom: 81px;
+  padding-bottom: 80px;
   color: var(--white);
   background: url(../images/birmingham-museums-4@1x.jpg) center center no-repeat transparent;
   background-size: cover;
@@ -924,7 +924,7 @@ ul {
 
 /* CATALOG */
 .catalog-section {
-  padding-top: 85px;
+  padding-top: 86px;
 }
 
 .catalog__title {
@@ -934,7 +934,7 @@ ul {
 
 .catalog__title-list-countries {
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .catalog__item-countries {
@@ -1039,9 +1039,9 @@ ul {
 }
 
 .catalog__description > p {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   max-width: 1080px;
-  line-height: 32px;
+  line-height: 33px;
 }
 
 .catalog__description_active {
@@ -1085,14 +1085,14 @@ ul {
 
 .catalog-wrapper__date {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-size: 12px;
   color: #999;
 }
 
 .catalog-wrapper__description {
   max-width: 750px;
-  line-height: 32px;
+  line-height: 33px;
 }
 
 .ui-accordion {
@@ -1282,9 +1282,6 @@ ul {
 /* EVENTS */
 .events-section {
   padding-top: 85px;
-}
-
-.events__container {
   padding-bottom: 82px;
 }
 
@@ -1325,14 +1322,14 @@ ul {
 
 .events-card__figcaption {
   flex-direction: column;
-  padding: 14px 16px 46px 50px;
+  padding: 16px 16px 46px 50px;
   height: 100%;
 }
 
 .events-card__signature {
   display: block;
   flex-direction: column;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   font-size: 12px;
   color: #999;
   text-align: right;
@@ -1346,7 +1343,7 @@ ul {
 
 .events-card__description {
   margin-right: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   line-height: 32px;
 }
 
@@ -1452,11 +1449,11 @@ ul {
 }
 
 .edition__categories-prices {
-  margin-right: 9vw;
+  margin-right: 8.15vw;
 }
 
 .edition__title {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .edition__categories,
@@ -1691,7 +1688,7 @@ ul {
 .projects__description {
   margin-bottom: 24px;
   max-width: 1080px;
-  line-height: 32px;
+  line-height: 33px;
 }
 
 .projects__tooltip {
@@ -1830,9 +1827,9 @@ ul {
 .contacts__address-form-social {
   align-items: center;
   padding-top: 124px;
-  padding-right: max(50px, calc((100vw - 1680px)/2));
+  padding-right: max(50px, calc((100vw - 1890px)/2));
   padding-bottom: clamp(100px, 9vw, 122px);
-  padding-left: max(15px, calc((100vw - 1600px)/2));
+  padding-left: max(15px, calc((100vw - 1620px)/2));
   border-top: 1px solid var(--border);
   border-right: 1px solid var(--border);
 }

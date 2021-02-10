@@ -43,7 +43,7 @@
 
   .accordion__list {
     padding: 25px 0 29px 0;
-    /* height: 441px; Для макета */
+    height: 441px; /*Для макета*/
     column-count: 2;
     column-gap: 50px;
   }
