@@ -42,8 +42,8 @@
   }
 
   .nav__item {
-    margin-bottom: 18px;
-    font-size: 18px;
+    margin-bottom: 24px;
+    font-size: 24px;
   }
 
   .nav__close {
@@ -59,15 +59,15 @@
   }
 
   .header__log-in {
-    padding: 11px 31px 11px 41px;
-    font-size: 12px;
-    background: url(../images/To-come-in.svg) 25px center no-repeat;
-    background-size: 9px;
+    padding: 22px 41px 22px 51px;
+    font-size: 18px;
+    background: url(../images/To-come-in.svg) 35px center no-repeat;
+    background-size: 12px;
   }
 
   .header__log-in:hover {
-    background: url(../images/To-come-in-hover.svg) 25px center no-repeat;
-    background-size: 12px;
+    background: url(../images/To-come-in-hover.svg) 35px center no-repeat;
+    background-size: 18px;
   }
 
   .logo {
@@ -242,7 +242,7 @@
 
   .catalog-wrapper__title {
     padding-top: 22px;
-    padding-bottom: 18px;
+    padding-bottom: 14px;
   }
 
   /* GALLERY */
@@ -252,7 +252,7 @@
 
   /* EVENTS */
   .events-section {
-    padding-top: 52px;
+    padding-top: 55px;
     padding-bottom: 50px;
   }
 
@@ -278,6 +278,10 @@
   .events__card:nth-child(5) {
     display: flex;
     opacity: 1;
+  }
+
+  .events-card__signature {
+    margin-bottom: 5px;
   }
 
   .events-card__signature > div {
@@ -323,6 +327,7 @@
 
   .edition__categories-prices {
     margin-right: 0;
+    margin-bottom: 25px;
   }
 
   .edition__categories-text {
@@ -469,7 +474,7 @@
 
   /* PROJECTS */
   .projects-section {
-    padding-top: 55px;
+    padding-top: 53px;
   }
 
   .projects__title {

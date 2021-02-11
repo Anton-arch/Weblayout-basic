@@ -373,14 +373,12 @@ window.addEventListener('DOMContentLoaded', function () {
   let projectsSwiper = new Swiper('.projects__swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 3,
-    slidesPerGroup: 3,
     updateOnWindowResize: true,
-    spaceBetween: 50,
     breakpoints: {
       1400: {
         slidesPerView: 3,
         slidesPerGroup: 3,
+        spaceBetween: 45,
       },
       992: {
         slidesPerView: 2,
@@ -463,7 +461,7 @@ window.addEventListener('DOMContentLoaded', function () {
           1400: {
             slidesPerView: 3,
             slidesPerGroup: 3,
-            spaceBetween: 45,
+            spaceBetween: 50,
           },
           992: {
             slidesPerView: 2,

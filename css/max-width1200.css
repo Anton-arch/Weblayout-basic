@@ -250,6 +250,10 @@
   }
 
   /* ABOUT-US */
+  .about-us {
+    padding-top: 86px;
+  }
+
   .about-us__description {
     line-height: 32px;
   }
@@ -284,14 +288,22 @@
     line-height: 32px;
   }
 
+  .ui-accordion-header {
+    min-height: 114px;
+  }
+
   /* EVENTS */
   .events-section {
-    padding-top: 86px;
-    padding-bottom: 78px;
+    padding-top: 85px;
+    padding-bottom: 80px;
   }
 
   .events__card {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
+  }
+
+  .events-card__figcaption {
+    padding: 12px 16px 56px 34px;
   }
 
   .events-card__signature > div {
@@ -303,6 +315,11 @@
   }
 
   /* EDITIONS */
+  .edition-section {
+    padding-top: 88px;
+    padding-bottom: 78px;
+  }
+
   .edition__categories-prices {
     margin-right: 1.6vw;
   }
@@ -321,12 +338,13 @@
 
   /* CONTACTS */
   .contacts__wrapper_address-form-title {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   .contacts__address-form-social {
     padding-right: max(45px, calc((100vw - 820px)/2));
     padding-left: max(50px, calc((100vw - 1600px)/2));
+    padding-bottom: 102px;
   }
 
   .contacts__social-icons {
